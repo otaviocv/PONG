@@ -74,8 +74,10 @@
     - Na implementação mobile definir uma velocidade limite
 
 ** Visual
+  - Proporção da Tela 16:9
   - DEFAULT
-    - Fonte do placar
+    - Fontes
+      - TODAS [[http://www.dafont.com/pt/8-bit-party.font?psize=l&text=PONG]]
     - Pauzinhos
     - Barra central (dashed)
     - Barra suprerior e inferior
