@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="6" version="2.0" version_name="Godot Engine v2.0.stable.official">
+	<ext_resource path="res://ball.gd" type="Script" index="1"></ext_resource>
+	<ext_resource path="res://line.png" type="Texture" index="0"></ext_resource>
+	<resource type="ConvexPolygonShape2D" path="local://2">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="4"> 			0, -10, 1024, -10, 1024, 0, 0, 0 </vector2_array>
+
+	</resource>
+	<resource type="ConvexPolygonShape2D" path="local://3">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2_array name="points" len="4"> 			0, -10, 1024, -10, 1024, 0, 0, 0 </vector2_array>
+
+	</resource>
+	<resource type="CircleShape2D" path="local://4">
+		<real name="custom_solver_bias"> 0 </real>
+		<real name="radius"> 13.5 </real>
+
+	</resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "names" </string>
+			<string_array  len="59">
+				<string> "Multiplayer" </string>
+				<string> "Node2D" </string>
+				<string> "Fundo" </string>
+				<string> "polygon" </string>
+				<string> "uv" </string>
+				<string> "color" </string>
+				<string> "offset" </string>
+				<string> "texture/texture" </string>
+				<string> "texture/offset" </string>
+				<string> "texture/scale" </string>
+				<string> "texture/rotation" </string>
+				<string> "invert/enable" </string>
+				<string> "invert/border" </string>
+				<string> "Polygon2D" </string>
+				<string> "Dashed Line" </string>
+				<string> "transform/pos" </string>
+				<string> "texture" </string>
+				<string> "Sprite" </string>
+				<string> "BoundUpper" </string>
+				<string> "input/pickable" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "shapes/0/trigger" </string>
+				<string> "collision/layers" </string>
+				<string> "collision/mask" </string>
+				<string> "constant_linear_velocity" </string>
+				<string> "constant_angular_velocity" </string>
+				<string> "friction" </string>
+				<string> "bounce" </string>
+				<string> "__meta__" </string>
+				<string> "StaticBody2D" </string>
+				<string> "CollisionPolygon2D" </string>
+				<string> "build_mode" </string>
+				<string> "shape_range" </string>
+				<string> "trigger" </string>
+				<string> "BoundBottom" </string>
+				<string> "CollisionPolygon2D 2" </string>
+				<string> "ball" </string>
+				<string> "mode" </string>
+				<string> "mass" </string>
+				<string> "gravity_scale" </string>
+				<string> "custom_integrator" </string>
+				<string> "continuous_cd" </string>
+				<string> "contacts_reported" </string>
+				<string> "contact_monitor" </string>
+				<string> "sleeping" </string>
+				<string> "can_sleep" </string>
+				<string> "velocity/linear" </string>
+				<string> "velocity/angular" </string>
+				<string> "damp_override/linear" </string>
+				<string> "damp_override/angular" </string>
+				<string> "script/script" </string>
+				<string> "RigidBody2D" </string>
+				<string> "transform/scale" </string>
+				<string> "CollisionShape2D" </string>
+				<string> "shape" </string>
+				<string> "_update_shape_index" </string>
+				<string> "PadLeft" </string>
+				<string> "PadRigth" </string>
+			</string_array>
+			<string> "node_count" </string>
+			<int> 14 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="380"> 				-1, -1, 1, 0, -1, 0, 0, 0, 0, 13, 2, -1, 10, 3, 0, 4, 1, 5, 2, 6, 3, 7, 4, 8, 3, 9, 5, 10, 6, 11, 7, 12, 8, 0, 0, 0, 17, 14, -1, 2, 15, 9, 16, 10, 0, 0, 0, 30, 18, -1, 11, 19, 7, 20, 11, 21, 12, 22, 7, 23, 13, 24, 13, 25, 3, 26, 6, 27, 14, 28, 14, 29, 15, 0, 3, 0, 31, 31, -1, 4, 32, 16, 3, 17, 33, 3, 34, 7, 0, 0, 0, 30, 35, -1, 11, 19, 7, 20, 18, 21, 19, 22, 7, 23, 13, 24, 13, 25, 3, 26, 6, 27, 14, 28, 14, 29, 20, 0, 5, 0, 31, 36, -1, 5, 15, 21, 32, 16, 3, 17, 33, 3, 34, 7, 0, 0, 0, 52, 37, -1, 24, 15, 22, 19, 7, 20, 23, 21, 12, 22, 7, 23, 13, 24, 13, 38, 24, 39, 14, 27, 6, 28, 6, 40, 6, 41, 7, 42, 16, 43, 16, 44, 7, 45, 7, 46, 25, 47, 3, 48, 6, 49, 26, 50, 26, 51, 27, 29, 28, 0, 7, 0, 13, 13, -1, 12, 53, 29, 3, 30, 4, 1, 5, 31, 6, 3, 7, 4, 8, 3, 9, 5, 10, 6, 11, 7, 12, 8, 29, 32, 0, 7, 0, 54, 54, -1, 3, 55, 23, 34, 7, 56, 16, 0, 0, 0, 52, 57, -1, 19, 15, 33, 19, 7, 23, 13, 24, 13, 38, 24, 39, 14, 27, 6, 28, 6, 40, 6, 41, 7, 42, 16, 43, 16, 44, 7, 45, 7, 46, 25, 47, 3, 48, 6, 49, 26, 50, 26, 0, 10, 0, 13, 13, -1, 11, 3, 34, 4, 1, 5, 31, 6, 3, 7, 4, 8, 3, 9, 5, 10, 6, 11, 7, 12, 8, 29, 35, 0, 0, 0, 52, 58, -1, 19, 15, 36, 19, 7, 23, 13, 24, 13, 38, 24, 39, 14, 27, 14, 28, 6, 40, 6, 41, 7, 42, 16, 43, 16, 44, 7, 45, 7, 46, 25, 47, 3, 48, 6, 49, 26, 50, 26, 0, 12, 0, 13, 13, -1, 10, 3, 34, 4, 1, 5, 31, 6, 3, 7, 4, 8, 3, 9, 5, 10, 6, 11, 7, 12, 8, 0 </int_array>
+			<string> "variants" </string>
+			<array  len="37" shared="false">
+				<vector2_array  len="4"> 					0, 0, 1024, 0, 1024, 600, 0, 600 </vector2_array>
+				<vector2_array  len="0"> 					 </vector2_array>
+				<color> 0, 0, 0, 1 </color>
+				<vector2> 0, 0 </vector2>
+				<resource name=""></resource>				<vector2> 1, 1 </vector2>
+				<real> 0 </real>
+				<bool> False </bool>
+				<real> 100 </real>
+				<vector2> 522, 300 </vector2>
+				<resource  external="0">  </resource>
+				<resource  resource_type="Shape2D" path="local://2">  </resource>
+				<matrix32> 1, 0, 0, 1, 0, 0 </matrix32>
+				<int> 1 </int>
+				<real> 1 </real>
+				<dictionary  shared="false">
+					<string> "_editor_collapsed" </string>
+					<bool> True </bool>
+				</dictionary>
+				<int> 0 </int>
+				<vector2_array  len="4"> 					0, 0, 1024, 0, 1024, -10, 0, -10 </vector2_array>
+				<resource  resource_type="Shape2D" path="local://3">  </resource>
+				<matrix32> 1, 0, 0, 1, 0, 600 </matrix32>
+				<dictionary  shared="false">
+					<string> "_editor_collapsed" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 0, 600 </vector2>
+				<vector2> 439.401, 265.273 </vector2>
+				<resource  resource_type="Shape2D" path="local://4">  </resource>
+				<int> 2 </int>
+				<bool> True </bool>
+				<real> -1 </real>
+				<resource  external="1">  </resource>
+				<dictionary  shared="false">
+					<string> "_editor_collapsed" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 1.5, 1.5 </vector2>
+				<vector2_array  len="4"> 					-5, 5, -5, -5, 5, -5, 5, 5 </vector2_array>
+				<color> 1, 1, 1, 1 </color>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 50, 300 </vector2>
+				<vector2_array  len="4"> 					5, 40, -5, 40, -5, -40, 5, -40 </vector2_array>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 974, 300 </vector2>
+			</array>
+			<string> "version" </string>
+			<int> 2 </int>
+		</dictionary>
+
+	</main_resource>
+</resource_file>
