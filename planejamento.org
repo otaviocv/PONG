@@ -16,79 +16,104 @@
                                    |             
                     _______________|______________
 
-** Horários
-  1o Horário: Segunda 16:00 - 18:00
-  2o Horário: Quarta 16:00 - 18:00
-  3o Horário: Quinta 8:00 - 10:00
+* Planejamento Incial
+  ** Horários
+    1o Horário: Segunda 16:00 - 18:00
+    2o Horário: Quarta 16:00 - 18:00
+    3o Horário: Quinta 8:00 - 10:00
 
- |    Horários   | SEG | TER | QUA | QUI | SEX |
- |---------------|-----|-----|-----|-----|-----|
- | 8:00 - 10:00  |     |     |     | 3o  |     |
- | 16:00 - 18:00 | 1o  |     | 2o  |     |     |
+   |    Horários   | SEG | TER | QUA | QUI | SEX |
+   |---------------|-----|-----|-----|-----|-----|
+   | 8:00 - 10:00  |     |     |     | 3o  |     |
+   | 16:00 - 18:00 | 1o  |     | 2o  |     |     |
 
-** Integrantes
-  - Breno Moura [[mailto:]]
-  - Otávio Vasques [[mailto:]]
-  - Sofia Alonso [[mailto:]] 
+  ** Integrantes
+    - Breno Moura [[mailto:]]
+    - Otávio Vasques [[mailto:]]
+    - Sofia Alonso [[mailto:]] 
+    - Gabriel Kazuyuki [[mailto:]] 
 
-** Mecânica Básica
+  ** Mecânica Básica
 
-  - Movimento do pauzinhos
-  - Tamanho dos pauzinhos
-  - Movimento da bolinha
-    - colide com as perede superiores, atravessa as laterais
-      - Quando a bolinha sai pela lateral ela deixa de exisitr. Nova bolinha é criada
-    - Ganho/perda de velocidade baseado na velocidade do pauzinho
-      - Troca de direção
-        - Movimento baseado em colisões elásticas.
-          - Colisão com Pauzinho Vx = x, Vy = y -> Vx = -x, Vy = (a*Vp - b*y)
-          - Colisão com Parede Vx = x, Vy = y -> Vx = x, Vy = -y.
-  - Criação de novos objetos
-    - A bolinha nova surge na metade da tela por onde a última bolinha escapou com velocidade Vi
-    - Nova Bolinha
-      - Sempre pro lado do jogador que perdeu a rodada
-      - Velocidade inical
-        - Vy = k, Vx = abs(k), x = centro,
-      - Posição inicial
-        - y = centro
-        OU
-        - y = yaxis * random()
-                 
-  - Placar
-    - Registro de quantas bolinhas escaparam pelas laterais.
-  - Início/Fim do jogo
-    - Delimitar o máximo de pontos
+    - Movimento do pauzinhos
+    - Tamanho dos pauzinhos
+    - Movimento da bolinha
+      - colide com as perede superiores, atravessa as laterais
+        - Quando a bolinha sai pela lateral ela deixa de exisitr. Nova bolinha é criada
+      - Ganho/perda de velocidade baseado na velocidade do pauzinho
+        - Troca de direção
+          - Movimento baseado em colisões elásticas.
+            - Colisão com Pauzinho Vx = x, Vy = y -> Vx = -x, Vy = (a*Vp - b*y)
+            - Colisão com Parede Vx = x, Vy = y -> Vx = x, Vy = -y.
+    - Criação de novos objetos
+      - A bolinha nova surge na metade da tela por onde a última bolinha escapou com velocidade Vi
+      - Nova Bolinha
+        - Sempre pro lado do jogador que perdeu a rodada
+        - Velocidade inical
+          - Vy = k, Vx = abs(k), x = centro,
+        - Posição inicial
+          - y = centro
+          OU
+          - y = yaxis * random()
+                   
+    - Placar
+      - Registro de quantas bolinhas escaparam pelas laterais.
+    - Início/Fim do jogo
+      - Delimitar o máximo de pontos
 
-** Jogabilidade
-  - Single Player
-    - Mouse ou teclado
-  - Vs local
-    -  Só teclado
-  - Vs online
+  ** Jogabilidade
+    - Single Player
+      - Mouse ou teclado
+    - Vs local
+      -  Só teclado
+    - Vs online
 
 
-  *** PROBLEMAS :importante:
-    - IA balanceada
-      - Numero máximo de rabtidas
-      - Velocidade fixa
-    - Na implementação mobile definir uma velocidade limite
+    *** PROBLEMAS :importante:
+      - IA balanceada
+        - Numero máximo de rabtidas
+        - Velocidade fixa
+      - Na implementação mobile definir uma velocidade limite
 
-** Visual
-  - Proporção da Tela 16:9
-  - DEFAULT
-    - Fontes
-      - TODAS [[http://www.dafont.com/pt/8-bit-party.font?psize=l&text=PONG]]
-    - Pauzinhos
-    - Barra central (dashed)
-    - Barra suprerior e inferior
-** Som
-    - Colisão com pauzinho
-      - Ajustável com a intensidade da colisão
-    - Colisão com parede
-    - Música de fundo
-    - inicio/fim do jogo
-    - inicio/fim da rodada + Bola nova
-       
-** Plataformas
-  - MOBILE **
-  - PC
+  ** Visual
+    - Proporção da Tela 16:9
+    - DEFAULT
+      - Fontes
+        - TODAS [[http://www.dafont.com/pt/8-bit-party.font?psize=l&text=PONG]]
+      - Pauzinhos
+      - Barra central (dashed)
+      - Barra suprerior e inferior
+  ** Som
+      - Colisão com pauzinho
+        - Ajustável com a intensidade da colisão
+      - Colisão com parede
+      - Música de fundo
+      - inicio/fim do jogo
+      - inicio/fim da rodada + Bola nova
+         
+  ** Plataformas
+    - MOBILE **
+    - PC
+
+* Mínimo para o jogo ficar pornto
+  * Global [0/2]
+    - [ ] Sprites
+    - [ ] Som
+  ** Multiplayer [1/4]
+    - [X] Placares
+    - [ ] Mecânica de reposição de bola [0/2]
+      - [ ] Delay no reset da bola
+      - [ ] Angulo de reposição
+    - [ ] Corrigir o lado do lançamento da bolinha
+    - [ ] Mecânica de inicio e fim de jogo
+
+  ** Single Player [0/1]
+    - [ ] IA
+
+* Features [0/1]
+  - [ ]  Destruir a barra do perdedor
+
+* Issues [0/2]
+  - [ ] Velocidade em X da bolinha
+  - [ ] Velocidade em Y da bolinha
+      - A bola não consegue somar a velocidade do pad

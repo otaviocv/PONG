@@ -4,6 +4,11 @@ extends Node2D
 onready var padleft = get_node("PadLeft")
 onready var padrigth = get_node("PadRigth")
 onready var ball = get_node("ball")
+onready var labelrigth = get_node("LabelRight")
+onready var labelleft = get_node("LabelLeft")
+var scoreleft = 0
+var scoreright = 0
+
 # member variables here, example:
 # var a=2
 # var b="textvar"
@@ -35,7 +40,20 @@ func _input(event):
 func _fixed_process(delta):
 	padleft.set_pos(Vector2(50, padleft.get_pos().y))
 	padrigth.set_pos(Vector2(974, padrigth.get_pos().y))
-	ball.increase_velocity_x(1.005)
+	ball.increase_velocity_x(1.0035)
+	score()
+	
+func score():
+	var x = ball.get_pos().x
+	if (x < 0):
+		scoreright += 1
+		ball.reset(1)
+	elif (x > 1024):
+		scoreleft += 1
+		ball.reset(-1)
+	labelleft.set_text(str(scoreleft))
+	labelrigth.set_text(str(scoreright))
+	
 	
 
 func _ready():
@@ -45,8 +63,13 @@ func _ready():
 	# Initialization here
 	pass
 
-func collision_on_padleft( viewport, event, shape_idx ):
-	ball.increase_velocity_y(padleft.get_linear_velocity().y)
 
-func _on_PadRigth_input_event( viewport, event, shape_idx ):
-	ball.increase_velocity_y(padrigth.get_linear_velocity().y)
+
+func _on_PadLeft_body_enter( body ):
+	if body == ball:
+		ball.increase_velocity_y(0.5*padleft.get_linear_velocity().y)
+
+
+func _on_PadRigth_body_enter( body ):
+	if body == ball:
+		ball.increase_velocity_y(0.5*padleft.get_linear_velocity().y)
