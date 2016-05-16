@@ -27,8 +27,17 @@ func reset(dir):
 func increase_velocity_y(k):
 	var vy = self.get_linear_velocity().y
 	self.set_linear_velocity(Vector2(get_linear_velocity().x, vy+k))
-	
+
+func _fixed_process(delta):
+	vy = self.get_linear_velocity().y
+	if vy > 1000:
+		self.set_linear_velocity(Vector2(self.get_linear_velocity().x, 1000))
+	elif vy < -1000:
+		self.set_linear_velocity(Vector2(self.get_linear_velocity().x, -1000))
+		
+
 func _ready():
+	set_fixed_process(true)
 	# Called every time the node is added to the scene.
 	# Initialization here
 	reset(1)

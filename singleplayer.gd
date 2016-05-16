@@ -8,24 +8,43 @@ onready var labelrigth = get_node("LabelRight")
 onready var labelleft = get_node("LabelLeft")
 var scoreleft = 0
 var scoreright = 0
+var epsilon1 = 30
+var epsilon2 = 40
 
 # member variables here, example:
 # var a=2
 # var b="textvar"
 
-func _input(event):
-	#First Player
-	if event.is_action_released("2playerup"):
-		padleft.set_up_pressed(false)
-	if event.is_action_released("2playerdown"):
-		padleft.set_down_pressed(false)
-	if event.is_action_pressed("2playerup"):
+func ai():
+	if ball.get_pos().y + epsilon2 < padleft.get_pos().y:
+		padleft.set_pad_velocity(400)
 		padleft.set_up_pressed(true)
-	if event.is_action_pressed("2playerdown"):
+		padleft.set_down_pressed(false)
+	elif ball.get_pos().y - epsilon2 > padleft.get_pos().y:
+		padleft.set_pad_velocity(400)
 		padleft.set_down_pressed(true)
-		
-	# Second Player
+		padleft.set_up_pressed(false)
+	elif ball.get_pos().y + epsilon1 < padleft.get_pos().y:
+		padleft.set_pad_velocity(200)
+		padleft.set_up_pressed(true)
+		padleft.set_down_pressed(false)
+	elif ball.get_pos().y - epsilon1 > padleft.get_pos().y:
+		padleft.set_pad_velocity(200)
+		padleft.set_down_pressed(true)
+		padleft.set_up_pressed(false)
+	elif ball.get_pos().y < padleft.get_pos().y:
+		padleft.set_pad_velocity(50)
+		padleft.set_up_pressed(true)
+		padleft.set_down_pressed(false)
+	elif ball.get_pos().y > padleft.get_pos().y:
+		padleft.set_pad_velocity(50)
+		padleft.set_down_pressed(true)
+		padleft.set_up_pressed(false)
+	else:
+		padleft.set_down_pressed(false)
+		padleft.set_up_pressed(false)
 
+func _input(event):
 	if event.is_action_released("1playerup"):
 		padrigth.set_up_pressed(false)
 	if event.is_action_released("1playerdown"):
@@ -40,6 +59,7 @@ func _fixed_process(delta):
 	padrigth.set_pos(Vector2(974, padrigth.get_pos().y))
 	ball.increase_velocity_x(1.0035)
 	score()
+	ai()
 	
 func score():
 	var x = ball.get_pos().x
@@ -57,6 +77,7 @@ func score():
 func _ready():
 	set_process_input(true)
 	set_fixed_process(true)
+	padleft.set_pad_velocity(600)
 	# Called every time the node is added to the scene.
 	# Initialization here
 	pass

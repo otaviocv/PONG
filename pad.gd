@@ -32,6 +32,9 @@ func _fixed_process(delta):
 	if (not up_pressed) and (not down_pressed):
 		stop()
 
+func set_pad_velocity(v):
+	padvelocity = v
+
 func _ready():
 	set_fixed_process(true)
 	self.set_mass(15)

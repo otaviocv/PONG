@@ -27,6 +27,8 @@
    | 8:00 - 10:00  |     |     |     | 3o  |     |
    | 16:00 - 18:00 | 1o  |     | 2o  |     |     |
 
+   
+
   ** Integrantes
     - Breno Moura [[mailto:]]
     - Otávio Vasques [[mailto:]]
@@ -107,8 +109,8 @@
     - [ ] Corrigir o lado do lançamento da bolinha
     - [ ] Mecânica de inicio e fim de jogo
 
-  ** Single Player [0/1]
-    - [ ] IA
+  ** Single Player [1/1]
+    - [X] IA
 
 * Features [0/1]
   - [ ]  Destruir a barra do perdedor
