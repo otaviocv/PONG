@@ -15,11 +15,15 @@ func increase_velocity_x(k):
 		self.set_linear_velocity(Vector2(vx*k, get_linear_velocity().y))
 	# print("1:"+ str(self.get_linear_velocity().x))
 
-func reset(dir):
+
+func reset():
+	self.set_pos(Vector2(512, 300))
+	self.set_linear_velocity(Vector2(0, 0))
+
+func reset_velocity(dir):
 	var k = 0.28727
 	vx = 350
 	vy = rand_range(-k*vx,k*vx)
-	self.set_pos(Vector2(512, 300))
 	self.set_linear_velocity(Vector2(dir*vx, vy))
 
 	
@@ -40,7 +44,8 @@ func _ready():
 	set_fixed_process(true)
 	# Called every time the node is added to the scene.
 	# Initialization here
-	reset(1)
+	reset()
+	reset_velocity(1)
 
 
 
