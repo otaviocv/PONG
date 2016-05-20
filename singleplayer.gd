@@ -14,7 +14,7 @@ var scoreplayer = 0
 var epsilon1 = 30
 var epsilon2 = 40
 var dir
-var maxpoints = 11
+var maxpoints = 1
 var gameend = false
 
 # member variables here, example:

@@ -55,10 +55,12 @@ func _fixed_process(delta):
 func check_end_of_game():
 	if scoreleft == maxpoints:
 		playerwins.set_text("Player 1 Wins")
+		get_node("Quadrado").show()
 		gameend = true
 		reset_time.start()
 	if scoreright == maxpoints:
 		playerwins.set_text("Player 2 Wins")
+		get_node("Quadrado").show()
 		gameend = true
 		reset_time.start()
 
@@ -107,18 +109,31 @@ func _on_RespawnTime_timeout():
 	timer.stop()
 
 
-func _on_Home_released():
-	get_tree().change_scene("res://home.xscn")
-
 func _on_Exit_pressed():
 	get_tree().quit()
-
-
-func _on_Home_pressed():
-	get_tree().change_scene("res://home.xscn")
 
 
 func _on_ResetTime_timeout():
 	playerwins.hide()
 	home.show()
 	exit.show()
+
+
+func _on_Home_mouse_enter():
+	home.get_child(0).set_scale(Vector2(3.2,3.2))
+
+
+func _on_Home_mouse_exit():
+	home.get_child(0).set_scale(Vector2(3,3))
+
+
+func _on_Exit_mouse_enter():
+	exit.get_child(0).set_scale(Vector2(3.2,3.2))
+
+
+func _on_Exit_mouse_exit():
+	exit.get_child(0).set_scale(Vector2(3,3))
+
+
+func _on_Home_pressed():
+	print("TAFUCNIONDO")

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="11" version="2.0" version_name="Godot Engine v2.0.stable.official">
+<resource_file type="PackedScene" subresource_count="12" version="2.0" version_name="Godot Engine v2.0.stable.official">
 	<ext_resource path="res://line.png" type="Texture" index="1"></ext_resource>
 	<ext_resource path="res://ball.gd" type="Script" index="2"></ext_resource>
 	<ext_resource path="res://pad.gd" type="Script" index="3"></ext_resource>
 	<ext_resource path="res://multiplayer.gd" type="Script" index="0"></ext_resource>
 	<ext_resource path="res://8_bit_party.fnt" type="Font" index="4"></ext_resource>
+	<ext_resource path="res://buttons.gd" type="Script" index="5"></ext_resource>
 	<resource type="ConvexPolygonShape2D" path="local://10">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2_array name="points" len="4"> 			0, -10, 1024, -10, 1024, 0, 0, 0 </vector2_array>
@@ -33,14 +34,14 @@
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
-			<int> 8 </int>
+			<int> 9 </int>
 			<string> "conns" </string>
-			<int_array  len="48"> 				10, 0, 94, 93, 2, 0, 13, 0, 94, 95, 2, 0, 19, 0, 97, 96, 2, 0, 20, 0, 99, 98, 2, 0, 20, 0, 101, 100, 2, 0, 22, 0, 99, 102, 2, 0, 22, 0, 101, 103, 2, 0, 24, 0, 97, 104, 2, 0 </int_array>
+			<int_array  len="54"> 				11, 0, 94, 93, 2, 0, 14, 0, 94, 95, 2, 0, 20, 0, 97, 96, 2, 0, 21, 0, 97, 98, 2, 0, 22, 0, 100, 99, 2, 0, 22, 0, 102, 101, 2, 0, 22, 0, 104, 103, 2, 0, 22, 0, 106, 105, 2, 0, 24, 0, 102, 107, 2, 0 </int_array>
 			<string> "editable_instances" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "names" </string>
-			<string_array  len="105">
+			<string_array  len="108">
 				<string> "Multiplayer" </string>
 				<string> "script/script" </string>
 				<string> "Node2D" </string>
@@ -61,6 +62,8 @@
 				<string> "transform/pos" </string>
 				<string> "texture" </string>
 				<string> "Sprite" </string>
+				<string> "Quadrado" </string>
+				<string> "visibility/visible" </string>
 				<string> "BoundUpper" </string>
 				<string> "input/pickable" </string>
 				<string> "shapes/0/shape" </string>
@@ -123,39 +126,40 @@
 				<string> "one_shot" </string>
 				<string> "autostart" </string>
 				<string> "Timer" </string>
-				<string> "Home" </string>
-				<string> "anchor/left" </string>
-				<string> "anchor/top" </string>
-				<string> "anchor/right" </string>
-				<string> "anchor/bottom" </string>
+				<string> "ResetTime" </string>
+				<string> "Exit" </string>
+				<string> "visibility/self_opacity" </string>
 				<string> "size_flags/vertical" </string>
 				<string> "toggle_mode" </string>
 				<string> "flat" </string>
 				<string> "Button" </string>
-				<string> "Exit" </string>
-				<string> "ResetTime" </string>
+				<string> "valign" </string>
+				<string> "Home" </string>
 				<string> "_on_PadLeft_body_enter" </string>
 				<string> "body_enter" </string>
 				<string> "_on_PadRigth_body_enter" </string>
 				<string> "_on_RespawnTime_timeout" </string>
 				<string> "timeout" </string>
-				<string> "_on_Home_released" </string>
-				<string> "released" </string>
-				<string> "_on_Home_pressed" </string>
-				<string> "pressed" </string>
-				<string> "_on_Exit_released" </string>
-				<string> "_on_Exit_pressed" </string>
 				<string> "_on_ResetTime_timeout" </string>
+				<string> "_on_Exit_released" </string>
+				<string> "released" </string>
+				<string> "_on_Exit_pressed" </string>
+				<string> "pressed" </string>
+				<string> "_on_Exit_mouse_enter" </string>
+				<string> "mouse_enter" </string>
+				<string> "_on_Exit_mouse_exit" </string>
+				<string> "mouse_exit" </string>
+				<string> "_on_Home_pressed" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 25 </int>
+			<int> 26 </int>
 			<string> "node_paths" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="687"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 15, 3, -1, 11, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 10, 0, 0, 0, 19, 16, -1, 3, 17, 11, 18, 12, 14, 13, 0, 0, 0, 31, 20, -1, 11, 21, 8, 22, 14, 23, 15, 24, 8, 25, 16, 26, 16, 27, 4, 28, 7, 29, 17, 30, 7, 14, 18, 0, 3, 0, 32, 32, -1, 4, 33, 19, 4, 20, 34, 4, 35, 8, 0, 0, 0, 31, 36, -1, 11, 21, 8, 22, 21, 23, 22, 24, 8, 25, 16, 26, 16, 27, 4, 28, 7, 29, 17, 30, 7, 14, 23, 0, 5, 0, 32, 37, -1, 5, 17, 24, 33, 19, 4, 25, 34, 4, 35, 8, 0, 0, 0, 52, 38, -1, 24, 17, 26, 21, 8, 22, 27, 23, 15, 24, 8, 25, 16, 26, 16, 39, 28, 40, 17, 29, 7, 30, 17, 41, 7, 42, 8, 43, 19, 44, 19, 45, 8, 46, 8, 47, 29, 48, 4, 49, 7, 50, 30, 51, 30, 1, 31, 14, 32, 0, 7, 0, 15, 15, -1, 12, 53, 33, 4, 34, 5, 2, 6, 35, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 36, 0, 7, 0, 54, 54, -1, 3, 55, 27, 35, 8, 56, 19, 0, 0, 0, 52, 57, -1, 24, 17, 37, 21, 8, 22, 38, 23, 39, 24, 8, 25, 16, 26, 16, 39, 28, 40, 40, 29, 17, 30, 7, 41, 7, 42, 8, 43, 19, 44, 16, 45, 29, 46, 8, 47, 29, 48, 4, 49, 7, 50, 30, 51, 30, 1, 41, 14, 42, 0, 10, 0, 15, 15, -1, 11, 4, 43, 5, 2, 6, 35, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 44, 0, 10, 0, 32, 32, -1, 5, 17, 45, 33, 19, 4, 46, 34, 4, 35, 8, 0, 0, 0, 52, 58, -1, 24, 17, 47, 21, 8, 22, 48, 23, 15, 24, 8, 25, 16, 26, 16, 39, 28, 40, 40, 29, 7, 30, 7, 41, 7, 42, 8, 43, 19, 44, 16, 45, 29, 46, 8, 47, 29, 48, 4, 49, 7, 50, 30, 51, 30, 1, 41, 14, 49, 0, 13, 0, 15, 15, -1, 10, 4, 43, 5, 2, 6, 35, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 0, 13, 0, 32, 32, -1, 4, 33, 19, 4, 50, 34, 4, 35, 8, 0, 0, 0, 73, 59, -1, 13, 60, 51, 61, 52, 62, 53, 63, 54, 64, 55, 65, 29, 66, 29, 67, 28, 68, 56, 69, 57, 70, 17, 71, 19, 72, 58, 0, 0, 0, 73, 74, -1, 13, 60, 59, 61, 52, 62, 60, 63, 61, 64, 55, 65, 29, 66, 29, 67, 28, 68, 56, 69, 57, 70, 17, 71, 19, 72, 58, 0, 0, 0, 73, 75, -1, 13, 60, 62, 61, 63, 62, 64, 63, 51, 64, 65, 65, 29, 66, 29, 67, 28, 68, 56, 69, 57, 70, 17, 71, 19, 72, 58, 0, 0, 0, 81, 76, -1, 4, 77, 16, 78, 17, 79, 8, 80, 8, 0, 0, 0, 90, 82, -1, 14, 83, 66, 84, 66, 85, 66, 86, 66, 60, 67, 61, 68, 62, 69, 63, 70, 65, 8, 66, 29, 67, 28, 87, 28, 88, 8, 89, 8, 0, 20, 0, 73, 73, -1, 11, 62, 71, 63, 72, 64, 65, 65, 29, 66, 29, 67, 28, 68, 56, 69, 73, 70, 17, 71, 19, 72, 58, 0, 0, 0, 90, 91, -1, 10, 60, 74, 61, 63, 62, 75, 63, 76, 65, 8, 66, 29, 67, 28, 87, 28, 88, 8, 89, 8, 0, 22, 0, 73, 73, -1, 11, 62, 71, 63, 72, 64, 65, 65, 29, 66, 29, 67, 28, 68, 56, 69, 77, 70, 17, 71, 19, 72, 58, 0, 0, 0, 81, 92, -1, 4, 77, 16, 78, 78, 79, 8, 80, 8, 0 </int_array>
+			<int_array  len="724"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 15, 3, -1, 11, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 10, 0, 0, 0, 19, 16, -1, 3, 17, 11, 18, 12, 14, 13, 0, 0, 0, 15, 20, -1, 12, 21, 8, 17, 14, 4, 15, 5, 2, 6, 3, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 0, 0, 0, 33, 22, -1, 11, 23, 8, 24, 16, 25, 17, 26, 8, 27, 18, 28, 18, 29, 4, 30, 7, 31, 19, 32, 7, 14, 20, 0, 4, 0, 34, 34, -1, 4, 35, 21, 4, 22, 36, 4, 37, 8, 0, 0, 0, 33, 38, -1, 11, 23, 8, 24, 23, 25, 24, 26, 8, 27, 18, 28, 18, 29, 4, 30, 7, 31, 19, 32, 7, 14, 25, 0, 6, 0, 34, 39, -1, 5, 17, 26, 35, 21, 4, 27, 36, 4, 37, 8, 0, 0, 0, 54, 40, -1, 24, 17, 28, 23, 8, 24, 29, 25, 17, 26, 8, 27, 18, 28, 18, 41, 30, 42, 19, 31, 7, 32, 19, 43, 7, 44, 8, 45, 21, 46, 21, 47, 8, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 33, 14, 34, 0, 8, 0, 15, 15, -1, 12, 55, 35, 4, 36, 5, 2, 6, 37, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 38, 0, 8, 0, 56, 56, -1, 3, 57, 29, 37, 8, 58, 21, 0, 0, 0, 54, 59, -1, 24, 17, 39, 23, 8, 24, 40, 25, 41, 26, 8, 27, 18, 28, 18, 41, 30, 42, 42, 31, 19, 32, 7, 43, 7, 44, 8, 45, 21, 46, 18, 47, 31, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 43, 14, 44, 0, 11, 0, 15, 15, -1, 11, 4, 45, 5, 2, 6, 37, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 46, 0, 11, 0, 34, 34, -1, 5, 17, 47, 35, 21, 4, 48, 36, 4, 37, 8, 0, 0, 0, 54, 60, -1, 24, 17, 49, 23, 8, 24, 50, 25, 17, 26, 8, 27, 18, 28, 18, 41, 30, 42, 42, 31, 7, 32, 7, 43, 7, 44, 8, 45, 21, 46, 18, 47, 31, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 43, 14, 51, 0, 14, 0, 15, 15, -1, 10, 4, 45, 5, 2, 6, 37, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 0, 14, 0, 34, 34, -1, 4, 35, 21, 4, 52, 36, 4, 37, 8, 0, 0, 0, 75, 61, -1, 13, 62, 53, 63, 54, 64, 55, 65, 56, 66, 57, 67, 31, 68, 31, 69, 30, 70, 58, 71, 59, 72, 19, 73, 21, 74, 60, 0, 0, 0, 75, 76, -1, 13, 62, 61, 63, 54, 64, 62, 65, 63, 66, 57, 67, 31, 68, 31, 69, 30, 70, 58, 71, 59, 72, 19, 73, 21, 74, 60, 0, 0, 0, 75, 77, -1, 14, 62, 64, 63, 65, 64, 66, 65, 67, 66, 68, 67, 31, 68, 31, 69, 30, 70, 58, 71, 59, 72, 19, 73, 21, 74, 60, 1, 69, 0, 0, 0, 83, 78, -1, 4, 79, 18, 80, 19, 81, 8, 82, 8, 0, 0, 0, 83, 84, -1, 4, 79, 18, 80, 70, 81, 8, 82, 8, 0, 0, 0, 90, 85, -1, 11, 86, 7, 62, 71, 63, 53, 64, 72, 65, 73, 67, 8, 68, 31, 69, 30, 87, 30, 88, 8, 89, 8, 0, 22, 0, 75, 75, -1, 13, 62, 74, 64, 75, 65, 76, 66, 68, 67, 31, 68, 31, 69, 30, 70, 58, 71, 77, 91, 18, 72, 19, 73, 21, 74, 60, 0, 0, 0, 90, 92, -1, 11, 86, 7, 62, 78, 63, 79, 64, 80, 65, 81, 67, 8, 68, 31, 69, 30, 87, 30, 88, 8, 89, 8, 0, 24, 0, 75, 75, -1, 13, 62, 74, 64, 75, 65, 76, 66, 68, 67, 31, 68, 31, 69, 30, 70, 58, 71, 82, 91, 18, 72, 19, 73, 21, 74, 60, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="79" shared="false">
+			<array  len="83" shared="false">
 				<resource  external="0">  </resource>
 				<vector2_array  len="4"> 					0, 0, 1024, 0, 1024, 600, 0, 600 </vector2_array>
 				<vector2_array  len="0"> 					 </vector2_array>
@@ -169,12 +173,14 @@
 					<string> "_edit_lock_" </string>
 					<bool> True </bool>
 				</dictionary>
-				<vector2> 520, 300 </vector2>
+				<vector2> 528, 300 </vector2>
 				<resource  external="1">  </resource>
 				<dictionary  shared="false">
 					<string> "_edit_lock_" </string>
 					<bool> True </bool>
 				</dictionary>
+				<vector2> 512, 300 </vector2>
+				<vector2_array  len="4"> 					-10, -150, -10, 135, 10, 135, 10, -150 </vector2_array>
 				<resource  resource_type="Shape2D" path="local://10">  </resource>
 				<matrix32> 1, 0, 0, 1, 0, 0 </matrix32>
 				<int> 1 </int>
@@ -249,22 +255,24 @@
 				<real> 661 </real>
 				<real> 73 </real>
 				<real> 350 </real>
-				<real> 300 </real>
+				<real> 270 </real>
 				<real> 394 </real>
+				<real> 290 </real>
 				<vector2> 3, 3 </vector2>
-				<int> 3 </int>
-				<real> -480 </real>
-				<real> -157 </real>
-				<real> -492 </real>
-				<real> -176 </real>
-				<real> 44 </real>
-				<real> 20 </real>
-				<string> "HOME" </string>
-				<real> 512 </real>
-				<real> 524 </real>
-				<real> 319 </real>
-				<string> "EXIT" </string>
+				<resource  external="5">  </resource>
 				<real> 3 </real>
+				<real> 455 </real>
+				<real> 575 </real>
+				<real> 380 </real>
+				<real> 10 </real>
+				<real> 54 </real>
+				<real> 20 </real>
+				<string> "EXIT" </string>
+				<real> 445 </real>
+				<real> 200 </real>
+				<real> 565 </real>
+				<real> 260 </real>
+				<string> "HOME" </string>
 			</array>
 			<string> "version" </string>
 			<int> 2 </int>
