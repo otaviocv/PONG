@@ -118,6 +118,14 @@ func _on_ResetTime_timeout():
 	home.show()
 	exit.show()
 
+func _on_Exit_mouse_enter():
+	exit.get_child(0).set_scale(Vector2(3.2,3.2))
+
+func _on_Exit_mouse_exit():
+	exit.get_child(0).set_scale(Vector2(3,3))
+
+func _on_Home_pressed():
+	get_tree().change_scene("res://home.xscn")
 
 func _on_Home_mouse_enter():
 	home.get_child(0).set_scale(Vector2(3.2,3.2))
@@ -125,15 +133,3 @@ func _on_Home_mouse_enter():
 
 func _on_Home_mouse_exit():
 	home.get_child(0).set_scale(Vector2(3,3))
-
-
-func _on_Exit_mouse_enter():
-	exit.get_child(0).set_scale(Vector2(3.2,3.2))
-
-
-func _on_Exit_mouse_exit():
-	exit.get_child(0).set_scale(Vector2(3,3))
-
-
-func _on_Home_pressed():
-	print("TAFUCNIONDO")

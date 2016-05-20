@@ -34,14 +34,14 @@
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
-			<int> 9 </int>
+			<int> 11 </int>
 			<string> "conns" </string>
-			<int_array  len="54"> 				11, 0, 94, 93, 2, 0, 14, 0, 94, 95, 2, 0, 20, 0, 97, 96, 2, 0, 21, 0, 97, 98, 2, 0, 22, 0, 100, 99, 2, 0, 22, 0, 102, 101, 2, 0, 22, 0, 104, 103, 2, 0, 22, 0, 106, 105, 2, 0, 24, 0, 102, 107, 2, 0 </int_array>
+			<int_array  len="66"> 				11, 0, 94, 93, 2, 0, 14, 0, 94, 95, 2, 0, 20, 0, 97, 96, 2, 0, 21, 0, 97, 98, 2, 0, 22, 0, 100, 99, 2, 0, 22, 0, 102, 101, 2, 0, 22, 0, 104, 103, 2, 0, 22, 0, 106, 105, 2, 0, 24, 0, 102, 107, 2, 0, 24, 0, 104, 108, 2, 0, 24, 0, 106, 109, 2, 0 </int_array>
 			<string> "editable_instances" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "names" </string>
-			<string_array  len="108">
+			<string_array  len="110">
 				<string> "Multiplayer" </string>
 				<string> "script/script" </string>
 				<string> "Node2D" </string>
@@ -150,6 +150,8 @@
 				<string> "_on_Exit_mouse_exit" </string>
 				<string> "mouse_exit" </string>
 				<string> "_on_Home_pressed" </string>
+				<string> "_on_Home_mouse_enter" </string>
+				<string> "_on_Home_mouse_exit" </string>
 			</string_array>
 			<string> "node_count" </string>
 			<int> 26 </int>
