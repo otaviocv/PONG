@@ -11,6 +11,7 @@ onready var timer = get_node("RespawnTime")
 onready var home = get_node("Home")
 onready var exit = get_node("Exit")
 onready var reset_time = get_node("ResetTime")
+onready var sounds = get_node("sounds")
 
 var scoreai = 0
 var scoreplayer = 0
@@ -92,7 +93,7 @@ func score():
 			dir = 1
 			ball.reset()
 			timer.start()
-			
+			sounds.play("score")
 	elif (x > 1024) and not gameend:
 		scoreai += 1
 		check_end_of_game()
@@ -100,6 +101,7 @@ func score():
 			dir = -1
 			ball.reset()
 			timer.start()
+			sounds.play("score")
 	labelleft.set_text(str(scoreai))
 	labelrigth.set_text(str(scoreplayer))
 	
@@ -161,3 +163,7 @@ func _on_Exit_mouse_enter():
 
 func _on_Exit_mouse_exit():
 	exit.get_child(0).set_scale(Vector2(3,3))
+
+
+func _on_ball_body_enter( body ):
+	sounds.play("hit")
