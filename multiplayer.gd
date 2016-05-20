@@ -15,7 +15,7 @@ onready var reset_time = get_node("ResetTime")
 var scoreleft = 0
 var scoreright = 0
 var dir = 1
-var maxpoints = 1
+var maxpoints = 11
 var gameend = false
 
 # member variables here, example:
@@ -89,6 +89,8 @@ func _ready():
 	set_process_input(true)
 	set_fixed_process(true)
 	playerwins.set_text("")
+	ball.reset()
+	timer.start()
 	home.hide()
 	exit.hide()
 

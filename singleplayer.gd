@@ -16,8 +16,8 @@ var scoreai = 0
 var scoreplayer = 0
 var epsilon1 = 30
 var epsilon2 = 40
-var dir
-var maxpoints = 1
+var dir = 1
+var maxpoints = 11
 var gameend = false
 
 # member variables here, example:
@@ -111,7 +111,8 @@ func _ready():
 	set_fixed_process(true)
 	padleft.set_pad_velocity(600)
 	playerwins.set_text("")
-	timer.set_wait_time(1)
+	ball.reset()
+	timer.start()
 	home.hide()
 	exit.hide()
 
