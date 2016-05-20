@@ -11,6 +11,7 @@ onready var timer = get_node("RespawnTime")
 onready var home = get_node("Home")
 onready var exit = get_node("Exit")
 onready var reset_time = get_node("ResetTime")
+onready var sounds = get_node("sounds")
 
 var scoreleft = 0
 var scoreright = 0
@@ -96,6 +97,7 @@ func _ready():
 
 
 
+
 func _on_PadLeft_body_enter( body ):
 	if body == ball:
 		ball.increase_velocity_y(0.5*padleft.get_linear_velocity().y)
@@ -134,3 +136,7 @@ func _on_Home_mouse_enter():
 
 func _on_Home_mouse_exit():
 	home.get_child(0).set_scale(Vector2(3,3))
+
+
+func _on_ball_body_enter( body ):
+	get_node("sounds").play("hit")

@@ -48,4 +48,5 @@ func _ready():
 	reset_velocity(1)
 
 
-
+func _on_ball_body_enter( body ):
+	get_node("sounds").play("hit")
