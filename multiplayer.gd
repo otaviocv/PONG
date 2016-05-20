@@ -74,6 +74,7 @@ func score():
 			dir = 1
 			ball.reset()
 			timer.start()
+			sounds.play("score")
 	elif (x > 1024) and not gameend:
 		scoreleft += 1
 		check_end_of_game()
@@ -81,6 +82,7 @@ func score():
 			dir = -1
 			ball.reset()
 			timer.start()
+			sounds.play("score")
 	labelleft.set_text(str(scoreleft))
 	labelrigth.set_text(str(scoreright))
 	
@@ -139,4 +141,4 @@ func _on_Home_mouse_exit():
 
 
 func _on_ball_body_enter( body ):
-	get_node("sounds").play("hit")
+	sounds.play("hit")
