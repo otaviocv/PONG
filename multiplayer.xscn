@@ -62,7 +62,7 @@
 				<string> "transform/pos" </string>
 				<string> "texture" </string>
 				<string> "Sprite" </string>
-				<string> "Quadrado" </string>
+				<string> "Square" </string>
 				<string> "visibility/visible" </string>
 				<string> "BoundUpper" </string>
 				<string> "input/pickable" </string>

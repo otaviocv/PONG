@@ -8,6 +8,9 @@ onready var labelrigth = get_node("LabelRight")
 onready var labelleft = get_node("LabelLeft")
 onready var playerwins = get_node("PlayerWins")
 onready var timer = get_node("RespawnTime")
+onready var home = get_node("Home")
+onready var exit = get_node("Exit")
+onready var reset_time = get_node("ResetTime")
 
 var scoreai = 0
 var scoreplayer = 0
@@ -71,10 +74,14 @@ func _fixed_process(delta):
 func check_end_of_game():
 	if scoreai == maxpoints:
 		playerwins.set_text("Computer Wins")
+		get_node("Square").show()
 		gameend = true
+		reset_time.start()
 	if scoreplayer == maxpoints:
 		playerwins.set_text("Player Wins")
+		get_node("Square").show()
 		gameend = true
+		reset_time.start()
 
 func score():
 	var x = ball.get_pos().x
@@ -105,6 +112,8 @@ func _ready():
 	padleft.set_pad_velocity(600)
 	playerwins.set_text("")
 	timer.set_wait_time(1)
+	home.hide()
+	exit.hide()
 
 
 
@@ -121,3 +130,33 @@ func _on_PadRigth_body_enter( body ):
 func _on_RespawnTime_timeout():
 	ball.reset_velocity(dir)
 	timer.stop()
+
+
+func _on_ResetTimer_timeout():
+	playerwins.hide()
+	home.show()
+	exit.show()
+
+
+func _on_Home_pressed():
+	get_tree().change_scene("res://home.xscn")
+
+
+func _on_Exit_pressed():
+	get_tree().quit()
+
+
+func _on_Home_mouse_enter():
+	home.get_child(0).set_scale(Vector2(3.2,3.2))
+
+
+func _on_Home_mouse_exit():
+	home.get_child(0).set_scale(Vector2(3,3))
+
+
+func _on_Exit_mouse_enter():
+	exit.get_child(0).set_scale(Vector2(3.2,3.2))
+
+
+func _on_Exit_mouse_exit():
+	exit.get_child(0).set_scale(Vector2(3,3))

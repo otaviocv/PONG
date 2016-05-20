@@ -55,12 +55,12 @@ func _fixed_process(delta):
 func check_end_of_game():
 	if scoreleft == maxpoints:
 		playerwins.set_text("Player 1 Wins")
-		get_node("Quadrado").show()
+		get_node("Square").show()
 		gameend = true
 		reset_time.start()
 	if scoreright == maxpoints:
 		playerwins.set_text("Player 2 Wins")
-		get_node("Quadrado").show()
+		get_node("Square").show()
 		gameend = true
 		reset_time.start()
 
@@ -129,7 +129,6 @@ func _on_Home_pressed():
 
 func _on_Home_mouse_enter():
 	home.get_child(0).set_scale(Vector2(3.2,3.2))
-
 
 func _on_Home_mouse_exit():
 	home.get_child(0).set_scale(Vector2(3,3))
