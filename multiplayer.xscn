@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="18" version="2.0" version_name="Godot Engine v2.0.stable.official">
-	<ext_resource path="res://line.png" type="Texture" index="1"></ext_resource>
 	<ext_resource path="res://ball.gd" type="Script" index="2"></ext_resource>
 	<ext_resource path="res://pad.gd" type="Script" index="3"></ext_resource>
 	<ext_resource path="res://multiplayer.gd" type="Script" index="0"></ext_resource>
-	<ext_resource path="res://GEO1_destroy.smp" type="Sample" index="6"></ext_resource>
-	<ext_resource path="res://8_bit_party.fnt" type="Font" index="4"></ext_resource>
-	<ext_resource path="res://GEO1_score.smp" type="Sample" index="9"></ext_resource>
 	<ext_resource path="res://buttons.gd" type="Script" index="5"></ext_resource>
-	<ext_resource path="res://GEO1_hit.smp" type="Sample" index="7"></ext_resource>
-	<ext_resource path="res://GEO1_spawn.smp" type="Sample" index="10"></ext_resource>
+	<ext_resource path="res://line.png" type="Texture" index="1"></ext_resource>
 	<ext_resource path="res://GEO1_hurt.smp" type="Sample" index="8"></ext_resource>
+	<ext_resource path="res://8_bit_party.fnt" type="Font" index="4"></ext_resource>
+	<ext_resource path="res://GEO1_spawn.smp" type="Sample" index="10"></ext_resource>
+	<ext_resource path="res://GEO1_destroy.smp" type="Sample" index="6"></ext_resource>
+	<ext_resource path="res://GEO1_score.smp" type="Sample" index="9"></ext_resource>
+	<ext_resource path="res://GEO1_hit.smp" type="Sample" index="7"></ext_resource>
 	<resource type="ConvexPolygonShape2D" path="local://10">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2_array name="points" len="4"> 			0, -10, 1024, -10, 1024, 0, 0, 0 </vector2_array>
@@ -45,21 +45,13 @@
 			<string> "sample" </string>
 			<resource  external="9">  </resource>
 		</dictionary>
-		<dictionary name="samples/destroy" shared="false">
+		<dictionary name="samples/hurt" shared="false">
 			<string> "db" </string>
 			<real> 0 </real>
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  external="6">  </resource>
-		</dictionary>
-		<dictionary name="samples/hit" shared="false">
-			<string> "db" </string>
-			<real> 0 </real>
-			<string> "pitch" </string>
-			<real> 1 </real>
-			<string> "sample" </string>
-			<resource  external="7">  </resource>
+			<resource  external="8">  </resource>
 		</dictionary>
 		<dictionary name="samples/spawn" shared="false">
 			<string> "db" </string>
@@ -69,27 +61,35 @@
 			<string> "sample" </string>
 			<resource  external="10">  </resource>
 		</dictionary>
-		<dictionary name="samples/hurt" shared="false">
+		<dictionary name="samples/hit" shared="false">
 			<string> "db" </string>
 			<real> 0 </real>
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  external="8">  </resource>
+			<resource  external="7">  </resource>
+		</dictionary>
+		<dictionary name="samples/destroy" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="6">  </resource>
 		</dictionary>
 
 	</resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
-			<int> 12 </int>
+			<int> 13 </int>
 			<string> "conns" </string>
-			<int_array  len="72"> 				8, 0, 110, 109, 2, 0, 11, 0, 110, 111, 2, 0, 14, 0, 110, 112, 2, 0, 20, 0, 114, 113, 2, 0, 21, 0, 114, 115, 2, 0, 22, 0, 117, 116, 2, 0, 22, 0, 119, 118, 2, 0, 22, 0, 121, 120, 2, 0, 22, 0, 123, 122, 2, 0, 24, 0, 119, 124, 2, 0, 24, 0, 121, 125, 2, 0, 24, 0, 123, 126, 2, 0 </int_array>
+			<int_array  len="78"> 				8, 0, 118, 117, 2, 0, 11, 0, 118, 119, 2, 0, 14, 0, 118, 120, 2, 0, 20, 0, 122, 121, 2, 0, 21, 0, 122, 123, 2, 0, 22, 0, 122, 124, 2, 0, 23, 0, 126, 125, 2, 0, 23, 0, 128, 127, 2, 0, 23, 0, 130, 129, 2, 0, 23, 0, 132, 131, 2, 0, 25, 0, 128, 133, 2, 0, 25, 0, 130, 134, 2, 0, 25, 0, 132, 135, 2, 0 </int_array>
 			<string> "editable_instances" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "names" </string>
-			<string_array  len="127">
+			<string_array  len="136">
 				<string> "Multiplayer" </string>
 				<string> "script/script" </string>
 				<string> "Node2D" </string>
@@ -175,6 +175,7 @@
 				<string> "autostart" </string>
 				<string> "Timer" </string>
 				<string> "ResetTime" </string>
+				<string> "TutorialTime" </string>
 				<string> "Exit" </string>
 				<string> "visibility/self_opacity" </string>
 				<string> "size_flags/vertical" </string>
@@ -199,6 +200,13 @@
 				<string> "default/reverb_send" </string>
 				<string> "default/chorus_send" </string>
 				<string> "SamplePlayer" </string>
+				<string> "TutorialLabels" </string>
+				<string> "LeftTutorial" </string>
+				<string> "anchor/left" </string>
+				<string> "anchor/top" </string>
+				<string> "anchor/right" </string>
+				<string> "anchor/bottom" </string>
+				<string> "RightTutorial" </string>
 				<string> "_on_ball_body_enter" </string>
 				<string> "body_enter" </string>
 				<string> "_on_PadLeft_body_enter" </string>
@@ -206,6 +214,7 @@
 				<string> "_on_RespawnTime_timeout" </string>
 				<string> "timeout" </string>
 				<string> "_on_ResetTime_timeout" </string>
+				<string> "_on_TutorialTime_timeout" </string>
 				<string> "_on_Exit_released" </string>
 				<string> "released" </string>
 				<string> "_on_Exit_pressed" </string>
@@ -219,14 +228,14 @@
 				<string> "_on_Home_mouse_exit" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 27 </int>
+			<int> 31 </int>
 			<string> "node_paths" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="763"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 15, 3, -1, 11, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 10, 0, 0, 0, 19, 16, -1, 3, 17, 11, 18, 12, 14, 13, 0, 0, 0, 15, 20, -1, 12, 21, 8, 17, 14, 4, 15, 5, 2, 6, 3, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 0, 0, 0, 33, 22, -1, 11, 23, 8, 24, 16, 25, 17, 26, 8, 27, 18, 28, 18, 29, 4, 30, 7, 31, 19, 32, 7, 14, 20, 0, 4, 0, 34, 34, -1, 4, 35, 21, 4, 22, 36, 4, 37, 8, 0, 0, 0, 33, 38, -1, 11, 23, 8, 24, 23, 25, 24, 26, 8, 27, 18, 28, 18, 29, 4, 30, 7, 31, 19, 32, 7, 14, 25, 0, 6, 0, 34, 39, -1, 5, 17, 26, 35, 21, 4, 27, 36, 4, 37, 8, 0, 0, 0, 54, 40, -1, 24, 17, 28, 23, 8, 24, 29, 25, 17, 26, 8, 27, 18, 28, 18, 41, 30, 42, 19, 31, 7, 32, 19, 43, 7, 44, 8, 45, 21, 46, 18, 47, 31, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 33, 14, 34, 0, 8, 0, 15, 15, -1, 12, 55, 35, 4, 36, 5, 2, 6, 37, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 38, 0, 8, 0, 56, 56, -1, 3, 57, 29, 37, 8, 58, 21, 0, 0, 0, 54, 59, -1, 24, 17, 39, 23, 8, 24, 40, 25, 41, 26, 8, 27, 18, 28, 18, 41, 30, 42, 42, 31, 19, 32, 7, 43, 7, 44, 8, 45, 21, 46, 18, 47, 31, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 43, 14, 44, 0, 11, 0, 15, 15, -1, 11, 4, 45, 5, 2, 6, 37, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 46, 0, 11, 0, 34, 34, -1, 5, 17, 47, 35, 21, 4, 48, 36, 4, 37, 8, 0, 0, 0, 54, 60, -1, 24, 17, 49, 23, 8, 24, 50, 25, 17, 26, 8, 27, 18, 28, 18, 41, 30, 42, 42, 31, 7, 32, 7, 43, 7, 44, 8, 45, 21, 46, 18, 47, 31, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 43, 14, 51, 0, 14, 0, 15, 15, -1, 10, 4, 45, 5, 2, 6, 37, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 0, 14, 0, 34, 34, -1, 4, 35, 21, 4, 52, 36, 4, 37, 8, 0, 0, 0, 75, 61, -1, 13, 62, 53, 63, 54, 64, 55, 65, 56, 66, 57, 67, 31, 68, 31, 69, 30, 70, 58, 71, 59, 72, 19, 73, 21, 74, 60, 0, 0, 0, 75, 76, -1, 13, 62, 61, 63, 54, 64, 62, 65, 63, 66, 57, 67, 31, 68, 31, 69, 30, 70, 58, 71, 59, 72, 19, 73, 21, 74, 60, 0, 0, 0, 75, 77, -1, 14, 62, 64, 63, 65, 64, 66, 65, 67, 66, 68, 67, 31, 68, 31, 69, 30, 70, 58, 71, 59, 72, 19, 73, 21, 74, 60, 1, 69, 0, 0, 0, 83, 78, -1, 4, 79, 18, 80, 19, 81, 8, 82, 8, 0, 0, 0, 83, 84, -1, 4, 79, 18, 80, 70, 81, 8, 82, 8, 0, 0, 0, 90, 85, -1, 12, 86, 7, 62, 71, 63, 53, 64, 72, 65, 73, 67, 8, 68, 31, 69, 30, 87, 30, 88, 8, 89, 8, 14, 74, 0, 22, 0, 75, 75, -1, 13, 62, 75, 64, 76, 65, 77, 66, 68, 67, 31, 68, 31, 69, 30, 70, 58, 71, 78, 91, 18, 72, 19, 73, 21, 74, 60, 0, 0, 0, 90, 92, -1, 12, 86, 7, 62, 79, 63, 80, 64, 81, 65, 82, 67, 8, 68, 31, 69, 30, 87, 30, 88, 8, 89, 8, 14, 83, 0, 24, 0, 75, 75, -1, 13, 62, 75, 64, 76, 65, 77, 66, 68, 67, 31, 68, 31, 69, 30, 70, 58, 71, 84, 91, 18, 72, 19, 73, 21, 74, 60, 0, 0, 0, 108, 93, -1, 14, 94, 18, 95, 85, 96, 7, 97, 19, 98, 7, 99, 7, 100, 7, 101, 21, 102, 86, 103, 19, 104, 19, 105, 30, 106, 7, 107, 7, 0 </int_array>
+			<int_array  len="867"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 15, 3, -1, 11, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 10, 0, 0, 0, 19, 16, -1, 3, 17, 11, 18, 12, 14, 13, 0, 0, 0, 15, 20, -1, 12, 21, 8, 17, 14, 4, 15, 5, 2, 6, 3, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 0, 0, 0, 33, 22, -1, 11, 23, 8, 24, 16, 25, 17, 26, 8, 27, 18, 28, 18, 29, 4, 30, 7, 31, 19, 32, 7, 14, 20, 0, 4, 0, 34, 34, -1, 4, 35, 21, 4, 22, 36, 4, 37, 8, 0, 0, 0, 33, 38, -1, 11, 23, 8, 24, 23, 25, 24, 26, 8, 27, 18, 28, 18, 29, 4, 30, 7, 31, 19, 32, 7, 14, 25, 0, 6, 0, 34, 39, -1, 5, 17, 26, 35, 21, 4, 27, 36, 4, 37, 8, 0, 0, 0, 54, 40, -1, 24, 17, 28, 23, 8, 24, 29, 25, 17, 26, 8, 27, 18, 28, 18, 41, 30, 42, 19, 31, 7, 32, 19, 43, 7, 44, 8, 45, 21, 46, 18, 47, 31, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 33, 14, 34, 0, 8, 0, 15, 15, -1, 12, 55, 35, 4, 36, 5, 2, 6, 37, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 38, 0, 8, 0, 56, 56, -1, 3, 57, 29, 37, 8, 58, 21, 0, 0, 0, 54, 59, -1, 24, 17, 39, 23, 8, 24, 40, 25, 41, 26, 8, 27, 18, 28, 18, 41, 30, 42, 42, 31, 19, 32, 7, 43, 7, 44, 8, 45, 21, 46, 18, 47, 31, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 43, 14, 44, 0, 11, 0, 15, 15, -1, 11, 4, 45, 5, 2, 6, 37, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 46, 0, 11, 0, 34, 34, -1, 5, 17, 47, 35, 21, 4, 48, 36, 4, 37, 8, 0, 0, 0, 54, 60, -1, 24, 17, 49, 23, 8, 24, 50, 25, 17, 26, 8, 27, 18, 28, 18, 41, 30, 42, 42, 31, 7, 32, 7, 43, 7, 44, 8, 45, 21, 46, 18, 47, 31, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 43, 14, 51, 0, 14, 0, 15, 15, -1, 10, 4, 45, 5, 2, 6, 37, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 0, 14, 0, 34, 34, -1, 4, 35, 21, 4, 52, 36, 4, 37, 8, 0, 0, 0, 75, 61, -1, 13, 62, 53, 63, 54, 64, 55, 65, 56, 66, 57, 67, 31, 68, 31, 69, 30, 70, 58, 71, 59, 72, 19, 73, 21, 74, 60, 0, 0, 0, 75, 76, -1, 13, 62, 61, 63, 54, 64, 62, 65, 63, 66, 57, 67, 31, 68, 31, 69, 30, 70, 58, 71, 59, 72, 19, 73, 21, 74, 60, 0, 0, 0, 75, 77, -1, 14, 62, 64, 63, 65, 64, 66, 65, 67, 66, 68, 67, 31, 68, 31, 69, 30, 70, 58, 71, 59, 72, 19, 73, 21, 74, 60, 1, 69, 0, 0, 0, 83, 78, -1, 4, 79, 18, 80, 19, 81, 8, 82, 8, 0, 0, 0, 83, 84, -1, 4, 79, 18, 80, 70, 81, 8, 82, 8, 0, 0, 0, 83, 85, -1, 4, 79, 18, 80, 71, 81, 8, 82, 8, 0, 0, 0, 91, 86, -1, 12, 87, 7, 62, 72, 63, 53, 64, 73, 65, 74, 67, 8, 68, 31, 69, 30, 88, 30, 89, 8, 90, 8, 14, 75, 0, 23, 0, 75, 75, -1, 13, 62, 76, 64, 77, 65, 78, 66, 68, 67, 31, 68, 31, 69, 30, 70, 58, 71, 79, 92, 18, 72, 19, 73, 21, 74, 60, 0, 0, 0, 91, 93, -1, 12, 87, 7, 62, 80, 63, 81, 64, 82, 65, 83, 67, 8, 68, 31, 69, 30, 88, 30, 89, 8, 90, 8, 14, 84, 0, 25, 0, 75, 75, -1, 13, 62, 76, 64, 77, 65, 78, 66, 68, 67, 31, 68, 31, 69, 30, 70, 58, 71, 85, 92, 18, 72, 19, 73, 21, 74, 60, 0, 0, 0, 109, 94, -1, 14, 95, 18, 96, 86, 97, 7, 98, 19, 99, 7, 100, 7, 101, 7, 102, 21, 103, 87, 104, 19, 105, 19, 106, 30, 107, 7, 108, 7, 0, 0, 0, 2, 110, -1, 2, 17, 88, 55, 57, 0, 28, 0, 75, 111, -1, 16, 112, 89, 113, 89, 114, 89, 115, 89, 62, 90, 63, 91, 64, 92, 65, 93, 67, 31, 68, 31, 69, 30, 70, 58, 71, 94, 72, 19, 73, 21, 74, 60, 0, 28, 0, 75, 116, -1, 16, 112, 89, 113, 89, 114, 89, 115, 89, 62, 91, 63, 91, 64, 95, 65, 93, 67, 31, 68, 31, 69, 30, 70, 58, 71, 96, 72, 19, 73, 21, 74, 60, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="87" shared="false">
+			<array  len="97" shared="false">
 				<resource  external="0">  </resource>
 				<vector2_array  len="4"> 					0, 0, 1024, 0, 1024, 600, 0, 600 </vector2_array>
 				<vector2_array  len="0"> 					 </vector2_array>
@@ -328,6 +337,7 @@
 				<vector2> 3, 3 </vector2>
 				<resource  external="5">  </resource>
 				<real> 3 </real>
+				<real> 4 </real>
 				<real> 455 </real>
 				<real> 575 </real>
 				<real> 380 </real>
@@ -350,6 +360,15 @@
 				<string> "HOME" </string>
 				<resource  resource_type="SampleLibrary" path="local://14">  </resource>
 				<real> 5000 </real>
+				<vector2> 550, 220 </vector2>
+				<int> 3 </int>
+				<real> 227 </real>
+				<real> 32 </real>
+				<real> 99 </real>
+				<real> -68 </real>
+				<string> "W TO MOVE UP&#000a;&#000a;S TO MOVE DOWN&#000a;&#000a;" </string>
+				<real> -158 </real>
+				<string> "UP ARROW TO MOVE UP&#000a;&#000a;DOWN ARROW MOVE DOWN&#000a;&#000a;" </string>
 			</array>
 			<string> "version" </string>
 			<int> 2 </int>

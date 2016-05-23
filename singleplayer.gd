@@ -14,6 +14,7 @@ onready var reset_time = get_node("ResetTime")
 onready var sounds = get_node("sounds")
 
 var scoreai = 0
+var pause = false
 var scoreplayer = 0
 var epsilon1 = 30
 var epsilon2 = 40
@@ -55,6 +56,7 @@ func ai():
 		padleft.set_up_pressed(false)
 
 func _input(event):
+		
 	if event.is_action_released("1playerup"):
 		padrigth.set_up_pressed(false)
 	if event.is_action_released("1playerdown"):
@@ -115,6 +117,7 @@ func _ready():
 	playerwins.set_text("")
 	ball.reset()
 	timer.start()
+	get_node("TutorialTime").start()
 	home.hide()
 	exit.hide()
 
@@ -167,3 +170,7 @@ func _on_Exit_mouse_exit():
 
 func _on_ball_body_enter( body ):
 	sounds.play("hit")
+
+
+func _on_TutorialTime_timeout():
+	get_node("Tutorial").hide()

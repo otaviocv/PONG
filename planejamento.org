@@ -98,16 +98,16 @@
     - PC
 
 * Mínimo para o jogo ficar pornto
-  * Global [0/2]
+  * Global [1/2]
     - [ ] Sprites
-    - [ ] Som
-  ** Multiplayer [1/4]
+    - [X] Som
+  ** Multiplayer [4/4]
     - [X] Placares
-    - [ ] Mecânica de reposição de bola [0/2]
-      - [ ] Delay no reset da bola
-      - [ ] Angulo de reposição
-    - [ ] Corrigir o lado do lançamento da bolinha
-    - [ ] Mecânica de inicio e fim de jogo
+    - [X] Mecânica de reposição de bola [2/2]
+      - [X] Delay no reset da bola
+      - [X] Angulo de reposição
+    - [X] Corrigir o lado do lançamento da bolinha
+    - [X] Mecânica de inicio e fim de jogo
 
   ** Single Player [1/1]
     - [X] IA
@@ -115,7 +115,7 @@
 * Features [0/1]
   - [ ]  Destruir a barra do perdedor
 
-* Issues [0/2]
-  - [ ] Velocidade em X da bolinha
-  - [ ] Velocidade em Y da bolinha
+* Issues [2/2]
+  - [X] Velocidade em X da bolinha
+  - [X] Velocidade em Y da bolinha
       - A bola não consegue somar a velocidade do pad

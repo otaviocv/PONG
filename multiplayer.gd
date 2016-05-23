@@ -94,6 +94,7 @@ func _ready():
 	playerwins.set_text("")
 	ball.reset()
 	timer.start()
+	get_node("TutorialTime").start()
 	home.hide()
 	exit.hide()
 
@@ -142,3 +143,7 @@ func _on_Home_mouse_exit():
 
 func _on_ball_body_enter( body ):
 	sounds.play("hit")
+
+
+func _on_TutorialTime_timeout():
+	get_node("TutorialLabels").hide()
