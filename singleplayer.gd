@@ -16,8 +16,6 @@ onready var sounds = get_node("sounds")
 var scoreai = 0
 var pause = false
 var scoreplayer = 0
-var epsilon1 = 30
-var epsilon2 = 40
 var dir = 1
 var maxpoints = 11
 var gameend = false
@@ -26,34 +24,6 @@ var gameend = false
 # var a=2
 # var b="textvar"
 
-func ai():
-	if ball.get_pos().y + epsilon2 < padleft.get_pos().y:
-		padleft.set_pad_velocity(500)
-		padleft.set_up_pressed(true)
-		padleft.set_down_pressed(false)
-	elif ball.get_pos().y - epsilon2 > padleft.get_pos().y:
-		padleft.set_pad_velocity(500)
-		padleft.set_down_pressed(true)
-		padleft.set_up_pressed(false)
-	elif ball.get_pos().y + epsilon1 < padleft.get_pos().y:
-		padleft.set_pad_velocity(200)
-		padleft.set_up_pressed(true)
-		padleft.set_down_pressed(false)
-	elif ball.get_pos().y - epsilon1 > padleft.get_pos().y:
-		padleft.set_pad_velocity(200)
-		padleft.set_down_pressed(true)
-		padleft.set_up_pressed(false)
-	elif ball.get_pos().y < padleft.get_pos().y:
-		padleft.set_pad_velocity(50)
-		padleft.set_up_pressed(true)
-		padleft.set_down_pressed(false)
-	elif ball.get_pos().y > padleft.get_pos().y:
-		padleft.set_pad_velocity(50)
-		padleft.set_down_pressed(true)
-		padleft.set_up_pressed(false)
-	else:
-		padleft.set_down_pressed(false)
-		padleft.set_up_pressed(false)
 
 func _input(event):
 		
@@ -69,10 +39,9 @@ func _input(event):
 func _fixed_process(delta):
 	padleft.set_pos(Vector2(50, padleft.get_pos().y))
 	padrigth.set_pos(Vector2(974, padrigth.get_pos().y))
-	ball.increase_velocity_x(1.0035)
 	if not gameend:
 		score()
-	ai()
+	padleft.ai(ball.get_pos().y)
 
 func check_end_of_game():
 	if scoreai == maxpoints:

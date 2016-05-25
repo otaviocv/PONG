@@ -6,6 +6,9 @@ extends RigidBody2D
 # var b="textvar"
 var vx = 350
 var vy = 200
+var velocity
+var posx = 512
+var posy = 300
 
 func increase_velocity_x(k):
 	var vx = self.get_linear_velocity().x
@@ -33,6 +36,7 @@ func increase_velocity_y(k):
 	self.set_linear_velocity(Vector2(get_linear_velocity().x, vy+k))
 
 func _fixed_process(delta):
+	increase_velocity_x(1.0035)
 	vy = self.get_linear_velocity().y
 	if vy > 1000:
 		self.set_linear_velocity(Vector2(self.get_linear_velocity().x, 1000))
@@ -42,11 +46,17 @@ func _fixed_process(delta):
 
 func _ready():
 	set_fixed_process(true)
-	# Called every time the node is added to the scene.
-	# Initialization here
 	reset()
 	reset_velocity(1)
 
 
 func _on_ball_body_enter( body ):
 	get_node("sounds").play("hit")
+
+func set__pause(state):
+	if state:
+		velocity = get_linear_velocity()
+		set_linear_velocity(Vector2(0,0))
+	else:
+		set_linear_velocity(velocity)
+	

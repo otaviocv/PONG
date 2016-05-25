@@ -18,12 +18,24 @@ var scoreright = 0
 var dir = 1
 var maxpoints = 11
 var gameend = false
+var paused = false
 
 # member variables here, example:
 # var a=2
 # var b="textvar"
 
 func _input(event):
+	if event.is_action_pressed("ui_pause"):
+		print("fixp:" + str(ball.is_fixed_processing()))
+		print("p:" + str(ball.is_processing()))
+		
+		if paused:
+			pause(false)
+			paused = false
+		else:
+			pause(true)
+			paused = true
+	
 	#First Player
 	if event.is_action_released("2playerup"):
 		padleft.set_up_pressed(false)
@@ -48,7 +60,6 @@ func _input(event):
 func _fixed_process(delta):
 	padleft.set_pos(Vector2(50, padleft.get_pos().y))
 	padrigth.set_pos(Vector2(974, padrigth.get_pos().y))
-	ball.increase_velocity_x(1.0035)
 	if not gameend:
 		score()
 		
@@ -147,3 +158,8 @@ func _on_ball_body_enter( body ):
 
 func _on_TutorialTime_timeout():
 	get_node("TutorialLabels").hide()
+	
+func pause(state):
+	ball.set__pause(state)
+	padleft.set__pause(state)
+	padrigth.set__pause(state)
