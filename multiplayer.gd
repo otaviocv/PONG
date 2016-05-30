@@ -26,8 +26,6 @@ var paused = false
 
 func _input(event):
 	if event.is_action_pressed("ui_pause"):
-		print("fixp:" + str(ball.is_fixed_processing()))
-		print("p:" + str(ball.is_processing()))
 		pause()
 	
 	#First Player
