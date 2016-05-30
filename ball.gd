@@ -52,6 +52,9 @@ func _ready():
 
 func _on_ball_body_enter( body ):
 	get_node("sounds").play("hit")
+	
+func get_stored_velocity():
+	return velocity
 
 func set__pause(state):
 	if state:

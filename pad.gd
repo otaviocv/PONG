@@ -74,6 +74,7 @@ func _ready():
 
 func set__pause(state):
 	if state:
+		set_linear_velocity(Vector2(0,0))
 		set_fixed_process(false)
 	else:
 		set_fixed_process(true)

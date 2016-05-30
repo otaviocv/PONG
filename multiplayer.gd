@@ -28,13 +28,7 @@ func _input(event):
 	if event.is_action_pressed("ui_pause"):
 		print("fixp:" + str(ball.is_fixed_processing()))
 		print("p:" + str(ball.is_processing()))
-		
-		if paused:
-			pause(false)
-			paused = false
-		else:
-			pause(true)
-			paused = true
+		pause()
 	
 	#First Player
 	if event.is_action_released("2playerup"):
@@ -125,6 +119,7 @@ func _on_PadRigth_body_enter( body ):
 func _on_RespawnTime_timeout():
 	ball.reset_velocity(dir)
 	timer.stop()
+	timer.set_wait_time(1)
 
 
 func _on_Exit_pressed():
@@ -159,7 +154,29 @@ func _on_ball_body_enter( body ):
 func _on_TutorialTime_timeout():
 	get_node("TutorialLabels").hide()
 	
-func pause(state):
-	ball.set__pause(state)
-	padleft.set__pause(state)
-	padrigth.set__pause(state)
+func pause():
+	if paused:
+		get_node("Square").hide()
+		get_node("Pause").hide()
+		exit.hide()
+		ball.set__pause(false)
+		padleft.set__pause(false)
+		padrigth.set__pause(false)
+		paused = false
+		if ball.get_stored_velocity() == Vector2(0,0):
+			timer.start()
+	else:
+		get_node("Square").show()
+		get_node("Pause").show()
+		exit.show()
+		ball.set__pause(true)
+		padleft.set__pause(true)
+		padrigth.set__pause(true)
+		paused = true
+		var timeLeft = timer.get_time_left()
+		if timeLeft > 0:
+			timer.stop()
+			timer.set_wait_time(timeLeft)
+			
+
+		
