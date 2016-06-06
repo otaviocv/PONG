@@ -4,13 +4,13 @@
 	<ext_resource path="res://pad.gd" type="Script" index="3"></ext_resource>
 	<ext_resource path="res://multiplayer.gd" type="Script" index="0"></ext_resource>
 	<ext_resource path="res://buttons.gd" type="Script" index="5"></ext_resource>
-	<ext_resource path="res://8_bit_party.fnt" type="Font" index="4"></ext_resource>
-	<ext_resource path="res://GEO1_hurt.smp" type="Sample" index="8"></ext_resource>
-	<ext_resource path="res://GEO1_score.smp" type="Sample" index="9"></ext_resource>
-	<ext_resource path="res://GEO1_spawn.smp" type="Sample" index="10"></ext_resource>
-	<ext_resource path="res://GEO1_hit.smp" type="Sample" index="7"></ext_resource>
 	<ext_resource path="res://GEO1_destroy.smp" type="Sample" index="6"></ext_resource>
+	<ext_resource path="res://8_bit_party.fnt" type="Font" index="4"></ext_resource>
+	<ext_resource path="res://GEO1_hit.smp" type="Sample" index="7"></ext_resource>
 	<ext_resource path="res://line.png" type="Texture" index="1"></ext_resource>
+	<ext_resource path="res://GEO1_spawn.smp" type="Sample" index="10"></ext_resource>
+	<ext_resource path="res://GEO1_score.smp" type="Sample" index="9"></ext_resource>
+	<ext_resource path="res://GEO1_hurt.smp" type="Sample" index="8"></ext_resource>
 	<resource type="ConvexPolygonShape2D" path="local://10">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2_array name="points" len="4"> 			0, -10, 1024, -10, 1024, 0, 0, 0 </vector2_array>
@@ -37,14 +37,6 @@
 
 	</resource>
 	<resource type="SampleLibrary" path="local://14">
-		<dictionary name="samples/hit" shared="false">
-			<string> "db" </string>
-			<real> 0 </real>
-			<string> "pitch" </string>
-			<real> 1 </real>
-			<string> "sample" </string>
-			<resource  external="7">  </resource>
-		</dictionary>
 		<dictionary name="samples/score" shared="false">
 			<string> "db" </string>
 			<real> 0 </real>
@@ -52,6 +44,14 @@
 			<real> 1 </real>
 			<string> "sample" </string>
 			<resource  external="9">  </resource>
+		</dictionary>
+		<dictionary name="samples/destroy" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="6">  </resource>
 		</dictionary>
 		<dictionary name="samples/hurt" shared="false">
 			<string> "db" </string>
@@ -61,6 +61,14 @@
 			<string> "sample" </string>
 			<resource  external="8">  </resource>
 		</dictionary>
+		<dictionary name="samples/hit" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="7">  </resource>
+		</dictionary>
 		<dictionary name="samples/spawn" shared="false">
 			<string> "db" </string>
 			<real> 0 </real>
@@ -68,14 +76,6 @@
 			<real> 1 </real>
 			<string> "sample" </string>
 			<resource  external="10">  </resource>
-		</dictionary>
-		<dictionary name="samples/destroy" shared="false">
-			<string> "db" </string>
-			<real> 0 </real>
-			<string> "pitch" </string>
-			<real> 1 </real>
-			<string> "sample" </string>
-			<resource  external="6">  </resource>
 		</dictionary>
 
 	</resource>

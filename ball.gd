@@ -9,6 +9,11 @@ var vy = 200
 var velocity
 var posx = 512
 var posy = 300
+var radius = 10
+var velocities = Array()
+var positions = Array()
+var color = Color(255,255,255)
+var N = 2000
 
 func increase_velocity_x(k):
 	var vx = self.get_linear_velocity().x
@@ -42,12 +47,43 @@ func _fixed_process(delta):
 		self.set_linear_velocity(Vector2(self.get_linear_velocity().x, 1000))
 	elif vy < -1000:
 		self.set_linear_velocity(Vector2(self.get_linear_velocity().x, -1000))
-		
+	update()
+	
+	
+func _draw():
+	positions.push_front(get_pos())
+	positions.pop_back()
+	#print(positions)
+	velocities.push_front(get_linear_velocity())
+	velocities.pop_back()
+	var h = 1.0
+
+	for i in positions:
+		var polig = Array() 
+		var v1 = Vector2(i.x + h*radius, i.y + h*radius) - get_pos()
+		var v2 = Vector2(i.x + h*radius, i.y - h*radius) - get_pos()
+		var v3 = Vector2(i.x - h*radius, i.y - h*radius) - get_pos()
+		var v4 = Vector2(i.x -h*radius, i.y + h*radius) - get_pos()
+		polig.append(v1)
+		polig.append(v2)
+		polig.append(v3)
+		polig.append(v4)
+		h -= 71.0/N
+		if h < 0:
+			break
+		draw_colored_polygon(Vector2Array(polig), Color(h,h,h))
+	
+	
 
 func _ready():
 	set_fixed_process(true)
 	reset()
 	reset_velocity(1)
+	velocities.resize(N)
+	positions.resize(N)
+	for i in range(0, N):
+		velocities[i] = Vector2(0,0)
+		positions[i] = Vector2(0,0)
 
 
 func _on_ball_body_enter( body ):
