@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="18" version="2.0" version_name="Godot Engine v2.0.stable.official">
+<resource_file type="PackedScene" subresource_count="38" version="2.0" version_name="Godot Engine v2.0.stable.official">
+	<ext_resource path="res://sprites/BARS/GEO2/GEO20005.png" type="Texture" index="18"></ext_resource>
+	<ext_resource path="res://sprites/BARS/GEO1/GEO10006.png" type="Texture" index="11"></ext_resource>
+	<ext_resource path="res://sprites/BARS/GEO2/GEO20000.png" type="Texture" index="13"></ext_resource>
 	<ext_resource path="res://ball.gd" type="Script" index="2"></ext_resource>
-	<ext_resource path="res://pad.gd" type="Script" index="3"></ext_resource>
+	<ext_resource path="res://pad.gd" type="Script" index="4"></ext_resource>
 	<ext_resource path="res://multiplayer.gd" type="Script" index="0"></ext_resource>
-	<ext_resource path="res://buttons.gd" type="Script" index="5"></ext_resource>
-	<ext_resource path="res://GEO1_destroy.smp" type="Sample" index="6"></ext_resource>
-	<ext_resource path="res://8_bit_party.fnt" type="Font" index="4"></ext_resource>
-	<ext_resource path="res://GEO1_hit.smp" type="Sample" index="7"></ext_resource>
+	<ext_resource path="res://buttons.gd" type="Script" index="21"></ext_resource>
+	<ext_resource path="res://sprite.gd" type="Script" index="12"></ext_resource>
+	<ext_resource path="res://particles.gd" type="Script" index="3"></ext_resource>
+	<ext_resource path="res://GEO1_hurt.smp" type="Sample" index="26"></ext_resource>
+	<ext_resource path="res://sprites/BARS/GEO1/GEO10003.png" type="Texture" index="8"></ext_resource>
+	<ext_resource path="res://sprites/BARS/GEO2/GEO20006.png" type="Texture" index="19"></ext_resource>
+	<ext_resource path="res://GEO1_score.smp" type="Sample" index="27"></ext_resource>
+	<ext_resource path="res://8_bit_party.fnt" type="Font" index="20"></ext_resource>
 	<ext_resource path="res://line.png" type="Texture" index="1"></ext_resource>
-	<ext_resource path="res://GEO1_spawn.smp" type="Sample" index="10"></ext_resource>
-	<ext_resource path="res://GEO1_score.smp" type="Sample" index="9"></ext_resource>
-	<ext_resource path="res://GEO1_hurt.smp" type="Sample" index="8"></ext_resource>
+	<ext_resource path="res://GEO1_destroy.smp" type="Sample" index="24"></ext_resource>
+	<ext_resource path="res://GEO1_spawn.smp" type="Sample" index="28"></ext_resource>
+	<ext_resource path="res://sprites/BARS/GEO1/GEO10004.png" type="Texture" index="9"></ext_resource>
+	<ext_resource path="res://GEO1_hit.smp" type="Sample" index="25"></ext_resource>
+	<ext_resource path="res://sprites/BARS/GEO1/GEO10005.png" type="Texture" index="10"></ext_resource>
+	<ext_resource path="res://sprites/BARS/GEO2/GEO20004.png" type="Texture" index="17"></ext_resource>
+	<ext_resource path="res://sprites/BARS/GEO1/GEO10001.png" type="Texture" index="6"></ext_resource>
+	<ext_resource path="res://sprites/BARS/GEO1/GEO10000.png" type="Texture" index="5"></ext_resource>
+	<ext_resource path="res://sprites/BARS/GEO1/GEO10002.png" type="Texture" index="7"></ext_resource>
+	<ext_resource path="res://sprites/BARS/GEO2/GEO20003.png" type="Texture" index="16"></ext_resource>
+	<ext_resource path="res://sounds/Active.smp" type="Sample" index="22"></ext_resource>
+	<ext_resource path="res://sounds/Hover.smp" type="Sample" index="23"></ext_resource>
+	<ext_resource path="res://sprites/BARS/GEO2/GEO20002.png" type="Texture" index="15"></ext_resource>
+	<ext_resource path="res://sprites/BARS/GEO2/GEO20001.png" type="Texture" index="14"></ext_resource>
 	<resource type="ConvexPolygonShape2D" path="local://10">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2_array name="points" len="4"> 			0, -10, 1024, -10, 1024, 0, 0, 0 </vector2_array>
@@ -31,19 +49,51 @@
 		<vector2_array name="points" len="4"> 			5, 40, 4, 40, 4, -40, 5, -40 </vector2_array>
 
 	</resource>
+	<resource type="SpriteFrames" path="local://15">
+		<array name="frames" len="7" shared="false">
+			<resource  external="5">  </resource>
+			<resource  external="6">  </resource>
+			<resource  external="7">  </resource>
+			<resource  external="8">  </resource>
+			<resource  external="9">  </resource>
+			<resource  external="10">  </resource>
+			<resource  external="11">  </resource>
+		</array>
+
+	</resource>
 	<resource type="ConvexPolygonShape2D" path="local://13">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2_array name="points" len="4"> 			-4, 40, -5, 40, -5, -40, -4, -40 </vector2_array>
 
 	</resource>
+	<resource type="SpriteFrames" path="local://16">
+		<array name="frames" len="7" shared="false">
+			<resource  external="13">  </resource>
+			<resource  external="14">  </resource>
+			<resource  external="15">  </resource>
+			<resource  external="16">  </resource>
+			<resource  external="17">  </resource>
+			<resource  external="18">  </resource>
+			<resource  external="19">  </resource>
+		</array>
+
+	</resource>
 	<resource type="SampleLibrary" path="local://14">
-		<dictionary name="samples/score" shared="false">
+		<dictionary name="samples/Active" shared="false">
 			<string> "db" </string>
 			<real> 0 </real>
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  external="9">  </resource>
+			<resource  external="22">  </resource>
+		</dictionary>
+		<dictionary name="samples/Hover" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="23">  </resource>
 		</dictionary>
 		<dictionary name="samples/destroy" shared="false">
 			<string> "db" </string>
@@ -51,15 +101,7 @@
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  external="6">  </resource>
-		</dictionary>
-		<dictionary name="samples/hurt" shared="false">
-			<string> "db" </string>
-			<real> 0 </real>
-			<string> "pitch" </string>
-			<real> 1 </real>
-			<string> "sample" </string>
-			<resource  external="8">  </resource>
+			<resource  external="24">  </resource>
 		</dictionary>
 		<dictionary name="samples/hit" shared="false">
 			<string> "db" </string>
@@ -67,7 +109,23 @@
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  external="7">  </resource>
+			<resource  external="25">  </resource>
+		</dictionary>
+		<dictionary name="samples/hurt" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="26">  </resource>
+		</dictionary>
+		<dictionary name="samples/score" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="27">  </resource>
 		</dictionary>
 		<dictionary name="samples/spawn" shared="false">
 			<string> "db" </string>
@@ -75,7 +133,7 @@
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  external="10">  </resource>
+			<resource  external="28">  </resource>
 		</dictionary>
 
 	</resource>
@@ -84,12 +142,12 @@
 			<string> "conn_count" </string>
 			<int> 13 </int>
 			<string> "conns" </string>
-			<int_array  len="78"> 				8, 0, 119, 118, 2, 0, 11, 0, 119, 120, 2, 0, 14, 0, 119, 121, 2, 0, 20, 0, 123, 122, 2, 0, 21, 0, 123, 124, 2, 0, 22, 0, 123, 125, 2, 0, 23, 0, 127, 126, 2, 0, 23, 0, 129, 128, 2, 0, 23, 0, 131, 130, 2, 0, 23, 0, 133, 132, 2, 0, 25, 0, 129, 134, 2, 0, 25, 0, 131, 135, 2, 0, 25, 0, 133, 136, 2, 0 </int_array>
+			<int_array  len="78"> 				8, 0, 147, 146, 2, 0, 12, 0, 147, 148, 2, 0, 16, 0, 147, 149, 2, 0, 23, 0, 151, 150, 2, 0, 24, 0, 151, 152, 2, 0, 25, 0, 151, 153, 2, 0, 26, 0, 155, 154, 2, 0, 26, 0, 157, 156, 2, 0, 26, 0, 159, 158, 2, 0, 26, 0, 161, 160, 2, 0, 28, 0, 155, 162, 2, 0, 28, 0, 157, 163, 2, 0, 28, 0, 159, 164, 2, 0 </int_array>
 			<string> "editable_instances" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "names" </string>
-			<string_array  len="137">
+			<string_array  len="165">
 				<string> "Multiplayer" </string>
 				<string> "script/script" </string>
 				<string> "Node2D" </string>
@@ -149,17 +207,46 @@
 				<string> "CollisionShape2D" </string>
 				<string> "shape" </string>
 				<string> "_update_shape_index" </string>
+				<string> "Particles2D" </string>
+				<string> "config/amount" </string>
+				<string> "config/lifetime" </string>
+				<string> "config/preprocess" </string>
+				<string> "config/emit_timeout" </string>
+				<string> "config/emitting" </string>
+				<string> "config/local_space" </string>
+				<string> "config/explosiveness" </string>
+				<string> "params/direction" </string>
+				<string> "params/spread" </string>
+				<string> "params/linear_velocity" </string>
+				<string> "params/spin_velocity" </string>
+				<string> "params/orbit_velocity" </string>
+				<string> "params/gravity_direction" </string>
+				<string> "params/gravity_strength" </string>
+				<string> "params/radial_accel" </string>
+				<string> "params/tangential_accel" </string>
+				<string> "params/damping" </string>
+				<string> "params/initial_angle" </string>
+				<string> "params/initial_size" </string>
+				<string> "params/final_size" </string>
+				<string> "params/hue_variation" </string>
+				<string> "params/anim_speed_scale" </string>
+				<string> "params/anim_initial_pos" </string>
+				<string> "randomness/final_size" </string>
+				<string> "randomness/hue_variation" </string>
 				<string> "PadLeft" </string>
+				<string> "AnimatedSprite" </string>
+				<string> "frames" </string>
 				<string> "PadRigth" </string>
 				<string> "LabelLeft" </string>
-				<string> "margin/left" </string>
-				<string> "margin/top" </string>
-				<string> "margin/right" </string>
-				<string> "margin/bottom" </string>
 				<string> "rect/scale" </string>
 				<string> "focus/ignore_mouse" </string>
 				<string> "focus/stop_mouse" </string>
 				<string> "size_flags/horizontal" </string>
+				<string> "size_flags/vertical" </string>
+				<string> "margin/left" </string>
+				<string> "margin/top" </string>
+				<string> "margin/right" </string>
+				<string> "margin/bottom" </string>
 				<string> "custom_fonts/font" </string>
 				<string> "text" </string>
 				<string> "percent_visible" </string>
@@ -178,7 +265,6 @@
 				<string> "TutorialTime" </string>
 				<string> "Exit" </string>
 				<string> "visibility/self_opacity" </string>
-				<string> "size_flags/vertical" </string>
 				<string> "toggle_mode" </string>
 				<string> "flat" </string>
 				<string> "Button" </string>
@@ -216,27 +302,27 @@
 				<string> "timeout" </string>
 				<string> "_on_ResetTime_timeout" </string>
 				<string> "_on_TutorialTime_timeout" </string>
-				<string> "_on_Exit_released" </string>
-				<string> "released" </string>
-				<string> "_on_Exit_pressed" </string>
-				<string> "pressed" </string>
 				<string> "_on_Exit_mouse_enter" </string>
 				<string> "mouse_enter" </string>
 				<string> "_on_Exit_mouse_exit" </string>
 				<string> "mouse_exit" </string>
-				<string> "_on_Home_pressed" </string>
+				<string> "_on_Exit_pressed" </string>
+				<string> "pressed" </string>
+				<string> "_on_Exit_released" </string>
+				<string> "released" </string>
 				<string> "_on_Home_mouse_enter" </string>
 				<string> "_on_Home_mouse_exit" </string>
+				<string> "_on_Home_pressed" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 32 </int>
+			<int> 35 </int>
 			<string> "node_paths" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="904"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 15, 3, -1, 11, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 10, 0, 0, 0, 19, 16, -1, 3, 17, 11, 18, 12, 14, 13, 0, 0, 0, 15, 20, -1, 12, 21, 8, 17, 14, 4, 15, 5, 2, 6, 3, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 0, 0, 0, 33, 22, -1, 11, 23, 8, 24, 16, 25, 17, 26, 8, 27, 18, 28, 18, 29, 4, 30, 7, 31, 19, 32, 7, 14, 20, 0, 4, 0, 34, 34, -1, 4, 35, 21, 4, 22, 36, 4, 37, 8, 0, 0, 0, 33, 38, -1, 11, 23, 8, 24, 23, 25, 24, 26, 8, 27, 18, 28, 18, 29, 4, 30, 7, 31, 19, 32, 7, 14, 25, 0, 6, 0, 34, 39, -1, 5, 17, 26, 35, 21, 4, 27, 36, 4, 37, 8, 0, 0, 0, 54, 40, -1, 24, 17, 28, 23, 8, 24, 29, 25, 17, 26, 8, 27, 18, 28, 18, 41, 30, 42, 19, 31, 7, 32, 19, 43, 7, 44, 8, 45, 21, 46, 18, 47, 31, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 33, 14, 34, 0, 8, 0, 15, 15, -1, 12, 55, 35, 4, 36, 5, 2, 6, 37, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 38, 0, 8, 0, 56, 56, -1, 3, 57, 29, 37, 8, 58, 21, 0, 0, 0, 54, 59, -1, 24, 17, 39, 23, 8, 24, 40, 25, 41, 26, 8, 27, 18, 28, 18, 41, 30, 42, 42, 31, 19, 32, 7, 43, 7, 44, 8, 45, 21, 46, 18, 47, 31, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 43, 14, 44, 0, 11, 0, 15, 15, -1, 11, 4, 45, 5, 2, 6, 37, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 46, 0, 11, 0, 34, 34, -1, 5, 17, 47, 35, 21, 4, 48, 36, 4, 37, 8, 0, 0, 0, 54, 60, -1, 24, 17, 49, 23, 8, 24, 50, 25, 17, 26, 8, 27, 18, 28, 18, 41, 30, 42, 42, 31, 7, 32, 7, 43, 7, 44, 8, 45, 21, 46, 18, 47, 31, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 43, 14, 51, 0, 14, 0, 15, 15, -1, 10, 4, 45, 5, 2, 6, 37, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 0, 14, 0, 34, 34, -1, 4, 35, 21, 4, 52, 36, 4, 37, 8, 0, 0, 0, 75, 61, -1, 13, 62, 53, 63, 54, 64, 55, 65, 56, 66, 57, 67, 31, 68, 31, 69, 30, 70, 58, 71, 59, 72, 19, 73, 21, 74, 60, 0, 0, 0, 75, 76, -1, 13, 62, 61, 63, 54, 64, 62, 65, 63, 66, 57, 67, 31, 68, 31, 69, 30, 70, 58, 71, 59, 72, 19, 73, 21, 74, 60, 0, 0, 0, 75, 77, -1, 14, 62, 64, 63, 65, 64, 66, 65, 67, 66, 68, 67, 31, 68, 31, 69, 30, 70, 58, 71, 59, 72, 19, 73, 21, 74, 60, 1, 69, 0, 0, 0, 83, 78, -1, 4, 79, 18, 80, 19, 81, 8, 82, 8, 0, 0, 0, 83, 84, -1, 4, 79, 18, 80, 70, 81, 8, 82, 8, 0, 0, 0, 83, 85, -1, 4, 79, 18, 80, 71, 81, 8, 82, 8, 0, 0, 0, 91, 86, -1, 12, 87, 7, 62, 72, 63, 53, 64, 73, 65, 74, 67, 8, 68, 31, 69, 30, 88, 30, 89, 8, 90, 8, 14, 75, 0, 23, 0, 75, 75, -1, 13, 62, 76, 64, 77, 65, 78, 66, 68, 67, 31, 68, 31, 69, 30, 70, 58, 71, 79, 92, 18, 72, 19, 73, 21, 74, 60, 0, 0, 0, 91, 93, -1, 11, 87, 7, 62, 80, 63, 81, 64, 82, 65, 83, 67, 8, 68, 31, 69, 30, 88, 30, 89, 8, 90, 8, 0, 25, 0, 75, 75, -1, 13, 62, 76, 64, 77, 65, 78, 66, 68, 67, 31, 68, 31, 69, 30, 70, 58, 71, 84, 92, 18, 72, 19, 73, 21, 74, 60, 0, 0, 0, 75, 94, -1, 15, 21, 8, 62, 85, 63, 81, 64, 86, 65, 87, 66, 68, 67, 31, 68, 31, 69, 30, 70, 58, 71, 88, 92, 18, 72, 19, 73, 21, 74, 60, 0, 0, 0, 110, 95, -1, 14, 96, 18, 97, 89, 98, 7, 99, 19, 100, 7, 101, 7, 102, 7, 103, 21, 104, 90, 105, 19, 106, 19, 107, 30, 108, 7, 109, 7, 0, 0, 0, 2, 111, -1, 3, 17, 91, 55, 57, 14, 92, 0, 29, 0, 75, 112, -1, 16, 113, 93, 114, 93, 115, 93, 116, 93, 62, 94, 63, 95, 64, 96, 65, 97, 67, 31, 68, 31, 69, 30, 70, 58, 71, 98, 72, 19, 73, 21, 74, 60, 0, 29, 0, 75, 117, -1, 16, 113, 93, 114, 93, 115, 93, 116, 93, 62, 95, 63, 95, 64, 99, 65, 97, 67, 31, 68, 31, 69, 30, 70, 58, 71, 100, 72, 19, 73, 21, 74, 60, 0 </int_array>
+			<int_array  len="1005"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 15, 3, -1, 11, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 10, 0, 0, 0, 19, 16, -1, 3, 17, 11, 18, 12, 14, 13, 0, 0, 0, 15, 20, -1, 12, 21, 8, 17, 14, 4, 15, 5, 2, 6, 3, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 0, 0, 0, 33, 22, -1, 11, 23, 8, 24, 16, 25, 17, 26, 8, 27, 18, 28, 18, 29, 4, 30, 7, 31, 19, 32, 7, 14, 20, 0, 4, 0, 34, 34, -1, 4, 35, 21, 4, 22, 36, 4, 37, 8, 0, 0, 0, 33, 38, -1, 11, 23, 8, 24, 23, 25, 24, 26, 8, 27, 18, 28, 18, 29, 4, 30, 7, 31, 19, 32, 7, 14, 25, 0, 6, 0, 34, 39, -1, 5, 17, 26, 35, 21, 4, 27, 36, 4, 37, 8, 0, 0, 0, 54, 40, -1, 23, 17, 28, 23, 8, 24, 29, 25, 17, 26, 8, 27, 18, 28, 18, 41, 30, 42, 19, 31, 7, 32, 19, 43, 7, 44, 8, 45, 21, 46, 18, 47, 31, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 33, 0, 8, 0, 15, 15, -1, 12, 55, 34, 4, 35, 5, 2, 6, 36, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 37, 0, 8, 0, 56, 56, -1, 3, 57, 29, 37, 8, 58, 21, 0, 8, 0, 59, 59, -1, 26, 60, 38, 61, 39, 62, 40, 63, 19, 64, 8, 65, 8, 66, 40, 67, 7, 68, 41, 69, 42, 70, 7, 71, 7, 72, 7, 73, 7, 74, 7, 75, 7, 76, 7, 77, 7, 78, 19, 79, 19, 80, 7, 81, 19, 82, 7, 83, 19, 84, 19, 1, 43, 0, 0, 0, 54, 85, -1, 23, 17, 44, 23, 8, 24, 45, 25, 46, 26, 8, 27, 18, 28, 18, 41, 30, 42, 47, 31, 19, 32, 7, 43, 7, 44, 8, 45, 21, 46, 18, 47, 31, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 48, 0, 12, 0, 15, 15, -1, 12, 21, 8, 4, 49, 5, 2, 6, 36, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 50, 0, 12, 0, 34, 34, -1, 5, 17, 51, 35, 21, 4, 52, 36, 4, 37, 8, 0, 12, 0, 86, 86, -1, 2, 87, 53, 1, 54, 0, 0, 0, 54, 88, -1, 23, 17, 55, 23, 8, 24, 56, 25, 17, 26, 8, 27, 18, 28, 18, 41, 30, 42, 47, 31, 7, 32, 7, 43, 7, 44, 8, 45, 21, 46, 18, 47, 31, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 48, 0, 16, 0, 15, 15, -1, 11, 21, 8, 4, 49, 5, 2, 6, 36, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 0, 16, 0, 34, 34, -1, 4, 35, 21, 4, 57, 36, 4, 37, 8, 0, 16, 0, 86, 86, -1, 3, 55, 58, 87, 59, 1, 54, 0, 0, 0, 104, 89, -1, 14, 90, 60, 91, 31, 92, 31, 93, 30, 94, 21, 95, 61, 96, 62, 97, 63, 98, 64, 99, 65, 100, 66, 101, 19, 102, 21, 103, 67, 0, 0, 0, 104, 105, -1, 14, 90, 60, 91, 31, 92, 31, 93, 30, 94, 21, 95, 68, 96, 62, 97, 69, 98, 70, 99, 65, 100, 66, 101, 19, 102, 21, 103, 67, 0, 0, 0, 104, 106, -1, 15, 90, 71, 91, 31, 92, 31, 93, 30, 94, 21, 95, 72, 96, 73, 97, 74, 98, 75, 99, 65, 100, 66, 101, 19, 102, 21, 103, 67, 1, 76, 0, 0, 0, 112, 107, -1, 4, 108, 18, 109, 19, 110, 8, 111, 8, 0, 0, 0, 112, 113, -1, 4, 108, 18, 109, 39, 110, 8, 111, 8, 0, 0, 0, 112, 114, -1, 4, 108, 18, 109, 77, 110, 8, 111, 8, 0, 0, 0, 119, 115, -1, 12, 116, 7, 91, 8, 92, 31, 93, 30, 94, 30, 95, 78, 96, 61, 97, 79, 98, 80, 117, 8, 118, 8, 14, 81, 0, 26, 0, 104, 104, -1, 15, 90, 71, 91, 31, 92, 31, 93, 30, 94, 21, 95, 82, 96, 7, 97, 83, 98, 42, 99, 65, 100, 84, 120, 18, 101, 19, 102, 21, 103, 67, 0, 0, 0, 119, 121, -1, 11, 116, 7, 91, 8, 92, 31, 93, 30, 94, 30, 95, 85, 96, 86, 97, 87, 98, 88, 117, 8, 118, 8, 0, 28, 0, 104, 104, -1, 15, 90, 71, 91, 31, 92, 31, 93, 30, 94, 21, 95, 82, 96, 7, 97, 83, 98, 42, 99, 65, 100, 89, 120, 18, 101, 19, 102, 21, 103, 67, 0, 0, 0, 104, 122, -1, 16, 21, 8, 90, 71, 91, 31, 92, 31, 93, 30, 94, 21, 95, 90, 96, 86, 97, 91, 98, 92, 99, 65, 100, 93, 120, 18, 101, 19, 102, 21, 103, 67, 0, 0, 0, 138, 123, -1, 14, 124, 18, 125, 94, 126, 7, 127, 19, 128, 7, 129, 7, 130, 7, 131, 21, 132, 95, 133, 19, 134, 19, 135, 30, 136, 7, 137, 7, 0, 0, 0, 2, 139, -1, 3, 17, 96, 55, 60, 14, 97, 0, 32, 0, 104, 140, -1, 17, 141, 98, 142, 98, 143, 98, 144, 98, 91, 31, 92, 31, 93, 30, 94, 21, 95, 99, 96, 100, 97, 101, 98, 102, 99, 65, 100, 103, 101, 19, 102, 21, 103, 67, 0, 32, 0, 104, 145, -1, 17, 141, 98, 142, 98, 143, 98, 144, 98, 91, 31, 92, 31, 93, 30, 94, 21, 95, 100, 96, 100, 97, 104, 98, 102, 99, 65, 100, 105, 101, 19, 102, 21, 103, 67, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="101" shared="false">
+			<array  len="106" shared="false">
 				<resource  external="0">  </resource>
 				<vector2_array  len="4"> 					0, 0, 1024, 0, 1024, 600, 0, 600 </vector2_array>
 				<vector2_array  len="0"> 					 </vector2_array>
@@ -286,10 +372,6 @@
 				<bool> True </bool>
 				<real> -1 </real>
 				<resource  external="2">  </resource>
-				<dictionary  shared="false">
-					<string> "_editor_collapsed" </string>
-					<bool> True </bool>
-				</dictionary>
 				<vector2> 1.5, 1.5 </vector2>
 				<vector2_array  len="4"> 					-5, 5, -5, -5, 5, -5, 5, 5 </vector2_array>
 				<color> 1, 1, 1, 1 </color>
@@ -297,15 +379,17 @@
 					<string> "_edit_lock_" </string>
 					<bool> True </bool>
 				</dictionary>
+				<int> 100 </int>
+				<real> 3 </real>
+				<real> 0.1 </real>
+				<real> 180 </real>
+				<real> 20 </real>
+				<resource  external="3">  </resource>
 				<vector2> 50, 300 </vector2>
 				<resource  resource_type="Shape2D" path="local://12">  </resource>
 				<matrix32> 1, -0, 0, 1, 0, 1 </matrix32>
 				<real> 0.01 </real>
-				<resource  external="3">  </resource>
-				<dictionary  shared="false">
-					<string> "_editor_collapsed" </string>
-					<bool> True </bool>
-				</dictionary>
+				<resource  external="4">  </resource>
 				<vector2_array  len="4"> 					5, 40, -5, 40, -5, -40, 5, -40 </vector2_array>
 				<dictionary  shared="false">
 					<string> "_edit_lock_" </string>
@@ -313,31 +397,30 @@
 				</dictionary>
 				<vector2> 0, 1 </vector2>
 				<vector2_array  len="4"> 					5, 40, 4, 40, 4, -40, 5, -40 </vector2_array>
+				<resource  resource_type="SpriteFrames" path="local://15">  </resource>
+				<resource  external="12">  </resource>
 				<vector2> 974, 300 </vector2>
 				<resource  resource_type="Shape2D" path="local://13">  </resource>
-				<dictionary  shared="false">
-					<string> "_editor_collapsed" </string>
-					<bool> True </bool>
-				</dictionary>
 				<vector2_array  len="4"> 					-4, 40, -5, 40, -5, -40, -4, -40 </vector2_array>
+				<vector2> -1, 1 </vector2>
+				<resource  resource_type="SpriteFrames" path="local://16">  </resource>
+				<vector2> 2, 2 </vector2>
 				<real> 320 </real>
 				<real> 60 </real>
 				<real> 364 </real>
 				<real> 80 </real>
-				<vector2> 2, 2 </vector2>
-				<resource  external="4">  </resource>
+				<resource  external="20">  </resource>
 				<string> "TEXT" </string>
 				<int> -1 </int>
 				<real> 621 </real>
 				<real> 661 </real>
 				<real> 73 </real>
+				<vector2> 3, 3 </vector2>
 				<real> 350 </real>
 				<real> 270 </real>
 				<real> 394 </real>
 				<real> 290 </real>
-				<vector2> 3, 3 </vector2>
-				<resource  external="5">  </resource>
-				<real> 3 </real>
+				<resource  external="21">  </resource>
 				<real> 4 </real>
 				<real> 455 </real>
 				<real> 575 </real>
@@ -348,7 +431,6 @@
 				</dictionary>
 				<real> 10 </real>
 				<real> 54 </real>
-				<real> 20 </real>
 				<string> "EXIT" </string>
 				<real> 445 </real>
 				<real> 200 </real>

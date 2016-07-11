@@ -15,6 +15,7 @@ func _ready():
 
 func _on_Button_mouse_enter():
 	get_node("SINGLE PLAYER").set_scale(Vector2(0.45,0.45))
+	get_node("SamplePlayer").play("Hover")
 
 
 func _on_Button_mouse_exit():
@@ -23,6 +24,7 @@ func _on_Button_mouse_exit():
 
 func _on_Button2_mouse_enter():
 	get_node("MULTIPLAYER").set_scale(Vector2(0.45,0.45))
+	get_node("SamplePlayer").play("Hover")
 
 
 func _on_Button2_mouse_exit():
@@ -34,6 +36,7 @@ func _on_Exit_pressed():
 
 
 func _on_Exit_mouse_enter():
+	get_node("SamplePlayer").play("Hover")
 	get_node("Exit/Label").set_scale(Vector2(3.5,3.5))
 
 

@@ -130,15 +130,19 @@ func _on_ResetTime_timeout():
 	exit.show()
 
 func _on_Exit_mouse_enter():
+	get_node("sounds").play("Hover")
 	exit.get_child(0).set_scale(Vector2(3.2,3.2))
 
 func _on_Exit_mouse_exit():
+	get_node("sounds").play("Active")
 	exit.get_child(0).set_scale(Vector2(3,3))
 
 func _on_Home_pressed():
+	get_node("sounds").play("Active")
 	get_tree().change_scene("res://home.xscn")
 
 func _on_Home_mouse_enter():
+	get_node("sounds").play("Hover")
 	home.get_child(0).set_scale(Vector2(3.2,3.2))
 
 func _on_Home_mouse_exit():
@@ -153,28 +157,29 @@ func _on_TutorialTime_timeout():
 	get_node("TutorialLabels").hide()
 	
 func pause():
-	if paused:
-		get_node("Square").hide()
-		get_node("Pause").hide()
-		exit.hide()
-		ball.set__pause(false)
-		padleft.set__pause(false)
-		padrigth.set__pause(false)
-		paused = false
-		if ball.get_stored_velocity() == Vector2(0,0):
-			timer.start()
-	else:
-		get_node("Square").show()
-		get_node("Pause").show()
-		exit.show()
-		ball.set__pause(true)
-		padleft.set__pause(true)
-		padrigth.set__pause(true)
-		paused = true
-		var timeLeft = timer.get_time_left()
-		if timeLeft > 0:
-			timer.stop()
-			timer.set_wait_time(timeLeft)
-			
+	if not gameend:
+		if paused:
+			get_node("Square").hide()
+			get_node("Pause").hide()
+			exit.hide()
+			ball.set__pause(false)
+			padleft.set__pause(false)
+			padrigth.set__pause(false)
+			paused = false
+			if ball.get_stored_velocity() == Vector2(0,0):
+				timer.start()
+		else:
+			get_node("Square").show()
+			get_node("Pause").show()
+			exit.show()
+			ball.set__pause(true)
+			padleft.set__pause(true)
+			padrigth.set__pause(true)
+			paused = true
+			var timeLeft = timer.get_time_left()
+			if timeLeft > 0:
+				timer.stop()
+				timer.set_wait_time(timeLeft)
+				
 
 		

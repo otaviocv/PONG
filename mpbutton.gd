@@ -11,4 +11,5 @@ func _ready():
 	pass
 
 func _on_Button2_pressed():
+	get_parent().get_parent().get_child(5).play("Active")
 	get_tree().change_scene("res://multiplayer.xscn")

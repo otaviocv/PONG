@@ -17,7 +17,7 @@ var scoreai = 0
 var pause = false
 var scoreplayer = 0
 var dir = 1
-var maxpoints = 11
+var maxpoints = 1
 var gameend = false
 var paused = false
 
@@ -117,14 +117,17 @@ func _on_ResetTimer_timeout():
 
 
 func _on_Home_pressed():
+	get_node("sounds").play("Active")
 	get_tree().change_scene("res://home.xscn")
 
 
 func _on_Exit_pressed():
+	get_node("sounds").play("Active")
 	get_tree().quit()
 
 
 func _on_Home_mouse_enter():
+	get_node("sounds").play("Hover")
 	home.get_child(0).set_scale(Vector2(3.2,3.2))
 
 
@@ -133,6 +136,7 @@ func _on_Home_mouse_exit():
 
 
 func _on_Exit_mouse_enter():
+	get_node("sounds").play("Hover")
 	exit.get_child(0).set_scale(Vector2(3.2,3.2))
 
 

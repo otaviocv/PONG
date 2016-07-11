@@ -1,7 +1,6 @@
                              ************
                              *   PONG   *
                              ************
-                             HACKED BY GABRIEL
                    [[http://github.com/otaviocv/pong]]
          [[https://forum.uspgamedev.org/t/mini-projeto-game-pong/447]]
                     ______________________________
@@ -93,7 +92,11 @@
       - Música de fundo
       - inicio/fim do jogo
       - inicio/fim da rodada + Bola nova
-         
+      *** Músicas
+        - Soft -> menu
+        - Low e Wack com 50% de chance de aparecer tanto no multiplayer quanto
+          no singleplayer
+
   ** Plataformas
     - MOBILE **
     - PC
