@@ -1,34 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="38" version="2.0" version_name="Godot Engine v2.0.stable.official">
-	<ext_resource path="res://sprites/BARS/GEO2/GEO20005.png" type="Texture" index="18"></ext_resource>
-	<ext_resource path="res://sprites/BARS/GEO1/GEO10006.png" type="Texture" index="11"></ext_resource>
-	<ext_resource path="res://sprites/BARS/GEO2/GEO20000.png" type="Texture" index="13"></ext_resource>
+<resource_file type="PackedScene" subresource_count="44" version="2.0" version_name="Godot Engine v2.0.stable.official">
 	<ext_resource path="res://ball.gd" type="Script" index="2"></ext_resource>
 	<ext_resource path="res://pad.gd" type="Script" index="4"></ext_resource>
 	<ext_resource path="res://multiplayer.gd" type="Script" index="0"></ext_resource>
-	<ext_resource path="res://buttons.gd" type="Script" index="21"></ext_resource>
-	<ext_resource path="res://sprite.gd" type="Script" index="12"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar3.tex" type="Texture" index="18"></ext_resource>
+	<ext_resource path="res://buttons.gd" type="Script" index="27"></ext_resource>
 	<ext_resource path="res://particles.gd" type="Script" index="3"></ext_resource>
-	<ext_resource path="res://GEO1_hurt.smp" type="Sample" index="26"></ext_resource>
-	<ext_resource path="res://sprites/BARS/GEO1/GEO10003.png" type="Texture" index="8"></ext_resource>
-	<ext_resource path="res://sprites/BARS/GEO2/GEO20006.png" type="Texture" index="19"></ext_resource>
-	<ext_resource path="res://GEO1_score.smp" type="Sample" index="27"></ext_resource>
-	<ext_resource path="res://8_bit_party.fnt" type="Font" index="20"></ext_resource>
+	<ext_resource path="res://sprite.gd" type="Script" index="15"></ext_resource>
+	<ext_resource path="res://sounds/Hover.smp" type="Sample" index="29"></ext_resource>
+	<ext_resource path="res://8_bit_party.fnt" type="Font" index="26"></ext_resource>
+	<ext_resource path="res://sounds/Active.smp" type="Sample" index="28"></ext_resource>
+	<ext_resource path="res://GEO1_spawn.smp" type="Sample" index="34"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar4.tex" type="Texture" index="19"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar2.tex" type="Texture" index="17"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar5.tex" type="Texture" index="20"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar10.tex" type="Texture" index="25"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar1.tex" type="Texture" index="16"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar6.tex" type="Texture" index="21"></ext_resource>
+	<ext_resource path="res://GEO1_score.smp" type="Sample" index="33"></ext_resource>
+	<ext_resource path="res://GEO1_hurt.smp" type="Sample" index="32"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar1.tex" type="Texture" index="5"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar10.tex" type="Texture" index="14"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar2.tex" type="Texture" index="6"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar3.tex" type="Texture" index="7"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar4.tex" type="Texture" index="8"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar5.tex" type="Texture" index="9"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar6.tex" type="Texture" index="10"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar7.tex" type="Texture" index="11"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar8.tex" type="Texture" index="12"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar9.tex" type="Texture" index="13"></ext_resource>
+	<ext_resource path="res://GEO1_destroy.smp" type="Sample" index="30"></ext_resource>
+	<ext_resource path="res://GEO1_hit.smp" type="Sample" index="31"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar7.tex" type="Texture" index="22"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar8.tex" type="Texture" index="23"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar9.tex" type="Texture" index="24"></ext_resource>
 	<ext_resource path="res://line.png" type="Texture" index="1"></ext_resource>
-	<ext_resource path="res://GEO1_destroy.smp" type="Sample" index="24"></ext_resource>
-	<ext_resource path="res://GEO1_spawn.smp" type="Sample" index="28"></ext_resource>
-	<ext_resource path="res://sprites/BARS/GEO1/GEO10004.png" type="Texture" index="9"></ext_resource>
-	<ext_resource path="res://GEO1_hit.smp" type="Sample" index="25"></ext_resource>
-	<ext_resource path="res://sprites/BARS/GEO1/GEO10005.png" type="Texture" index="10"></ext_resource>
-	<ext_resource path="res://sprites/BARS/GEO2/GEO20004.png" type="Texture" index="17"></ext_resource>
-	<ext_resource path="res://sprites/BARS/GEO1/GEO10001.png" type="Texture" index="6"></ext_resource>
-	<ext_resource path="res://sprites/BARS/GEO1/GEO10000.png" type="Texture" index="5"></ext_resource>
-	<ext_resource path="res://sprites/BARS/GEO1/GEO10002.png" type="Texture" index="7"></ext_resource>
-	<ext_resource path="res://sprites/BARS/GEO2/GEO20003.png" type="Texture" index="16"></ext_resource>
-	<ext_resource path="res://sounds/Active.smp" type="Sample" index="22"></ext_resource>
-	<ext_resource path="res://sounds/Hover.smp" type="Sample" index="23"></ext_resource>
-	<ext_resource path="res://sprites/BARS/GEO2/GEO20002.png" type="Texture" index="15"></ext_resource>
-	<ext_resource path="res://sprites/BARS/GEO2/GEO20001.png" type="Texture" index="14"></ext_resource>
 	<resource type="ConvexPolygonShape2D" path="local://10">
 		<real name="custom_solver_bias"> 0 </real>
 		<vector2_array name="points" len="4"> 			0, -10, 1024, -10, 1024, 0, 0, 0 </vector2_array>
@@ -50,7 +56,7 @@
 
 	</resource>
 	<resource type="SpriteFrames" path="local://15">
-		<array name="frames" len="7" shared="false">
+		<array name="frames" len="10" shared="false">
 			<resource  external="5">  </resource>
 			<resource  external="6">  </resource>
 			<resource  external="7">  </resource>
@@ -58,6 +64,9 @@
 			<resource  external="9">  </resource>
 			<resource  external="10">  </resource>
 			<resource  external="11">  </resource>
+			<resource  external="12">  </resource>
+			<resource  external="13">  </resource>
+			<resource  external="14">  </resource>
 		</array>
 
 	</resource>
@@ -67,14 +76,17 @@
 
 	</resource>
 	<resource type="SpriteFrames" path="local://16">
-		<array name="frames" len="7" shared="false">
-			<resource  external="13">  </resource>
-			<resource  external="14">  </resource>
-			<resource  external="15">  </resource>
+		<array name="frames" len="10" shared="false">
 			<resource  external="16">  </resource>
 			<resource  external="17">  </resource>
 			<resource  external="18">  </resource>
 			<resource  external="19">  </resource>
+			<resource  external="20">  </resource>
+			<resource  external="21">  </resource>
+			<resource  external="22">  </resource>
+			<resource  external="23">  </resource>
+			<resource  external="24">  </resource>
+			<resource  external="25">  </resource>
 		</array>
 
 	</resource>
@@ -85,7 +97,7 @@
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  external="22">  </resource>
+			<resource  external="28">  </resource>
 		</dictionary>
 		<dictionary name="samples/Hover" shared="false">
 			<string> "db" </string>
@@ -93,7 +105,7 @@
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  external="23">  </resource>
+			<resource  external="29">  </resource>
 		</dictionary>
 		<dictionary name="samples/destroy" shared="false">
 			<string> "db" </string>
@@ -101,7 +113,7 @@
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  external="24">  </resource>
+			<resource  external="30">  </resource>
 		</dictionary>
 		<dictionary name="samples/hit" shared="false">
 			<string> "db" </string>
@@ -109,7 +121,7 @@
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  external="25">  </resource>
+			<resource  external="31">  </resource>
 		</dictionary>
 		<dictionary name="samples/hurt" shared="false">
 			<string> "db" </string>
@@ -117,7 +129,7 @@
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  external="26">  </resource>
+			<resource  external="32">  </resource>
 		</dictionary>
 		<dictionary name="samples/score" shared="false">
 			<string> "db" </string>
@@ -125,7 +137,7 @@
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  external="27">  </resource>
+			<resource  external="33">  </resource>
 		</dictionary>
 		<dictionary name="samples/spawn" shared="false">
 			<string> "db" </string>
@@ -133,7 +145,7 @@
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  external="28">  </resource>
+			<resource  external="34">  </resource>
 		</dictionary>
 
 	</resource>
@@ -320,7 +332,7 @@
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="1005"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 15, 3, -1, 11, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 10, 0, 0, 0, 19, 16, -1, 3, 17, 11, 18, 12, 14, 13, 0, 0, 0, 15, 20, -1, 12, 21, 8, 17, 14, 4, 15, 5, 2, 6, 3, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 0, 0, 0, 33, 22, -1, 11, 23, 8, 24, 16, 25, 17, 26, 8, 27, 18, 28, 18, 29, 4, 30, 7, 31, 19, 32, 7, 14, 20, 0, 4, 0, 34, 34, -1, 4, 35, 21, 4, 22, 36, 4, 37, 8, 0, 0, 0, 33, 38, -1, 11, 23, 8, 24, 23, 25, 24, 26, 8, 27, 18, 28, 18, 29, 4, 30, 7, 31, 19, 32, 7, 14, 25, 0, 6, 0, 34, 39, -1, 5, 17, 26, 35, 21, 4, 27, 36, 4, 37, 8, 0, 0, 0, 54, 40, -1, 23, 17, 28, 23, 8, 24, 29, 25, 17, 26, 8, 27, 18, 28, 18, 41, 30, 42, 19, 31, 7, 32, 19, 43, 7, 44, 8, 45, 21, 46, 18, 47, 31, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 33, 0, 8, 0, 15, 15, -1, 12, 55, 34, 4, 35, 5, 2, 6, 36, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 37, 0, 8, 0, 56, 56, -1, 3, 57, 29, 37, 8, 58, 21, 0, 8, 0, 59, 59, -1, 26, 60, 38, 61, 39, 62, 40, 63, 19, 64, 8, 65, 8, 66, 40, 67, 7, 68, 41, 69, 42, 70, 7, 71, 7, 72, 7, 73, 7, 74, 7, 75, 7, 76, 7, 77, 7, 78, 19, 79, 19, 80, 7, 81, 19, 82, 7, 83, 19, 84, 19, 1, 43, 0, 0, 0, 54, 85, -1, 23, 17, 44, 23, 8, 24, 45, 25, 46, 26, 8, 27, 18, 28, 18, 41, 30, 42, 47, 31, 19, 32, 7, 43, 7, 44, 8, 45, 21, 46, 18, 47, 31, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 48, 0, 12, 0, 15, 15, -1, 12, 21, 8, 4, 49, 5, 2, 6, 36, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 50, 0, 12, 0, 34, 34, -1, 5, 17, 51, 35, 21, 4, 52, 36, 4, 37, 8, 0, 12, 0, 86, 86, -1, 2, 87, 53, 1, 54, 0, 0, 0, 54, 88, -1, 23, 17, 55, 23, 8, 24, 56, 25, 17, 26, 8, 27, 18, 28, 18, 41, 30, 42, 47, 31, 7, 32, 7, 43, 7, 44, 8, 45, 21, 46, 18, 47, 31, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 48, 0, 16, 0, 15, 15, -1, 11, 21, 8, 4, 49, 5, 2, 6, 36, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 0, 16, 0, 34, 34, -1, 4, 35, 21, 4, 57, 36, 4, 37, 8, 0, 16, 0, 86, 86, -1, 3, 55, 58, 87, 59, 1, 54, 0, 0, 0, 104, 89, -1, 14, 90, 60, 91, 31, 92, 31, 93, 30, 94, 21, 95, 61, 96, 62, 97, 63, 98, 64, 99, 65, 100, 66, 101, 19, 102, 21, 103, 67, 0, 0, 0, 104, 105, -1, 14, 90, 60, 91, 31, 92, 31, 93, 30, 94, 21, 95, 68, 96, 62, 97, 69, 98, 70, 99, 65, 100, 66, 101, 19, 102, 21, 103, 67, 0, 0, 0, 104, 106, -1, 15, 90, 71, 91, 31, 92, 31, 93, 30, 94, 21, 95, 72, 96, 73, 97, 74, 98, 75, 99, 65, 100, 66, 101, 19, 102, 21, 103, 67, 1, 76, 0, 0, 0, 112, 107, -1, 4, 108, 18, 109, 19, 110, 8, 111, 8, 0, 0, 0, 112, 113, -1, 4, 108, 18, 109, 39, 110, 8, 111, 8, 0, 0, 0, 112, 114, -1, 4, 108, 18, 109, 77, 110, 8, 111, 8, 0, 0, 0, 119, 115, -1, 12, 116, 7, 91, 8, 92, 31, 93, 30, 94, 30, 95, 78, 96, 61, 97, 79, 98, 80, 117, 8, 118, 8, 14, 81, 0, 26, 0, 104, 104, -1, 15, 90, 71, 91, 31, 92, 31, 93, 30, 94, 21, 95, 82, 96, 7, 97, 83, 98, 42, 99, 65, 100, 84, 120, 18, 101, 19, 102, 21, 103, 67, 0, 0, 0, 119, 121, -1, 11, 116, 7, 91, 8, 92, 31, 93, 30, 94, 30, 95, 85, 96, 86, 97, 87, 98, 88, 117, 8, 118, 8, 0, 28, 0, 104, 104, -1, 15, 90, 71, 91, 31, 92, 31, 93, 30, 94, 21, 95, 82, 96, 7, 97, 83, 98, 42, 99, 65, 100, 89, 120, 18, 101, 19, 102, 21, 103, 67, 0, 0, 0, 104, 122, -1, 16, 21, 8, 90, 71, 91, 31, 92, 31, 93, 30, 94, 21, 95, 90, 96, 86, 97, 91, 98, 92, 99, 65, 100, 93, 120, 18, 101, 19, 102, 21, 103, 67, 0, 0, 0, 138, 123, -1, 14, 124, 18, 125, 94, 126, 7, 127, 19, 128, 7, 129, 7, 130, 7, 131, 21, 132, 95, 133, 19, 134, 19, 135, 30, 136, 7, 137, 7, 0, 0, 0, 2, 139, -1, 3, 17, 96, 55, 60, 14, 97, 0, 32, 0, 104, 140, -1, 17, 141, 98, 142, 98, 143, 98, 144, 98, 91, 31, 92, 31, 93, 30, 94, 21, 95, 99, 96, 100, 97, 101, 98, 102, 99, 65, 100, 103, 101, 19, 102, 21, 103, 67, 0, 32, 0, 104, 145, -1, 17, 141, 98, 142, 98, 143, 98, 144, 98, 91, 31, 92, 31, 93, 30, 94, 21, 95, 100, 96, 100, 97, 104, 98, 102, 99, 65, 100, 105, 101, 19, 102, 21, 103, 67, 0 </int_array>
+			<int_array  len="1007"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 15, 3, -1, 11, 4, 1, 5, 2, 6, 3, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 10, 0, 0, 0, 19, 16, -1, 3, 17, 11, 18, 12, 14, 13, 0, 0, 0, 15, 20, -1, 12, 21, 8, 17, 14, 4, 15, 5, 2, 6, 3, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 0, 0, 0, 33, 22, -1, 11, 23, 8, 24, 16, 25, 17, 26, 8, 27, 18, 28, 18, 29, 4, 30, 7, 31, 19, 32, 7, 14, 20, 0, 4, 0, 34, 34, -1, 4, 35, 21, 4, 22, 36, 4, 37, 8, 0, 0, 0, 33, 38, -1, 11, 23, 8, 24, 23, 25, 24, 26, 8, 27, 18, 28, 18, 29, 4, 30, 7, 31, 19, 32, 7, 14, 25, 0, 6, 0, 34, 39, -1, 5, 17, 26, 35, 21, 4, 27, 36, 4, 37, 8, 0, 0, 0, 54, 40, -1, 23, 17, 28, 23, 8, 24, 29, 25, 17, 26, 8, 27, 18, 28, 18, 41, 30, 42, 19, 31, 7, 32, 19, 43, 7, 44, 8, 45, 21, 46, 18, 47, 31, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 33, 0, 8, 0, 15, 15, -1, 12, 55, 34, 4, 35, 5, 2, 6, 36, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 37, 0, 8, 0, 56, 56, -1, 3, 57, 29, 37, 8, 58, 21, 0, 8, 0, 59, 59, -1, 26, 60, 38, 61, 39, 62, 40, 63, 19, 64, 8, 65, 8, 66, 40, 67, 7, 68, 41, 69, 42, 70, 7, 71, 7, 72, 7, 73, 7, 74, 7, 75, 7, 76, 7, 77, 7, 78, 19, 79, 19, 80, 7, 81, 19, 82, 7, 83, 19, 84, 19, 1, 43, 0, 0, 0, 54, 85, -1, 23, 17, 44, 23, 8, 24, 45, 25, 46, 26, 8, 27, 18, 28, 18, 41, 30, 42, 47, 31, 19, 32, 7, 43, 7, 44, 8, 45, 21, 46, 18, 47, 31, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 48, 0, 12, 0, 15, 15, -1, 12, 21, 8, 4, 49, 5, 2, 6, 36, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 14, 50, 0, 12, 0, 34, 34, -1, 5, 17, 51, 35, 21, 4, 52, 36, 4, 37, 8, 0, 12, 0, 86, 86, -1, 3, 55, 53, 87, 54, 1, 55, 0, 0, 0, 54, 88, -1, 23, 17, 56, 23, 8, 24, 57, 25, 17, 26, 8, 27, 18, 28, 18, 41, 30, 42, 47, 31, 7, 32, 7, 43, 7, 44, 8, 45, 21, 46, 18, 47, 31, 48, 8, 49, 31, 50, 4, 51, 7, 52, 32, 53, 32, 1, 48, 0, 16, 0, 15, 15, -1, 11, 21, 8, 4, 49, 5, 2, 6, 36, 7, 4, 8, 5, 9, 4, 10, 6, 11, 7, 12, 8, 13, 9, 0, 16, 0, 34, 34, -1, 4, 35, 21, 4, 58, 36, 4, 37, 8, 0, 16, 0, 86, 86, -1, 3, 55, 59, 87, 60, 1, 55, 0, 0, 0, 104, 89, -1, 14, 90, 53, 91, 31, 92, 31, 93, 30, 94, 21, 95, 61, 96, 62, 97, 63, 98, 64, 99, 65, 100, 66, 101, 19, 102, 21, 103, 67, 0, 0, 0, 104, 105, -1, 14, 90, 53, 91, 31, 92, 31, 93, 30, 94, 21, 95, 68, 96, 62, 97, 69, 98, 70, 99, 65, 100, 66, 101, 19, 102, 21, 103, 67, 0, 0, 0, 104, 106, -1, 15, 90, 71, 91, 31, 92, 31, 93, 30, 94, 21, 95, 72, 96, 73, 97, 74, 98, 75, 99, 65, 100, 66, 101, 19, 102, 21, 103, 67, 1, 76, 0, 0, 0, 112, 107, -1, 4, 108, 18, 109, 19, 110, 8, 111, 8, 0, 0, 0, 112, 113, -1, 4, 108, 18, 109, 39, 110, 8, 111, 8, 0, 0, 0, 112, 114, -1, 4, 108, 18, 109, 77, 110, 8, 111, 8, 0, 0, 0, 119, 115, -1, 12, 116, 7, 91, 8, 92, 31, 93, 30, 94, 30, 95, 78, 96, 61, 97, 79, 98, 80, 117, 8, 118, 8, 14, 81, 0, 26, 0, 104, 104, -1, 15, 90, 71, 91, 31, 92, 31, 93, 30, 94, 21, 95, 82, 96, 7, 97, 83, 98, 42, 99, 65, 100, 84, 120, 18, 101, 19, 102, 21, 103, 67, 0, 0, 0, 119, 121, -1, 11, 116, 7, 91, 8, 92, 31, 93, 30, 94, 30, 95, 85, 96, 86, 97, 87, 98, 88, 117, 8, 118, 8, 0, 28, 0, 104, 104, -1, 15, 90, 71, 91, 31, 92, 31, 93, 30, 94, 21, 95, 82, 96, 7, 97, 83, 98, 42, 99, 65, 100, 89, 120, 18, 101, 19, 102, 21, 103, 67, 0, 0, 0, 104, 122, -1, 16, 21, 8, 90, 71, 91, 31, 92, 31, 93, 30, 94, 21, 95, 90, 96, 86, 97, 91, 98, 92, 99, 65, 100, 93, 120, 18, 101, 19, 102, 21, 103, 67, 0, 0, 0, 138, 123, -1, 14, 124, 18, 125, 94, 126, 7, 127, 19, 128, 7, 129, 7, 130, 7, 131, 21, 132, 95, 133, 19, 134, 19, 135, 30, 136, 7, 137, 7, 0, 0, 0, 2, 139, -1, 3, 17, 96, 55, 53, 14, 97, 0, 32, 0, 104, 140, -1, 17, 141, 98, 142, 98, 143, 98, 144, 98, 91, 31, 92, 31, 93, 30, 94, 21, 95, 99, 96, 100, 97, 101, 98, 102, 99, 65, 100, 103, 101, 19, 102, 21, 103, 67, 0, 32, 0, 104, 145, -1, 17, 141, 98, 142, 98, 143, 98, 144, 98, 91, 31, 92, 31, 93, 30, 94, 21, 95, 100, 96, 100, 97, 104, 98, 102, 99, 65, 100, 105, 101, 19, 102, 21, 103, 67, 0 </int_array>
 			<string> "variants" </string>
 			<array  len="106" shared="false">
 				<resource  external="0">  </resource>
@@ -397,19 +409,19 @@
 				</dictionary>
 				<vector2> 0, 1 </vector2>
 				<vector2_array  len="4"> 					5, 40, 4, 40, 4, -40, 5, -40 </vector2_array>
+				<vector2> 2, 2 </vector2>
 				<resource  resource_type="SpriteFrames" path="local://15">  </resource>
-				<resource  external="12">  </resource>
+				<resource  external="15">  </resource>
 				<vector2> 974, 300 </vector2>
 				<resource  resource_type="Shape2D" path="local://13">  </resource>
 				<vector2_array  len="4"> 					-4, 40, -5, 40, -5, -40, -4, -40 </vector2_array>
-				<vector2> -1, 1 </vector2>
+				<vector2> -2, 2 </vector2>
 				<resource  resource_type="SpriteFrames" path="local://16">  </resource>
-				<vector2> 2, 2 </vector2>
 				<real> 320 </real>
 				<real> 60 </real>
 				<real> 364 </real>
 				<real> 80 </real>
-				<resource  external="20">  </resource>
+				<resource  external="26">  </resource>
 				<string> "TEXT" </string>
 				<int> -1 </int>
 				<real> 621 </real>
@@ -420,7 +432,7 @@
 				<real> 270 </real>
 				<real> 394 </real>
 				<real> 290 </real>
-				<resource  external="21">  </resource>
+				<resource  external="27">  </resource>
 				<real> 4 </real>
 				<real> 455 </real>
 				<real> 575 </real>
