@@ -100,8 +100,16 @@ func _ready():
 	get_node("TutorialTime").start()
 	home.hide()
 	exit.hide()
-
-
+	randomize()
+	var rand = randf()
+	if rand > 0.5:
+		get_node("Background/Bars1").show()
+		get_node("Background/Space").show()
+		get_node("Background/Bars2").hide()
+	else:
+		get_node("Background/Bars2").show()
+		get_node("Background/Bars1").hide()
+		get_node("Background/Space").hide()
 
 
 func _on_PadLeft_body_enter( body ):
