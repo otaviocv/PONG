@@ -103,6 +103,12 @@ func _ready():
 		get_node("Background/Bars2").show()
 		get_node("Background/Bars1").hide()
 		get_node("Background/Space").hide()
+	randomize()
+	var rand = randf()
+	if rand > 0.5:
+		get_node("Music1").play()
+	else:
+		get_node("Music2").play()
 
 
 

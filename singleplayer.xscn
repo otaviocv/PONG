@@ -1,51 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="57" version="2.0" version_name="Godot Engine v2.0.stable.official">
-	<ext_resource path="res://ball.gd" type="Script" index="15"></ext_resource>
-	<ext_resource path="res://pad.gd" type="Script" index="16"></ext_resource>
-	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar3.tex" type="Texture" index="19"></ext_resource>
-	<ext_resource path="res://singleplayer.gd" type="Script" index="0"></ext_resource>
-	<ext_resource path="res://sprite.gd" type="Script" index="27"></ext_resource>
-	<ext_resource path="res://sounds/Hover.smp" type="Sample" index="40"></ext_resource>
-	<ext_resource path="res://8_bit_party.fnt" type="Font" index="38"></ext_resource>
-	<ext_resource path="res://sounds/Active.smp" type="Sample" index="39"></ext_resource>
-	<ext_resource path="res://GEO1_spawn.smp" type="Sample" index="45"></ext_resource>
-	<ext_resource path="res://sprites/Background/Stage2/import/Stage2ANI4.tex" type="Texture" index="11"></ext_resource>
-	<ext_resource path="res://sprites/Background/Stage1/import/Stage1ANI3.tex" type="Texture" index="4"></ext_resource>
-	<ext_resource path="res://sprites/Background/Stage1/import/Stage1ANI5.tex" type="Texture" index="6"></ext_resource>
-	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar4.tex" type="Texture" index="20"></ext_resource>
-	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar2.tex" type="Texture" index="18"></ext_resource>
-	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar5.tex" type="Texture" index="21"></ext_resource>
-	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar10.tex" type="Texture" index="26"></ext_resource>
-	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar1.tex" type="Texture" index="17"></ext_resource>
-	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar6.tex" type="Texture" index="22"></ext_resource>
+<resource_file type="PackedScene" subresource_count="58" version="2.0" version_name="Godot Engine v2.0.stable.official">
+	<ext_resource path="res://GEO1_score.smp" type="Sample" index="43"></ext_resource>
 	<ext_resource path="res://sprites/Background/Stage2/import/Stage2ANI3.tex" type="Texture" index="10"></ext_resource>
-	<ext_resource path="res://GEO1_score.smp" type="Sample" index="44"></ext_resource>
-	<ext_resource path="res://GEO1_hurt.smp" type="Sample" index="43"></ext_resource>
-	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar1.tex" type="Texture" index="28"></ext_resource>
-	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar10.tex" type="Texture" index="37"></ext_resource>
-	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar2.tex" type="Texture" index="29"></ext_resource>
-	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar3.tex" type="Texture" index="30"></ext_resource>
-	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar4.tex" type="Texture" index="31"></ext_resource>
-	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar5.tex" type="Texture" index="32"></ext_resource>
-	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar6.tex" type="Texture" index="33"></ext_resource>
-	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar7.tex" type="Texture" index="34"></ext_resource>
-	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar8.tex" type="Texture" index="35"></ext_resource>
-	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar9.tex" type="Texture" index="36"></ext_resource>
-	<ext_resource path="res://GEO1_destroy.smp" type="Sample" index="41"></ext_resource>
-	<ext_resource path="res://GEO1_hit.smp" type="Sample" index="42"></ext_resource>
-	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar7.tex" type="Texture" index="23"></ext_resource>
+	<ext_resource path="res://GEO1_hurt.smp" type="Sample" index="42"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar1.tex" type="Texture" index="27"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar6.tex" type="Texture" index="21"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar3.tex" type="Texture" index="29"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar5.tex" type="Texture" index="31"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar7.tex" type="Texture" index="33"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar8.tex" type="Texture" index="34"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar9.tex" type="Texture" index="35"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar6.tex" type="Texture" index="32"></ext_resource>
+	<ext_resource path="res://ball.gd" type="Script" index="14"></ext_resource>
+	<ext_resource path="res://pad.gd" type="Script" index="15"></ext_resource>
+	<ext_resource path="res://singleplayer.gd" type="Script" index="0"></ext_resource>
+	<ext_resource path="res://sprite.gd" type="Script" index="26"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar3.tex" type="Texture" index="18"></ext_resource>
+	<ext_resource path="res://8_bit_party.fnt" type="Font" index="37"></ext_resource>
+	<ext_resource path="res://sprites/Background/Stage1/import/Stage1ANI5.tex" type="Texture" index="6"></ext_resource>
+	<ext_resource path="res://sprites/Background/Stage2/import/Stage2ANI4.tex" type="Texture" index="11"></ext_resource>
+	<ext_resource path="res://sounds/Hover.smp" type="Sample" index="39"></ext_resource>
+	<ext_resource path="res://sounds/Active.smp" type="Sample" index="38"></ext_resource>
+	<ext_resource path="res://GEO1_spawn.smp" type="Sample" index="44"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar1.tex" type="Texture" index="16"></ext_resource>
+	<ext_resource path="res://sprites/Background/Stage1/import/Stage1ANI3.tex" type="Texture" index="4"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar2.tex" type="Texture" index="17"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar10.tex" type="Texture" index="25"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar5.tex" type="Texture" index="20"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar4.tex" type="Texture" index="19"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar10.tex" type="Texture" index="36"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar2.tex" type="Texture" index="28"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar4.tex" type="Texture" index="30"></ext_resource>
+	<ext_resource path="res://GEO1_destroy.smp" type="Sample" index="40"></ext_resource>
+	<ext_resource path="res://GEO1_hit.smp" type="Sample" index="41"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar7.tex" type="Texture" index="22"></ext_resource>
 	<ext_resource path="res://sprites/Background/Stage2/import/Stage2ANI2.tex" type="Texture" index="9"></ext_resource>
 	<ext_resource path="res://sprites/Background/Stage1/import/Stage1.tex" type="Texture" index="1"></ext_resource>
 	<ext_resource path="res://sprites/Background/Stage1/import/Stage1ANI4.tex" type="Texture" index="5"></ext_resource>
 	<ext_resource path="res://sprites/Background/Stage2/import/Stage2ANI5.tex" type="Texture" index="12"></ext_resource>
 	<ext_resource path="res://sprites/Background/Stage1/import/Stage1ANI1.tex" type="Texture" index="2"></ext_resource>
 	<ext_resource path="res://sprites/Background/Stage1/import/Stage1ANI2.tex" type="Texture" index="3"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar8.tex" type="Texture" index="23"></ext_resource>
+	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar9.tex" type="Texture" index="24"></ext_resource>
 	<ext_resource path="res://sprites/Background/Stage2/import/Stage2ANI1.tex" type="Texture" index="8"></ext_resource>
-	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar8.tex" type="Texture" index="24"></ext_resource>
-	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar9.tex" type="Texture" index="25"></ext_resource>
-	<ext_resource path="res://line.png" type="Texture" index="14"></ext_resource>
 	<ext_resource path="res://sprites/Background/Stage2/import/Stage2ANI6.tex" type="Texture" index="13"></ext_resource>
 	<ext_resource path="res://sprites/Background/Stage1/import/Stage1ANI6.tex" type="Texture" index="7"></ext_resource>
+	<ext_resource path="res://sounds/BGM/Low.ogg" type="AudioStream" index="45"></ext_resource>
+	<ext_resource path="res://sounds/BGM/Wacky.ogg" type="AudioStream" index="46"></ext_resource>
 	<resource type="SpriteFrames" path="local://15">
 		<array name="frames" len="6" shared="false">
 			<resource  external="2">  </resource>
@@ -90,6 +91,7 @@
 	</resource>
 	<resource type="SpriteFrames" path="local://17">
 		<array name="frames" len="10" shared="false">
+			<resource  external="16">  </resource>
 			<resource  external="17">  </resource>
 			<resource  external="18">  </resource>
 			<resource  external="19">  </resource>
@@ -99,7 +101,6 @@
 			<resource  external="23">  </resource>
 			<resource  external="24">  </resource>
 			<resource  external="25">  </resource>
-			<resource  external="26">  </resource>
 		</array>
 
 	</resource>
@@ -110,6 +111,7 @@
 	</resource>
 	<resource type="SpriteFrames" path="local://18">
 		<array name="frames" len="10" shared="false">
+			<resource  external="27">  </resource>
 			<resource  external="28">  </resource>
 			<resource  external="29">  </resource>
 			<resource  external="30">  </resource>
@@ -119,7 +121,6 @@
 			<resource  external="34">  </resource>
 			<resource  external="35">  </resource>
 			<resource  external="36">  </resource>
-			<resource  external="37">  </resource>
 		</array>
 
 	</resource>
@@ -130,7 +131,7 @@
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  external="39">  </resource>
+			<resource  external="38">  </resource>
 		</dictionary>
 		<dictionary name="samples/Hover" shared="false">
 			<string> "db" </string>
@@ -138,7 +139,7 @@
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  external="40">  </resource>
+			<resource  external="39">  </resource>
 		</dictionary>
 		<dictionary name="samples/destroy" shared="false">
 			<string> "db" </string>
@@ -146,7 +147,7 @@
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  external="41">  </resource>
+			<resource  external="40">  </resource>
 		</dictionary>
 		<dictionary name="samples/hit" shared="false">
 			<string> "db" </string>
@@ -154,7 +155,7 @@
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  external="42">  </resource>
+			<resource  external="41">  </resource>
 		</dictionary>
 		<dictionary name="samples/hurt" shared="false">
 			<string> "db" </string>
@@ -162,7 +163,7 @@
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  external="43">  </resource>
+			<resource  external="42">  </resource>
 		</dictionary>
 		<dictionary name="samples/score" shared="false">
 			<string> "db" </string>
@@ -170,7 +171,7 @@
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  external="44">  </resource>
+			<resource  external="43">  </resource>
 		</dictionary>
 		<dictionary name="samples/spawn" shared="false">
 			<string> "db" </string>
@@ -178,7 +179,7 @@
 			<string> "pitch" </string>
 			<real> 1 </real>
 			<string> "sample" </string>
-			<resource  external="45">  </resource>
+			<resource  external="44">  </resource>
 		</dictionary>
 
 	</resource>
@@ -187,12 +188,12 @@
 			<string> "conn_count" </string>
 			<int> 12 </int>
 			<string> "conns" </string>
-			<int_array  len="72"> 				13, 0, 124, 123, 2, 0, 16, 0, 124, 125, 2, 0, 19, 0, 124, 126, 2, 0, 25, 0, 128, 127, 2, 0, 26, 0, 128, 129, 2, 0, 27, 0, 128, 130, 2, 0, 28, 0, 132, 131, 2, 0, 28, 0, 134, 133, 2, 0, 28, 0, 136, 135, 2, 0, 30, 0, 132, 137, 2, 0, 30, 0, 134, 138, 2, 0, 30, 0, 136, 139, 2, 0 </int_array>
+			<int_array  len="72"> 				12, 0, 134, 133, 2, 0, 15, 0, 134, 135, 2, 0, 18, 0, 134, 136, 2, 0, 24, 0, 138, 137, 2, 0, 25, 0, 138, 139, 2, 0, 26, 0, 138, 140, 2, 0, 27, 0, 142, 141, 2, 0, 27, 0, 144, 143, 2, 0, 27, 0, 146, 145, 2, 0, 29, 0, 142, 147, 2, 0, 29, 0, 144, 148, 2, 0, 29, 0, 146, 149, 2, 0 </int_array>
 			<string> "editable_instances" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "names" </string>
-			<string_array  len="140">
+			<string_array  len="150">
 				<string> "Singleplayer" </string>
 				<string> "script/script" </string>
 				<string> "Node2D" </string>
@@ -206,8 +207,6 @@
 				<string> "frames" </string>
 				<string> "AnimatedSprite" </string>
 				<string> "Bars2" </string>
-				<string> "Dashed Line" </string>
-				<string> "__meta__" </string>
 				<string> "Square" </string>
 				<string> "visibility/visible" </string>
 				<string> "polygon" </string>
@@ -232,6 +231,7 @@
 				<string> "constant_angular_velocity" </string>
 				<string> "friction" </string>
 				<string> "bounce" </string>
+				<string> "__meta__" </string>
 				<string> "StaticBody2D" </string>
 				<string> "CollisionPolygon2D" </string>
 				<string> "build_mode" </string>
@@ -316,6 +316,17 @@
 				<string> "anchor/right" </string>
 				<string> "anchor/bottom" </string>
 				<string> "Pause" </string>
+				<string> "Music1" </string>
+				<string> "stream/stream" </string>
+				<string> "stream/play" </string>
+				<string> "stream/loop" </string>
+				<string> "stream/volume_db" </string>
+				<string> "stream/autoplay" </string>
+				<string> "stream/paused" </string>
+				<string> "stream/loop_restart_time" </string>
+				<string> "stream/buffering_ms" </string>
+				<string> "StreamPlayer" </string>
+				<string> "Music2" </string>
 				<string> "_on_ball_body_enter" </string>
 				<string> "body_enter" </string>
 				<string> "_on_PadLeft_body_enter" </string>
@@ -335,26 +346,20 @@
 				<string> "_on_Exit_pressed" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 35 </int>
+			<int> 36 </int>
 			<string> "node_paths" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="881"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 2, 3, -1, 1, 4, 1, 0, 1, 0, 7, 5, -1, 1, 6, 2, 0, 1, 0, 11, 8, -1, 2, 9, 3, 10, 4, 0, 1, 0, 11, 12, -1, 2, 9, 3, 10, 5, 0, 0, 0, 7, 13, -1, 3, 4, 6, 6, 7, 14, 8, 0, 0, 0, 27, 15, -1, 12, 16, 9, 4, 1, 17, 10, 18, 11, 19, 12, 20, 13, 21, 14, 22, 13, 23, 15, 24, 16, 25, 9, 26, 17, 0, 0, 0, 39, 28, -1, 11, 29, 9, 30, 18, 31, 19, 32, 9, 33, 20, 34, 20, 35, 13, 36, 16, 37, 21, 38, 16, 14, 22, 0, 7, 0, 40, 40, -1, 4, 41, 23, 17, 24, 42, 13, 43, 9, 0, 0, 0, 39, 44, -1, 11, 29, 9, 30, 25, 31, 26, 32, 9, 33, 20, 34, 20, 35, 13, 36, 16, 37, 21, 38, 16, 14, 27, 0, 9, 0, 40, 45, -1, 5, 4, 28, 41, 23, 17, 29, 42, 13, 43, 9, 0, 0, 0, 27, 46, -1, 10, 17, 11, 18, 11, 19, 30, 20, 13, 21, 14, 22, 13, 23, 15, 24, 16, 25, 9, 26, 17, 0, 0, 0, 2, 47, -1, 0, 0, 0, 0, 62, 48, -1, 23, 4, 31, 29, 9, 30, 32, 31, 19, 32, 9, 33, 20, 34, 20, 49, 33, 50, 21, 37, 16, 38, 21, 51, 16, 52, 9, 53, 23, 54, 20, 55, 34, 56, 9, 57, 34, 58, 13, 59, 16, 60, 35, 61, 35, 1, 36, 0, 13, 0, 27, 27, -1, 12, 9, 37, 17, 38, 18, 11, 19, 30, 20, 13, 21, 14, 22, 13, 23, 15, 24, 16, 25, 9, 26, 17, 14, 39, 0, 13, 0, 63, 63, -1, 3, 64, 32, 43, 9, 65, 23, 0, 0, 0, 62, 66, -1, 23, 4, 40, 29, 9, 30, 41, 31, 42, 32, 9, 33, 20, 34, 20, 49, 33, 50, 43, 37, 21, 38, 16, 51, 16, 52, 9, 53, 23, 54, 20, 55, 34, 56, 9, 57, 34, 58, 13, 59, 16, 60, 35, 61, 35, 1, 44, 0, 16, 0, 40, 40, -1, 5, 4, 45, 41, 23, 17, 46, 42, 13, 43, 9, 0, 16, 0, 11, 11, -1, 3, 9, 47, 10, 48, 1, 49, 0, 0, 0, 62, 67, -1, 23, 4, 50, 29, 9, 30, 51, 31, 19, 32, 9, 33, 20, 34, 20, 49, 33, 50, 43, 37, 16, 38, 16, 51, 16, 52, 9, 53, 23, 54, 20, 55, 34, 56, 9, 57, 34, 58, 13, 59, 16, 60, 35, 61, 35, 1, 44, 0, 19, 0, 40, 40, -1, 4, 41, 23, 17, 52, 42, 13, 43, 9, 0, 19, 0, 11, 11, -1, 3, 9, 53, 10, 54, 1, 49, 0, 0, 0, 83, 68, -1, 14, 69, 47, 70, 34, 71, 34, 72, 33, 73, 23, 74, 55, 75, 56, 76, 57, 77, 58, 78, 59, 79, 60, 80, 21, 81, 23, 82, 61, 0, 0, 0, 83, 84, -1, 14, 69, 47, 70, 34, 71, 34, 72, 33, 73, 23, 74, 62, 75, 56, 76, 63, 77, 58, 78, 59, 79, 60, 80, 21, 81, 23, 82, 61, 0, 0, 0, 83, 85, -1, 14, 69, 64, 70, 34, 71, 34, 72, 33, 73, 23, 74, 65, 75, 66, 76, 67, 77, 68, 78, 59, 79, 60, 80, 21, 81, 23, 82, 61, 0, 0, 0, 91, 86, -1, 4, 87, 20, 88, 21, 89, 9, 90, 9, 0, 0, 0, 91, 92, -1, 4, 87, 20, 88, 69, 89, 9, 90, 9, 0, 0, 0, 91, 93, -1, 4, 87, 20, 88, 70, 89, 9, 90, 9, 0, 0, 0, 98, 94, -1, 12, 95, 16, 70, 9, 71, 34, 72, 33, 73, 33, 74, 71, 75, 72, 76, 73, 77, 74, 96, 9, 97, 9, 14, 75, 0, 28, 0, 83, 83, -1, 15, 69, 64, 70, 34, 71, 34, 72, 33, 73, 23, 74, 76, 75, 16, 76, 77, 77, 78, 78, 59, 79, 79, 99, 20, 80, 21, 81, 23, 82, 61, 0, 0, 0, 98, 100, -1, 12, 95, 16, 70, 9, 71, 34, 72, 33, 73, 33, 74, 80, 75, 55, 76, 81, 77, 82, 96, 9, 97, 9, 14, 83, 0, 30, 0, 83, 83, -1, 15, 69, 64, 70, 34, 71, 34, 72, 33, 73, 23, 74, 76, 75, 16, 76, 77, 77, 78, 78, 59, 79, 84, 99, 20, 80, 21, 81, 23, 82, 61, 0, 0, 0, 116, 101, -1, 14, 102, 20, 103, 85, 104, 16, 105, 21, 106, 16, 107, 16, 108, 16, 109, 23, 110, 86, 111, 21, 112, 21, 113, 33, 114, 16, 115, 16, 0, 0, 0, 83, 117, -1, 18, 118, 87, 119, 87, 120, 87, 121, 87, 69, 47, 70, 34, 71, 34, 72, 33, 73, 23, 74, 88, 75, 89, 76, 90, 77, 91, 78, 59, 79, 92, 80, 21, 81, 23, 82, 61, 0, 0, 0, 83, 122, -1, 16, 16, 9, 69, 64, 70, 34, 71, 34, 72, 33, 73, 23, 74, 93, 75, 72, 76, 94, 77, 95, 78, 59, 79, 96, 99, 20, 80, 21, 81, 23, 82, 61, 0 </int_array>
+			<int_array  len="914"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 2, 3, -1, 1, 4, 1, 0, 1, 0, 7, 5, -1, 1, 6, 2, 0, 1, 0, 11, 8, -1, 2, 9, 3, 10, 4, 0, 1, 0, 11, 12, -1, 2, 9, 3, 10, 5, 0, 0, 0, 25, 13, -1, 12, 14, 6, 4, 1, 15, 7, 16, 8, 17, 9, 18, 10, 19, 11, 20, 10, 21, 12, 22, 13, 23, 6, 24, 14, 0, 0, 0, 38, 26, -1, 11, 27, 6, 28, 15, 29, 16, 30, 6, 31, 17, 32, 17, 33, 10, 34, 13, 35, 18, 36, 13, 37, 19, 0, 6, 0, 39, 39, -1, 4, 40, 20, 15, 21, 41, 10, 42, 6, 0, 0, 0, 38, 43, -1, 11, 27, 6, 28, 22, 29, 23, 30, 6, 31, 17, 32, 17, 33, 10, 34, 13, 35, 18, 36, 13, 37, 24, 0, 8, 0, 39, 44, -1, 5, 4, 25, 40, 20, 15, 26, 41, 10, 42, 6, 0, 0, 0, 25, 45, -1, 10, 15, 8, 16, 8, 17, 27, 18, 10, 19, 11, 20, 10, 21, 12, 22, 13, 23, 6, 24, 14, 0, 0, 0, 2, 46, -1, 0, 0, 0, 0, 61, 47, -1, 23, 4, 28, 27, 6, 28, 29, 29, 16, 30, 6, 31, 17, 32, 17, 48, 30, 49, 18, 35, 13, 36, 18, 50, 13, 51, 6, 52, 20, 53, 17, 54, 31, 55, 6, 56, 31, 57, 10, 58, 13, 59, 32, 60, 32, 1, 33, 0, 12, 0, 25, 25, -1, 12, 9, 34, 15, 35, 16, 8, 17, 27, 18, 10, 19, 11, 20, 10, 21, 12, 22, 13, 23, 6, 24, 14, 37, 36, 0, 12, 0, 62, 62, -1, 3, 63, 29, 42, 6, 64, 20, 0, 0, 0, 61, 65, -1, 23, 4, 37, 27, 6, 28, 38, 29, 39, 30, 6, 31, 17, 32, 17, 48, 30, 49, 40, 35, 18, 36, 13, 50, 13, 51, 6, 52, 20, 53, 17, 54, 31, 55, 6, 56, 31, 57, 10, 58, 13, 59, 32, 60, 32, 1, 41, 0, 15, 0, 39, 39, -1, 5, 4, 42, 40, 20, 15, 43, 41, 10, 42, 6, 0, 15, 0, 11, 11, -1, 3, 9, 44, 10, 45, 1, 46, 0, 0, 0, 61, 66, -1, 23, 4, 47, 27, 6, 28, 48, 29, 16, 30, 6, 31, 17, 32, 17, 48, 30, 49, 40, 35, 13, 36, 13, 50, 13, 51, 6, 52, 20, 53, 17, 54, 31, 55, 6, 56, 31, 57, 10, 58, 13, 59, 32, 60, 32, 1, 41, 0, 18, 0, 39, 39, -1, 4, 40, 20, 15, 49, 41, 10, 42, 6, 0, 18, 0, 11, 11, -1, 3, 9, 50, 10, 51, 1, 46, 0, 0, 0, 82, 67, -1, 14, 68, 44, 69, 31, 70, 31, 71, 30, 72, 20, 73, 52, 74, 53, 75, 54, 76, 55, 77, 56, 78, 57, 79, 18, 80, 20, 81, 58, 0, 0, 0, 82, 83, -1, 14, 68, 44, 69, 31, 70, 31, 71, 30, 72, 20, 73, 59, 74, 53, 75, 60, 76, 55, 77, 56, 78, 57, 79, 18, 80, 20, 81, 58, 0, 0, 0, 82, 84, -1, 14, 68, 61, 69, 31, 70, 31, 71, 30, 72, 20, 73, 62, 74, 63, 75, 64, 76, 65, 77, 56, 78, 57, 79, 18, 80, 20, 81, 58, 0, 0, 0, 90, 85, -1, 4, 86, 17, 87, 18, 88, 6, 89, 6, 0, 0, 0, 90, 91, -1, 4, 86, 17, 87, 66, 88, 6, 89, 6, 0, 0, 0, 90, 92, -1, 4, 86, 17, 87, 67, 88, 6, 89, 6, 0, 0, 0, 97, 93, -1, 12, 94, 13, 69, 6, 70, 31, 71, 30, 72, 30, 73, 68, 74, 69, 75, 70, 76, 71, 95, 6, 96, 6, 37, 72, 0, 27, 0, 82, 82, -1, 15, 68, 61, 69, 31, 70, 31, 71, 30, 72, 20, 73, 73, 74, 13, 75, 74, 76, 75, 77, 56, 78, 76, 98, 17, 79, 18, 80, 20, 81, 58, 0, 0, 0, 97, 99, -1, 12, 94, 13, 69, 6, 70, 31, 71, 30, 72, 30, 73, 77, 74, 52, 75, 78, 76, 79, 95, 6, 96, 6, 37, 80, 0, 29, 0, 82, 82, -1, 15, 68, 61, 69, 31, 70, 31, 71, 30, 72, 20, 73, 73, 74, 13, 75, 74, 76, 75, 77, 56, 78, 81, 98, 17, 79, 18, 80, 20, 81, 58, 0, 0, 0, 115, 100, -1, 14, 101, 17, 102, 82, 103, 13, 104, 18, 105, 13, 106, 13, 107, 13, 108, 20, 109, 83, 110, 18, 111, 18, 112, 30, 113, 13, 114, 13, 0, 0, 0, 82, 116, -1, 18, 117, 84, 118, 84, 119, 84, 120, 84, 68, 44, 69, 31, 70, 31, 71, 30, 72, 20, 73, 85, 74, 86, 75, 87, 76, 88, 77, 56, 78, 89, 79, 18, 80, 20, 81, 58, 0, 0, 0, 82, 121, -1, 16, 14, 6, 68, 61, 69, 31, 70, 31, 71, 30, 72, 20, 73, 90, 74, 69, 75, 91, 76, 92, 77, 56, 78, 93, 98, 17, 79, 18, 80, 20, 81, 58, 0, 0, 0, 131, 122, -1, 8, 123, 94, 124, 6, 125, 31, 126, 95, 127, 6, 128, 6, 129, 13, 130, 96, 0, 0, 0, 131, 132, -1, 8, 123, 97, 124, 6, 125, 31, 126, 98, 127, 6, 128, 6, 129, 13, 130, 96, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="97" shared="false">
+			<array  len="99" shared="false">
 				<resource  external="0">  </resource>
 				<vector2> 512, 300 </vector2>
 				<resource  external="1">  </resource>
 				<vector2> 8, 8 </vector2>
 				<resource  resource_type="SpriteFrames" path="local://15">  </resource>
 				<resource  resource_type="SpriteFrames" path="local://16">  </resource>
-				<vector2> 528, 300 </vector2>
-				<resource  external="14">  </resource>
-				<dictionary  shared="false">
-					<string> "_edit_lock_" </string>
-					<bool> True </bool>
-				</dictionary>
 				<bool> False </bool>
 				<vector2_array  len="4"> 					-10, -150, -10, 135, 10, 135, 10, -150 </vector2_array>
 				<vector2_array  len="0"> 					 </vector2_array>
@@ -391,7 +396,7 @@
 				<int> 2 </int>
 				<bool> True </bool>
 				<real> -1 </real>
-				<resource  external="15">  </resource>
+				<resource  external="14">  </resource>
 				<vector2> 1.5, 1.5 </vector2>
 				<vector2_array  len="4"> 					-5, 5, -5, -5, 5, -5, 5, 5 </vector2_array>
 				<dictionary  shared="false">
@@ -402,12 +407,12 @@
 				<resource  resource_type="Shape2D" path="local://12">  </resource>
 				<matrix32> 1, -0, 0, 1, 0, 1 </matrix32>
 				<real> 0.01 </real>
-				<resource  external="16">  </resource>
+				<resource  external="15">  </resource>
 				<vector2> 0, 1 </vector2>
 				<vector2_array  len="4"> 					5, 40, 4, 40, 4, -40, 5, -40 </vector2_array>
 				<vector2> 2, 2 </vector2>
 				<resource  resource_type="SpriteFrames" path="local://17">  </resource>
-				<resource  external="27">  </resource>
+				<resource  external="26">  </resource>
 				<vector2> 974, 300 </vector2>
 				<resource  resource_type="Shape2D" path="local://13">  </resource>
 				<vector2_array  len="4"> 					-4, 40, -5, 40, -5, -40, -4, -40 </vector2_array>
@@ -417,7 +422,7 @@
 				<real> 60 </real>
 				<real> 360 </real>
 				<real> 73 </real>
-				<resource  external="38">  </resource>
+				<resource  external="37">  </resource>
 				<string> "TEXT" </string>
 				<int> -1 </int>
 				<real> 621 </real>
@@ -461,6 +466,11 @@
 				<real> 490 </real>
 				<real> 220 </real>
 				<string> "PAUSED" </string>
+				<resource  external="45">  </resource>
+				<real> 18 </real>
+				<int> 500 </int>
+				<resource  external="46">  </resource>
+				<real> 5 </real>
 			</array>
 			<string> "version" </string>
 			<int> 2 </int>
