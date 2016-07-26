@@ -12,6 +12,7 @@ onready var home = get_node("Home")
 onready var exit = get_node("Exit")
 onready var reset_time = get_node("ResetTime")
 onready var sounds = get_node("sounds")
+onready var camera = get_node("Camera")
 
 var scoreai = 0
 var pause = false
@@ -109,6 +110,14 @@ func _ready():
 		get_node("Music1").play()
 	else:
 		get_node("Music2").play()
+	randomize()
+	var rand = randf()
+	if rand > 0.5:
+		get_node("ball/BlueBall").show()
+		get_node("ball/RedBall").hide()
+	else:
+		get_node("ball/BlueBall").hide()
+		get_node("ball/RedBall").show()
 
 
 
@@ -135,6 +144,7 @@ func _on_ResetTimer_timeout():
 
 func _on_ball_body_enter( body ):
 	sounds.play("hit")
+	get_node("Camera").shake(1, 15, 18)
 
 
 func _on_TutorialTime_timeout():

@@ -116,6 +116,14 @@ func _ready():
 		get_node("Music1").play()
 	else:
 		get_node("Music2").play()
+	randomize()
+	var rand = randf()
+	if rand > 0.5:
+		get_node("ball/BlueBall").show()
+		get_node("ball/RedBall").hide()
+	else:
+		get_node("ball/BlueBall").hide()
+		get_node("ball/RedBall").show()
 			
 
 
