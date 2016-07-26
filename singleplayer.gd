@@ -133,35 +133,6 @@ func _on_ResetTimer_timeout():
 	home.show()
 	exit.show()
 
-
-func _on_Home_pressed():
-	get_node("sounds").play("Active")
-	get_tree().change_scene("res://home.xscn")
-
-
-func _on_Exit_pressed():
-	get_node("sounds").play("Active")
-	get_tree().quit()
-
-
-func _on_Home_mouse_enter():
-	get_node("sounds").play("Hover")
-	home.get_child(0).set_scale(Vector2(3.2,3.2))
-
-
-func _on_Home_mouse_exit():
-	home.get_child(0).set_scale(Vector2(3,3))
-
-
-func _on_Exit_mouse_enter():
-	get_node("sounds").play("Hover")
-	exit.get_child(0).set_scale(Vector2(3.2,3.2))
-
-
-func _on_Exit_mouse_exit():
-	exit.get_child(0).set_scale(Vector2(3,3))
-
-
 func _on_ball_body_enter( body ):
 	sounds.play("hit")
 
@@ -174,6 +145,7 @@ func pause():
 		get_node("Square").hide()
 		get_node("Pause").hide()
 		exit.hide()
+		home.hide()
 		ball.set__pause(false)
 		padleft.set__pause(false)
 		padrigth.set__pause(false)
@@ -184,6 +156,7 @@ func pause():
 		get_node("Square").show()
 		get_node("Pause").show()
 		exit.show()
+		home.show()
 		ball.set__pause(true)
 		padleft.set__pause(true)
 		padrigth.set__pause(true)
@@ -192,3 +165,9 @@ func pause():
 		if timeLeft > 0:
 			timer.stop()
 			timer.set_wait_time(timeLeft)
+
+func _on_HomeButton_pressed():
+	get_tree().change_scene("res://home.xscn")
+
+func _on_ExitButton_pressed():
+	get_tree().quit()

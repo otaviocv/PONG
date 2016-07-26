@@ -10,27 +10,28 @@ func _ready():
 	get_node("Hover").hide()
 	get_node("Pressed").hide()
 
-func _on_SinglePlayerButton_mouse_enter():
+
+func _on_ExitButton_pressed():
+	get_node("Normal").hide()
+	get_node("Hover").show()
+	get_node("Pressed").hide()
+
+func _on_ExitButton_focus_enter():
+	get_node("Normal").hide()
+	get_node("Hover").hide()
+	get_node("Pressed").show()
+	get_parent().get_child(0).play("Active")
+
+
+
+func _on_ExitButton_mouse_enter():
 	get_node("Normal").hide()
 	get_node("Hover").show()
 	get_node("Pressed").hide()
 	get_parent().get_child(0).play("Hover")
 
 
-func _on_SinglePlayerButton_mouse_exit():
+func _on_ExitButton_mouse_exit():
 	get_node("Normal").show()
 	get_node("Hover").hide()
 	get_node("Pressed").hide()
-
-
-func _on_SinglePlayerButton_focus_enter():
-	get_node("Normal").hide()
-	get_node("Hover").hide()
-	get_node("Pressed").show()
-
-
-func _on_SinglePlayerButton_pressed():
-	get_node("Normal").hide()
-	get_node("Hover").show()
-	get_node("Pressed").hide()
-

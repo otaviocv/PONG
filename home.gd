@@ -12,33 +12,11 @@ func _ready():
 
 
 
+func _on_SinglePlayerButton_pressed():
+	get_tree().change_scene("res://singleplayer.xscn")
 
-func _on_Button_mouse_enter():
-	get_node("SINGLE PLAYER").set_scale(Vector2(0.45,0.45))
-	get_node("SamplePlayer").play("Hover")
+func _on_MultiplayerButton_pressed():
+	get_tree().change_scene("res://multiplayer.xscn")
 
-
-func _on_Button_mouse_exit():
-	get_node("SINGLE PLAYER").set_scale(Vector2(0.4,0.4))
-
-
-func _on_Button2_mouse_enter():
-	get_node("MULTIPLAYER").set_scale(Vector2(0.45,0.45))
-	get_node("SamplePlayer").play("Hover")
-
-
-func _on_Button2_mouse_exit():
-	get_node("MULTIPLAYER").set_scale(Vector2(0.4,0.4))
-
-
-func _on_Exit_pressed():
+func _on_ExitButton_pressed():
 	get_tree().quit()
-
-
-func _on_Exit_mouse_enter():
-	get_node("SamplePlayer").play("Hover")
-	get_node("Exit/Label").set_scale(Vector2(3.5,3.5))
-
-
-func _on_Exit_mouse_exit():
-	get_node("Exit/Label").set_scale(Vector2(3,3))
