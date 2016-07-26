@@ -87,9 +87,8 @@ func _ready():
 
 
 func _on_ball_body_enter( body ):
-	pass
-	#get_node("sounds").play("hit")
-	# get_node("Particles2D").set_emitting(true)
+	get_node("../Particles2D").set_pos(get_pos())
+	get_node("../Particles2D").set_emitting(true)
 	
 func get_stored_velocity():
 	return velocity
