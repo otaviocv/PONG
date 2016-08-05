@@ -4,16 +4,16 @@
                    [[http://github.com/otaviocv/pong]]
          [[https://forum.uspgamedev.org/t/mini-projeto-game-pong/447]]
                     ______________________________
-                     -          7  |  6         
-                     |             |             
-                     -             |             
-                                   |             
-                             o     |             
-                                   |             
+                     -          7  |  6
+                     |             |
+                     -             |
+                                   |
+                             o     |
+                                   |
                                    |             -
                                    |             |
                                    |             -
-                                   |             
+                                   |
                     _______________|______________
 
 * Planejamento Incial
@@ -24,16 +24,16 @@
 
    |    Horários   | SEG | TER | QUA | QUI | SEX |
    |---------------|-----|-----|-----|-----|-----|
-   | 8:00 - 10:00  |     |     |     | 3o  |     |
-   | 16:00 - 18:00 | 1o  |     | 2o  |     |     |
+   | 8:00 - 10:00  |     |     |     |     |     |
+   | 10:00 - 12:00 |     |     |     |     | 1o  |
+   | 16:00 - 18:00 |     |     |     |     |     |
 
-   
 
   ** Integrantes
     - Breno Moura [[mailto:]]
     - Otávio Vasques [[mailto:]]
-    - Sofia Alonso [[mailto:]] 
-    - Gabriel Kazuyuki [[mailto:]] 
+    - Sofia Alonso [[mailto:]]
+    - Gabriel Kazuyuki [[mailto:]]
 
   ** Mecânica Básica
 
@@ -57,7 +57,7 @@
           - y = centro
           OU
           - y = yaxis * random()
-                   
+
     - Placar
       - Registro de quantas bolinhas escaparam pelas laterais.
     - Início/Fim do jogo
@@ -103,7 +103,7 @@
 
 * Mínimo para o jogo ficar pornto
   * Global [1/2]
-    - [ ] Sprites
+    - [X] Sprites
     - [X] Som
   ** Multiplayer [4/4]
     - [X] Placares
@@ -123,3 +123,38 @@
   - [X] Velocidade em X da bolinha
   - [X] Velocidade em Y da bolinha
       - A bola não consegue somar a velocidade do pad
+  - [] Concertar as posições das coisas
+
+* Metas definidas em 5 de Agosto de 2016
+
+    - [] Introdução
+        - [] Tela do UGD e dos créditos
+    - [] Adicionar Glow em tudo
+        - [] Pads
+    - [] Fazer o glow oscilante
+    - [] Criar o rastro em forma de glow do título
+    - [] Criar o rastro em forma de glow das bolas
+    - [] Efeito de shake quando a bola bate nas paredes
+    - [] Concertar a fonte
+    - [] Concertar tutorial
+    - [] Corrigir a posição das coisas
+        - [] Placares
+        - [] Fundo
+        - [] Pause
+    - [] Opções
+        - [] Controlar Volume
+        - [] Bind de teclas
+        - [] Incluir controle de mouse
+    - [] Exportação
+    - [] Re-importar sprites
+        - [] Fundo 2
+
+    Sprites novos:
+        - Tela do UGD  (Repositório do everknitght)
+        - Tela dos créditos
+        - Fonte (??)
+        - Botão de opção
+        - Fundo da tela de opções
+        - Iterruptores on e off da tela de opções
+
+Esses são os requisitos da versão 1.0.0

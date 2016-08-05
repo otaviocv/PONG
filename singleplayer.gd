@@ -50,12 +50,10 @@ func _fixed_process(delta):
 func check_end_of_game():
 	if scoreai == maxpoints:
 		playerwins.set_text("Computer Wins")
-		get_node("Square").show()
 		gameend = true
 		reset_time.start()
 	if scoreplayer == maxpoints:
 		playerwins.set_text("Player Wins")
-		get_node("Square").show()
 		gameend = true
 		reset_time.start()
 
@@ -152,7 +150,6 @@ func _on_TutorialTime_timeout():
 	
 func pause():
 	if paused:
-		get_node("Square").hide()
 		get_node("Pause").hide()
 		exit.hide()
 		home.hide()
@@ -163,7 +160,6 @@ func pause():
 		if ball.get_stored_velocity() == Vector2(0,0):
 			timer.start()
 	else:
-		get_node("Square").show()
 		get_node("Pause").show()
 		exit.show()
 		home.show()
