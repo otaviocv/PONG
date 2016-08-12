@@ -150,7 +150,7 @@
         - [] Fundo 2
 
     Sprites novos:
-        - Tela do UGD  (Repositório do everknitght)
+        - Tela do UGD (DONE)
         - Tela dos créditos
         - Fonte (??)
         - Botão de opção
