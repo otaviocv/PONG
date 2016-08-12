@@ -46,6 +46,14 @@ func _fixed_process(delta):
 	if not gameend:
 		score()
 	padleft.ai(ball.get_pos().y)
+	
+	shaketime += delta
+	if shake:
+		set_pos(Vector2(2*cos(15*shaketime + PI), 2*sin(-15*shaketime)))
+		if 15*shaketime > 2*PI:
+			shake = false
+			set_pos(Vector2(0,0))
+	
 
 func check_end_of_game():
 	if scoreai == maxpoints:
@@ -77,6 +85,10 @@ func score():
 			sounds.play("score")
 	labelleft.set_text(str(scoreai))
 	labelrigth.set_text(str(scoreplayer))
+
+var shaketime = 0
+var shake = false
+	
 	
 	
 	
@@ -142,7 +154,10 @@ func _on_ResetTimer_timeout():
 
 func _on_ball_body_enter( body ):
 	sounds.play("hit")
-	get_node("Camera").shake(1, 15, 18)
+	if body == get_node("BoundUpper") or body == get_node("BoundBottom"):
+		shake = true
+		shaketime = 0
+	
 
 
 func _on_TutorialTime_timeout():

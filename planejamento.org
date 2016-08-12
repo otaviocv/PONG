@@ -129,12 +129,12 @@
 
     - [] Introdução
         - [] Tela do UGD e dos créditos
-    - [] Adicionar Glow em tudo
-        - [] Pads
-    - [] Fazer o glow oscilante
+    - [X] Adicionar Glow em tudo
+        - [X] Pads
+    - [X] Fazer o glow oscilante
     - [] Criar o rastro em forma de glow do título
     - [] Criar o rastro em forma de glow das bolas
-    - [] Efeito de shake quando a bola bate nas paredes
+    - [X] Efeito de shake quando a bola bate nas paredes
     - [] Concertar a fonte
     - [] Concertar tutorial
     - [] Corrigir a posição das coisas

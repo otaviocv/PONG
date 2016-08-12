@@ -19,6 +19,8 @@ var dir = 1
 var maxpoints = 11
 var gameend = false
 var paused = false
+var shaketime = 0
+var shake = false
 
 # member variables here, example:
 # var a=2
@@ -54,6 +56,13 @@ func _fixed_process(delta):
 	padrigth.set_pos(Vector2(974, padrigth.get_pos().y))
 	if not gameend:
 		score()
+	
+	shaketime += delta
+	if shake:
+		set_pos(Vector2(2*cos(15*shaketime + PI), 2*sin(-15*shaketime)))
+		if 15*shaketime > 2*PI:
+			shake = false
+			set_pos(Vector2(0,0))
 		
 
 func check_end_of_game():
@@ -155,6 +164,9 @@ func _on_ResetTime_timeout():
 
 func _on_ball_body_enter( body ):
 	sounds.play("hit")
+	if body == get_node("BoundBottom") or body == get_node("BoundUpper"):
+		shake = true
+		shaketime = 0
 
 
 func _on_TutorialTime_timeout():
