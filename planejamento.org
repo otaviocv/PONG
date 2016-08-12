@@ -150,11 +150,11 @@
         - [] Fundo 2
 
     Sprites novos:
-        - Tela do UGD  (Repositório do everknitght)
-        - Tela dos créditos
-        - Fonte (??)
-        - Botão de opção
-        - Fundo da tela de opções
-        - Iterruptores on e off da tela de opções
+        - Tela do UGD (DONE)
+        - Tela dos créditos (DONE)
+        - Fonte (Precisa testar)
+        - Botão de opção (DONE)
+        - Fundo da tela de opções (Precisa testar)
+        - Iterruptores on e off da tela de opções (DONE)
 
 Esses são os requisitos da versão 1.0.0
