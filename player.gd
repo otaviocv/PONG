@@ -20,13 +20,17 @@ func _on_SinglePlayerButton_pressed():
 func _on_SinglePlayerButton_focus_enter():
 	play("Active")
 
-
 func _on_SinglePlayerButton_mouse_enter():
 	play("Hover")
-
 
 func _on_MultiplayerButton_focus_enter():
 	play("Active")
 
 func _on_ExitButton_focus_enter():
+	play("Active")
+
+func _on_ExitButton_mouse_enter():
+	play("Hover")
+
+func _on_HomeButton_focus_enter():
 	play("Active")

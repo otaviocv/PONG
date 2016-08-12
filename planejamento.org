@@ -135,7 +135,7 @@
     - [] Criar o rastro em forma de glow do título
     - [] Criar o rastro em forma de glow das bolas
     - [X] Efeito de shake quando a bola bate nas paredes
-    - [] Concertar a fonte
+    - [X] Concertar a fonte
     - [] Concertar tutorial
     - [] Corrigir a posição das coisas
         - [] Placares
@@ -150,11 +150,11 @@
         - [] Fundo 2
 
     Sprites novos:
-        - Tela do UGD (DONE)
-        - Tela dos créditos (DONE)
-        - Fonte (Precisa testar)
-        - Botão de opção (DONE)
-        - Fundo da tela de opções (Precisa testar)
-        - Iterruptores on e off da tela de opções (DONE)
+        - Tela do UGD  (Repositório do everknitght)
+        - Tela dos créditos
+        - Fonte (??)
+        - Botão de opção
+        - Fundo da tela de opções
+        - Iterruptores on e off da tela de opções
 
 Esses são os requisitos da versão 1.0.0

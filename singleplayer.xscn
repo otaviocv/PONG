@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="85" version="2.1" version_name="Godot Engine v2.1.stable.official">
+<resource_file type="PackedScene" subresource_count="86" version="2.1" version_name="Godot Engine v2.1.stable.official">
 	<ext_resource path="res://sprites/Ball/BlueBall/import/BlueBall3.tex" type="Texture" index="27"></ext_resource>
 	<ext_resource path="res://ball.gd" type="Script" index="24"></ext_resource>
 	<ext_resource path="res://pad.gd" type="Script" index="37"></ext_resource>
 	<ext_resource path="res://singleplayer.gd" type="Script" index="0"></ext_resource>
 	<ext_resource path="res://sprite.gd" type="Script" index="16"></ext_resource>
 	<ext_resource path="res://particles.gd" type="Script" index="23"></ext_resource>
-	<ext_resource path="res://exbutton.gd" type="Script" index="66"></ext_resource>
-	<ext_resource path="res://hmbutton.gd" type="Script" index="62"></ext_resource>
+	<ext_resource path="res://exbutton.gd" type="Script" index="67"></ext_resource>
+	<ext_resource path="res://hmbutton.gd" type="Script" index="63"></ext_resource>
 	<ext_resource path="res://camera.gd" type="Script" index="8"></ext_resource>
 	<ext_resource path="res://sounds/Hover.smp" type="Sample" index="2"></ext_resource>
 	<ext_resource path="res://sounds/Active.smp" type="Sample" index="1"></ext_resource>
-	<ext_resource path="res://sprites/Buttons/import/ExitButton2.tex" type="Texture" index="68"></ext_resource>
-	<ext_resource path="res://sprites/Buttons/import/ExitButton3.tex" type="Texture" index="69"></ext_resource>
-	<ext_resource path="res://sprites/Buttons/import/ExitButton1.tex" type="Texture" index="67"></ext_resource>
+	<ext_resource path="res://sprites/Buttons/import/ExitButton2.tex" type="Texture" index="69"></ext_resource>
+	<ext_resource path="res://sprites/Buttons/import/ExitButton3.tex" type="Texture" index="70"></ext_resource>
+	<ext_resource path="res://sprites/Buttons/import/ExitButton1.tex" type="Texture" index="68"></ext_resource>
 	<ext_resource path="res://sprites/Background/Stage1/import/Stage1.tex" type="Texture" index="9"></ext_resource>
 	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar2.tex" type="Texture" index="50"></ext_resource>
 	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar1.tex" type="Texture" index="49"></ext_resource>
@@ -34,7 +34,7 @@
 	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar6.tex" type="Texture" index="54"></ext_resource>
 	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar9.tex" type="Texture" index="40"></ext_resource>
 	<ext_resource path="res://sprites/Background/Stage2/import/Stage2ANI6.tex" type="Texture" index="22"></ext_resource>
-	<ext_resource path="res://sounds/BGM/Wacky.ogg" type="AudioStream" index="61"></ext_resource>
+	<ext_resource path="res://sounds/BGM/Wacky.ogg" type="AudioStream" index="62"></ext_resource>
 	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar7.tex" type="Texture" index="38"></ext_resource>
 	<ext_resource path="res://glow.gd" type="Script" index="48"></ext_resource>
 	<ext_resource path="res://sprites/Background/Stage2/import/Stage2ANI2.tex" type="Texture" index="18"></ext_resource>
@@ -42,7 +42,7 @@
 	<ext_resource path="res://sprites/Background/Stage2/import/Stage2ANI3.tex" type="Texture" index="19"></ext_resource>
 	<ext_resource path="res://sprites/Background/Stage1/import/Stage1ANI3.tex" type="Texture" index="12"></ext_resource>
 	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar7.tex" type="Texture" index="55"></ext_resource>
-	<ext_resource path="res://8_bit_party.fnt" type="BitmapFont" index="59"></ext_resource>
+	<ext_resource path="res://8_bit_party.fnt" type="BitmapFont" index="60"></ext_resource>
 	<ext_resource path="res://sprites/Background/Stage2/import/Stage2ANI4.tex" type="Texture" index="20"></ext_resource>
 	<ext_resource path="res://sprites/Player Models/OrangeBar/import/RedBar10.tex" type="Texture" index="41"></ext_resource>
 	<ext_resource path="res://GEO1_spawn.smp" type="Sample" index="7"></ext_resource>
@@ -56,12 +56,12 @@
 	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar9.tex" type="Texture" index="57"></ext_resource>
 	<ext_resource path="res://sprites/Player Models/PurpleBar/import/PurpleBar10.tex" type="Texture" index="58"></ext_resource>
 	<ext_resource path="res://sprites/Background/Stage2/import/Stage2ANI1.tex" type="Texture" index="17"></ext_resource>
-	<ext_resource path="res://sounds/BGM/Low.ogg" type="AudioStream" index="60"></ext_resource>
+	<ext_resource path="res://sounds/BGM/Low.ogg" type="AudioStream" index="61"></ext_resource>
 	<ext_resource path="res://sprites/Background/Stage1/import/Stage1ANI6.tex" type="Texture" index="15"></ext_resource>
 	<ext_resource path="res://sprites/Background/Stage1/import/Stage1ANI1.tex" type="Texture" index="10"></ext_resource>
-	<ext_resource path="res://sprites/Buttons/import/MenuButton2.tex" type="Texture" index="64"></ext_resource>
-	<ext_resource path="res://sprites/Buttons/import/MenuButton1.tex" type="Texture" index="63"></ext_resource>
-	<ext_resource path="res://sprites/Buttons/import/MenuButton3.tex" type="Texture" index="65"></ext_resource>
+	<ext_resource path="res://sprites/Buttons/import/MenuButton2.tex" type="Texture" index="65"></ext_resource>
+	<ext_resource path="res://sprites/Buttons/import/MenuButton1.tex" type="Texture" index="64"></ext_resource>
+	<ext_resource path="res://sprites/Buttons/import/MenuButton3.tex" type="Texture" index="66"></ext_resource>
 	<ext_resource path="res://sprites/Ball/RedBall/import/RedBall1.tex" type="Texture" index="31"></ext_resource>
 	<ext_resource path="res://sprites/Ball/RedBall/import/RedBall5.tex" type="Texture" index="35"></ext_resource>
 	<ext_resource path="res://sprites/Ball/RedBall/import/RedBall4.tex" type="Texture" index="34"></ext_resource>
@@ -70,6 +70,7 @@
 	<ext_resource path="res://sprites/Ball/RedBall/import/RedBall6.tex" type="Texture" index="36"></ext_resource>
 	<ext_resource path="res://sprites/Ball/BlueBall/import/BlueBall2.tex" type="Texture" index="26"></ext_resource>
 	<ext_resource path="res://sprites/Ball/BlueBall/import/BlueBall4.tex" type="Texture" index="28"></ext_resource>
+	<ext_resource path="res://font/pixscript.fnt" type="BitmapFont" index="59"></ext_resource>
 	<resource type="SampleLibrary" path="local://14">
 		<dictionary name="samples/Active" shared="false">
 			<string> "db" </string>
@@ -351,12 +352,12 @@
 			<string> "conn_count" </string>
 			<int> 17 </int>
 			<string> "conns" </string>
-			<int_array  len="102"> 				14, 0, 196, 195, 2, 0, 14, 14, 196, 195, 2, 0, 19, 0, 196, 197, 2, 0, 23, 0, 196, 198, 2, 0, 30, 0, 200, 199, 2, 0, 31, 0, 200, 201, 2, 0, 32, 0, 200, 202, 2, 0, 38, 37, 204, 203, 2, 0, 38, 37, 206, 205, 2, 0, 38, 37, 208, 207, 2, 0, 38, 0, 210, 209, 2, 0, 38, 37, 210, 209, 2, 0, 43, 42, 204, 211, 2, 0, 43, 42, 206, 212, 2, 0, 43, 42, 208, 213, 2, 0, 43, 0, 210, 214, 2, 0, 43, 42, 210, 214, 2, 0 </int_array>
+			<int_array  len="102"> 				14, 0, 197, 196, 2, 0, 14, 14, 197, 196, 2, 0, 19, 0, 197, 198, 2, 0, 23, 0, 197, 199, 2, 0, 30, 0, 201, 200, 2, 0, 31, 0, 201, 202, 2, 0, 32, 0, 201, 203, 2, 0, 38, 37, 205, 204, 2, 0, 38, 37, 207, 206, 2, 0, 38, 37, 209, 208, 2, 0, 38, 0, 211, 210, 2, 0, 38, 37, 211, 210, 2, 0, 43, 42, 205, 212, 2, 0, 43, 42, 207, 213, 2, 0, 43, 42, 209, 214, 2, 0, 43, 0, 211, 215, 2, 0, 43, 42, 211, 215, 2, 0 </int_array>
 			<string> "editable_instances" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "names" </string>
-			<string_array  len="215">
+			<string_array  len="216">
 				<string> "Singleplayer" </string>
 				<string> "script/script" </string>
 				<string> "Node2D" </string>
@@ -508,6 +509,8 @@
 				<string> "margin/bottom" </string>
 				<string> "custom_fonts/font" </string>
 				<string> "text" </string>
+				<string> "align" </string>
+				<string> "valign" </string>
 				<string> "percent_visible" </string>
 				<string> "lines_skipped" </string>
 				<string> "max_lines_visible" </string>
@@ -528,7 +531,6 @@
 				<string> "anchor/right" </string>
 				<string> "anchor/bottom" </string>
 				<string> "Pause" </string>
-				<string> "valign" </string>
 				<string> "Music1" </string>
 				<string> "stream/stream" </string>
 				<string> "stream/play" </string>
@@ -579,9 +581,9 @@
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="1134"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 18, 3, -1, 14, 4, 1, 5, 2, 6, 3, 7, 4, 8, 3, 9, 3, 10, 3, 11, 5, 12, 6, 13, 4, 14, 4, 15, 7, 16, 3, 17, 3, 0, 0, 0, 37, 19, -1, 18, 20, 8, 21, 1, 22, 9, 23, 9, 24, 10, 25, 11, 26, 11, 27, 12, 28, 12, 29, 8, 30, 8, 31, 9, 32, 13, 33, 14, 34, 14, 35, 14, 36, 14, 1, 15, 0, 0, 0, 2, 38, -1, 2, 39, 8, 40, 16, 0, 3, 0, 43, 41, -1, 1, 42, 17, 0, 3, 0, 48, 44, -1, 4, 45, 18, 46, 19, 47, 20, 1, 21, 0, 3, 0, 48, 49, -1, 4, 45, 18, 46, 22, 47, 20, 1, 21, 0, 0, 0, 62, 50, -1, 12, 39, 8, 51, 9, 52, 23, 53, 24, 54, 9, 55, 1, 56, 1, 57, 25, 58, 3, 59, 4, 60, 3, 61, 26, 0, 7, 0, 63, 63, -1, 4, 64, 5, 65, 27, 66, 25, 67, 9, 0, 0, 0, 62, 68, -1, 12, 39, 8, 51, 9, 52, 28, 53, 29, 54, 9, 55, 1, 56, 1, 57, 25, 58, 3, 59, 4, 60, 3, 61, 30, 0, 9, 0, 63, 69, -1, 5, 40, 31, 64, 5, 65, 32, 66, 25, 67, 9, 0, 0, 0, 81, 70, -1, 11, 65, 33, 71, 33, 72, 34, 73, 35, 74, 25, 75, 36, 76, 25, 77, 10, 78, 3, 79, 9, 80, 37, 0, 0, 0, 2, 82, -1, 0, 0, 0, 0, 83, 83, -1, 28, 40, 38, 45, 39, 84, 40, 85, 41, 86, 4, 87, 41, 88, 9, 89, 42, 90, 3, 91, 43, 92, 37, 93, 3, 94, 3, 95, 3, 96, 3, 97, 3, 98, 3, 99, 3, 100, 3, 101, 4, 102, 4, 103, 3, 104, 4, 105, 3, 106, 4, 107, 4, 108, 44, 1, 45, 0, 0, 0, 123, 109, -1, 24, 39, 8, 40, 38, 51, 9, 52, 46, 53, 24, 54, 9, 55, 1, 56, 1, 110, 7, 111, 4, 59, 3, 60, 4, 112, 3, 113, 9, 114, 5, 115, 1, 116, 8, 117, 9, 118, 8, 119, 25, 120, 3, 121, 47, 122, 47, 1, 48, 0, 14, 0, 81, 81, -1, 14, 124, 9, 45, 49, 65, 50, 71, 33, 72, 34, 73, 35, 74, 25, 75, 36, 76, 25, 77, 10, 78, 3, 79, 9, 80, 37, 61, 51, 0, 14, 0, 125, 125, -1, 3, 126, 46, 67, 9, 127, 5, 0, 14, 0, 48, 128, -1, 2, 46, 52, 47, 20, 0, 14, 0, 48, 129, -1, 2, 46, 53, 47, 20, 0, 0, 0, 123, 130, -1, 24, 39, 8, 40, 54, 51, 9, 52, 55, 53, 56, 54, 9, 55, 1, 56, 1, 110, 7, 111, 57, 59, 4, 60, 3, 112, 3, 113, 9, 114, 5, 115, 1, 116, 8, 117, 9, 118, 8, 119, 25, 120, 3, 121, 47, 122, 47, 1, 58, 0, 19, 0, 63, 63, -1, 5, 40, 59, 64, 5, 65, 60, 66, 25, 67, 9, 0, 19, 0, 48, 48, -1, 5, 45, 61, 46, 62, 47, 20, 131, 63, 132, 8, 0, 19, 0, 48, 133, -1, 10, 134, 64, 135, 8, 136, 1, 45, 65, 46, 66, 47, 20, 131, 67, 132, 8, 137, 68, 1, 69, 0, 0, 0, 123, 138, -1, 24, 39, 8, 40, 70, 51, 9, 52, 71, 53, 24, 54, 9, 55, 1, 56, 1, 110, 7, 111, 57, 59, 3, 60, 3, 112, 3, 113, 9, 114, 5, 115, 1, 116, 8, 117, 9, 118, 8, 119, 25, 120, 3, 121, 47, 122, 47, 1, 58, 0, 23, 0, 63, 63, -1, 4, 64, 5, 65, 72, 66, 25, 67, 9, 0, 23, 0, 48, 48, -1, 5, 45, 73, 46, 74, 47, 20, 131, 75, 132, 8, 0, 23, 0, 48, 133, -1, 9, 135, 8, 136, 1, 45, 76, 46, 77, 47, 20, 131, 78, 132, 8, 137, 79, 1, 69, 0, 0, 0, 154, 139, -1, 14, 140, 61, 141, 8, 142, 8, 143, 7, 144, 5, 145, 80, 146, 81, 147, 82, 148, 83, 149, 84, 150, 85, 151, 4, 152, 5, 153, 86, 0, 0, 0, 154, 155, -1, 14, 140, 61, 141, 8, 142, 8, 143, 7, 144, 5, 145, 87, 146, 81, 147, 88, 148, 83, 149, 84, 150, 85, 151, 4, 152, 5, 153, 86, 0, 0, 0, 154, 156, -1, 14, 140, 89, 141, 8, 142, 8, 143, 7, 144, 5, 145, 90, 146, 91, 147, 92, 148, 93, 149, 84, 150, 85, 151, 4, 152, 5, 153, 86, 0, 0, 0, 162, 157, -1, 4, 158, 1, 159, 4, 160, 9, 161, 9, 0, 0, 0, 162, 163, -1, 4, 158, 1, 159, 94, 160, 9, 161, 9, 0, 0, 0, 162, 164, -1, 4, 158, 1, 159, 95, 160, 9, 161, 9, 0, 0, 0, 154, 165, -1, 18, 166, 78, 167, 78, 168, 78, 169, 78, 140, 61, 141, 8, 142, 8, 143, 7, 144, 5, 145, 96, 146, 97, 147, 98, 148, 99, 149, 84, 150, 100, 151, 4, 152, 5, 153, 86, 0, 0, 0, 154, 170, -1, 16, 124, 9, 140, 89, 141, 8, 142, 8, 143, 7, 144, 5, 145, 101, 146, 102, 147, 103, 148, 104, 149, 84, 150, 105, 171, 1, 151, 4, 152, 5, 153, 86, 0, 0, 0, 181, 172, -1, 8, 173, 106, 174, 9, 175, 8, 176, 107, 177, 9, 178, 9, 179, 3, 180, 108, 0, 0, 0, 181, 182, -1, 8, 173, 109, 174, 9, 175, 8, 176, 13, 177, 9, 178, 9, 179, 3, 180, 108, 0, 0, 0, 2, 183, -1, 2, 39, 8, 1, 110, 0, 37, 0, 189, 184, -1, 13, 134, 3, 141, 9, 142, 8, 143, 7, 144, 7, 145, 111, 146, 112, 147, 113, 148, 114, 185, 9, 186, 7, 187, 36, 188, 9, 0, 37, 0, 43, 190, -1, 3, 40, 115, 45, 116, 42, 117, 0, 37, 0, 43, 191, -1, 3, 40, 115, 45, 116, 42, 118, 0, 37, 0, 43, 192, -1, 3, 40, 115, 45, 116, 42, 119, 0, 0, 0, 2, 193, -1, 2, 39, 8, 1, 120, 0, 42, 0, 189, 194, -1, 13, 134, 3, 141, 9, 142, 8, 143, 7, 144, 7, 145, 111, 146, 121, 147, 113, 148, 122, 185, 9, 186, 7, 187, 36, 188, 9, 0, 42, 0, 43, 190, -1, 3, 40, 123, 45, 116, 42, 124, 0, 42, 0, 43, 191, -1, 3, 40, 123, 45, 116, 42, 125, 0, 42, 0, 43, 192, -1, 3, 40, 123, 45, 116, 42, 126, 0, 0, 0, 2, 2, -1, 0, 0 </int_array>
+			<int_array  len="1142"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 18, 3, -1, 14, 4, 1, 5, 2, 6, 3, 7, 4, 8, 3, 9, 3, 10, 3, 11, 5, 12, 6, 13, 4, 14, 4, 15, 7, 16, 3, 17, 3, 0, 0, 0, 37, 19, -1, 18, 20, 8, 21, 1, 22, 9, 23, 9, 24, 10, 25, 11, 26, 11, 27, 12, 28, 12, 29, 8, 30, 8, 31, 9, 32, 13, 33, 14, 34, 14, 35, 14, 36, 14, 1, 15, 0, 0, 0, 2, 38, -1, 2, 39, 8, 40, 16, 0, 3, 0, 43, 41, -1, 1, 42, 17, 0, 3, 0, 48, 44, -1, 4, 45, 18, 46, 19, 47, 20, 1, 21, 0, 3, 0, 48, 49, -1, 4, 45, 18, 46, 22, 47, 20, 1, 21, 0, 0, 0, 62, 50, -1, 12, 39, 8, 51, 9, 52, 23, 53, 24, 54, 9, 55, 1, 56, 1, 57, 25, 58, 3, 59, 4, 60, 3, 61, 26, 0, 7, 0, 63, 63, -1, 4, 64, 5, 65, 27, 66, 25, 67, 9, 0, 0, 0, 62, 68, -1, 12, 39, 8, 51, 9, 52, 28, 53, 29, 54, 9, 55, 1, 56, 1, 57, 25, 58, 3, 59, 4, 60, 3, 61, 30, 0, 9, 0, 63, 69, -1, 5, 40, 31, 64, 5, 65, 32, 66, 25, 67, 9, 0, 0, 0, 81, 70, -1, 11, 65, 33, 71, 33, 72, 34, 73, 35, 74, 25, 75, 36, 76, 25, 77, 10, 78, 3, 79, 9, 80, 37, 0, 0, 0, 2, 82, -1, 0, 0, 0, 0, 83, 83, -1, 28, 40, 38, 45, 39, 84, 40, 85, 41, 86, 4, 87, 41, 88, 9, 89, 42, 90, 3, 91, 43, 92, 37, 93, 3, 94, 3, 95, 3, 96, 3, 97, 3, 98, 3, 99, 3, 100, 3, 101, 4, 102, 4, 103, 3, 104, 4, 105, 3, 106, 4, 107, 4, 108, 44, 1, 45, 0, 0, 0, 123, 109, -1, 24, 39, 8, 40, 38, 51, 9, 52, 46, 53, 24, 54, 9, 55, 1, 56, 1, 110, 7, 111, 4, 59, 3, 60, 4, 112, 3, 113, 9, 114, 5, 115, 1, 116, 8, 117, 9, 118, 8, 119, 25, 120, 3, 121, 47, 122, 47, 1, 48, 0, 14, 0, 81, 81, -1, 14, 124, 9, 45, 49, 65, 50, 71, 33, 72, 34, 73, 35, 74, 25, 75, 36, 76, 25, 77, 10, 78, 3, 79, 9, 80, 37, 61, 51, 0, 14, 0, 125, 125, -1, 3, 126, 46, 67, 9, 127, 5, 0, 14, 0, 48, 128, -1, 2, 46, 52, 47, 20, 0, 14, 0, 48, 129, -1, 2, 46, 53, 47, 20, 0, 0, 0, 123, 130, -1, 24, 39, 8, 40, 54, 51, 9, 52, 55, 53, 56, 54, 9, 55, 1, 56, 1, 110, 7, 111, 57, 59, 4, 60, 3, 112, 3, 113, 9, 114, 5, 115, 1, 116, 8, 117, 9, 118, 8, 119, 25, 120, 3, 121, 47, 122, 47, 1, 58, 0, 19, 0, 63, 63, -1, 5, 40, 59, 64, 5, 65, 60, 66, 25, 67, 9, 0, 19, 0, 48, 48, -1, 5, 45, 61, 46, 62, 47, 20, 131, 63, 132, 8, 0, 19, 0, 48, 133, -1, 10, 134, 64, 135, 8, 136, 1, 45, 65, 46, 66, 47, 20, 131, 67, 132, 8, 137, 68, 1, 69, 0, 0, 0, 123, 138, -1, 24, 39, 8, 40, 70, 51, 9, 52, 71, 53, 24, 54, 9, 55, 1, 56, 1, 110, 7, 111, 57, 59, 3, 60, 3, 112, 3, 113, 9, 114, 5, 115, 1, 116, 8, 117, 9, 118, 8, 119, 25, 120, 3, 121, 47, 122, 47, 1, 58, 0, 23, 0, 63, 63, -1, 4, 64, 5, 65, 72, 66, 25, 67, 9, 0, 23, 0, 48, 48, -1, 5, 45, 73, 46, 74, 47, 20, 131, 7, 132, 8, 0, 23, 0, 48, 133, -1, 9, 135, 8, 136, 1, 45, 75, 46, 76, 47, 20, 131, 77, 132, 8, 137, 78, 1, 69, 0, 0, 0, 156, 139, -1, 16, 140, 79, 141, 8, 142, 8, 143, 7, 144, 5, 145, 80, 146, 81, 147, 82, 148, 83, 149, 84, 150, 85, 151, 1, 152, 1, 153, 4, 154, 5, 155, 86, 0, 0, 0, 156, 157, -1, 16, 140, 79, 141, 8, 142, 8, 143, 7, 144, 5, 145, 87, 146, 88, 147, 89, 148, 90, 149, 84, 150, 85, 151, 1, 152, 1, 153, 4, 154, 5, 155, 86, 0, 0, 0, 156, 158, -1, 14, 140, 91, 141, 8, 142, 8, 143, 7, 144, 5, 145, 92, 146, 93, 147, 94, 148, 95, 149, 96, 150, 97, 153, 4, 154, 5, 155, 86, 0, 0, 0, 164, 159, -1, 4, 160, 1, 161, 4, 162, 9, 163, 9, 0, 0, 0, 164, 165, -1, 4, 160, 1, 161, 98, 162, 9, 163, 9, 0, 0, 0, 164, 166, -1, 4, 160, 1, 161, 99, 162, 9, 163, 9, 0, 0, 0, 156, 167, -1, 18, 168, 77, 169, 77, 170, 77, 171, 77, 140, 61, 141, 8, 142, 8, 143, 7, 144, 5, 145, 100, 146, 101, 147, 102, 148, 103, 149, 96, 150, 104, 153, 4, 154, 5, 155, 86, 0, 0, 0, 156, 172, -1, 16, 124, 9, 140, 91, 141, 8, 142, 8, 143, 7, 144, 5, 145, 105, 146, 106, 147, 107, 148, 108, 149, 96, 150, 109, 152, 1, 153, 4, 154, 5, 155, 86, 0, 0, 0, 182, 173, -1, 8, 174, 110, 175, 9, 176, 8, 177, 111, 178, 9, 179, 9, 180, 3, 181, 112, 0, 0, 0, 182, 183, -1, 8, 174, 113, 175, 9, 176, 8, 177, 13, 178, 9, 179, 9, 180, 3, 181, 112, 0, 0, 0, 2, 184, -1, 2, 39, 8, 1, 114, 0, 37, 0, 190, 185, -1, 13, 134, 3, 141, 9, 142, 8, 143, 7, 144, 7, 145, 115, 146, 116, 147, 117, 148, 118, 186, 9, 187, 7, 188, 36, 189, 9, 0, 37, 0, 43, 191, -1, 3, 40, 119, 45, 120, 42, 121, 0, 37, 0, 43, 192, -1, 3, 40, 119, 45, 120, 42, 122, 0, 37, 0, 43, 193, -1, 3, 40, 119, 45, 120, 42, 123, 0, 0, 0, 2, 194, -1, 2, 39, 8, 1, 124, 0, 42, 0, 190, 195, -1, 13, 134, 3, 141, 9, 142, 8, 143, 7, 144, 7, 145, 115, 146, 125, 147, 117, 148, 126, 186, 9, 187, 7, 188, 36, 189, 9, 0, 42, 0, 43, 191, -1, 3, 40, 127, 45, 120, 42, 128, 0, 42, 0, 43, 192, -1, 3, 40, 127, 45, 120, 42, 129, 0, 42, 0, 43, 193, -1, 3, 40, 127, 45, 120, 42, 130, 0, 0, 0, 2, 2, -1, 0, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="127" shared="false">
+			<array  len="131" shared="false">
 				<resource  external="0">  </resource>
 				<int> 1 </int>
 				<resource  resource_type="SampleLibrary" path="local://14">  </resource>
@@ -653,7 +655,7 @@
 				<vector2_array  len="4"> 					5, 40, 4, 40, 4, -40, 5, -40 </vector2_array>
 				<vector2> 2, 2 </vector2>
 				<resource  resource_type="SpriteFrames" path="local://21">  </resource>
-				<int> 8 </int>
+				<int> 7 </int>
 				<real> 0.75 </real>
 				<vector2> 2.4, 2.2 </vector2>
 				<resource  resource_type="SpriteFrames" path="local://23">  </resource>
@@ -665,25 +667,29 @@
 				<vector2_array  len="4"> 					-4, 40, -5, 40, -5, -40, -4, -40 </vector2_array>
 				<vector2> -2, 2 </vector2>
 				<resource  resource_type="SpriteFrames" path="local://18">  </resource>
-				<int> 4 </int>
 				<vector2> -2.4, 2.2 </vector2>
 				<resource  resource_type="SpriteFrames" path="local://24">  </resource>
 				<int> 3 </int>
 				<color> 0.992188, 0, 1, 0.898039 </color>
-				<real> 320 </real>
-				<real> 60 </real>
-				<real> 360 </real>
-				<real> 73 </real>
+				<vector2> 3.8, 3.8 </vector2>
+				<real> 315 </real>
+				<real> 64 </real>
+				<real> 359 </real>
+				<real> 84 </real>
 				<resource  external="59">  </resource>
-				<string> "TEXT" </string>
+				<string> "t" </string>
 				<int> -1 </int>
-				<real> 621 </real>
-				<real> 661 </real>
+				<real> 545 </real>
+				<real> 66 </real>
+				<real> 589 </real>
+				<real> 86 </real>
 				<vector2> 3, 3 </vector2>
 				<real> 350 </real>
 				<real> 250 </real>
 				<real> 394 </real>
 				<real> 270 </real>
+				<resource  external="60">  </resource>
+				<string> "TEXT" </string>
 				<real> 3 </real>
 				<real> 4 </real>
 				<real> -518 </real>
@@ -696,27 +702,27 @@
 				<real> 490 </real>
 				<real> 220 </real>
 				<string> "PAUSED" </string>
-				<resource  external="60">  </resource>
+				<resource  external="61">  </resource>
 				<real> 18 </real>
 				<int> 500 </int>
-				<resource  external="61">  </resource>
 				<resource  external="62">  </resource>
+				<resource  external="63">  </resource>
 				<real> 460 </real>
 				<real> 345 </real>
 				<real> 570 </real>
 				<real> 400 </real>
 				<vector2> 515, 370 </vector2>
 				<vector2> 5, 5 </vector2>
-				<resource  external="63">  </resource>
 				<resource  external="64">  </resource>
 				<resource  external="65">  </resource>
 				<resource  external="66">  </resource>
+				<resource  external="67">  </resource>
 				<real> 275 </real>
 				<real> 330 </real>
 				<vector2> 515, 300 </vector2>
-				<resource  external="67">  </resource>
 				<resource  external="68">  </resource>
 				<resource  external="69">  </resource>
+				<resource  external="70">  </resource>
 			</array>
 			<string> "version" </string>
 			<int> 2 </int>

@@ -27,7 +27,6 @@ func _on_ExitButton_mouse_enter():
 	get_node("Normal").hide()
 	get_node("Hover").show()
 	get_node("Pressed").hide()
-	get_parent().get_parent().get_child(0).play("Hover")
 
 
 func _on_ExitButton_mouse_exit():

@@ -5,20 +5,20 @@
 	<ext_resource path="res://title.gd" type="Script" index="7"></ext_resource>
 	<ext_resource path="res://exbutton.gd" type="Script" index="15"></ext_resource>
 	<ext_resource path="res://sounds/Hover.smp" type="Sample" index="2"></ext_resource>
-	<ext_resource path="res://sprites/Background.tex" type="Texture" index="5"></ext_resource>
-	<ext_resource path="res://sprites/Buttons/import/SingleButton1.tex" type="Texture" index="8"></ext_resource>
-	<ext_resource path="res://sprites/Buttons/import/SingleButton2.tex" type="Texture" index="9"></ext_resource>
-	<ext_resource path="res://sprites/Buttons/import/MultiButton1.tex" type="Texture" index="12"></ext_resource>
-	<ext_resource path="res://sprites/Buttons/import/MultiButton3.tex" type="Texture" index="14"></ext_resource>
-	<ext_resource path="res://sprites/Buttons/import/MultiButton2.tex" type="Texture" index="13"></ext_resource>
 	<ext_resource path="res://sounds/Active.smp" type="Sample" index="1"></ext_resource>
 	<ext_resource path="res://sprites/Buttons/import/ExitButton2.tex" type="Texture" index="17"></ext_resource>
-	<ext_resource path="res://sounds/BGM/Soft.ogg" type="AudioStream" index="4"></ext_resource>
-	<ext_resource path="res://sprites/Logo.tex" type="Texture" index="6"></ext_resource>
-	<ext_resource path="res://sprites/Buttons/import/SingleButton3.tex" type="Texture" index="10"></ext_resource>
 	<ext_resource path="res://sprites/Buttons/import/ExitButton3.tex" type="Texture" index="18"></ext_resource>
 	<ext_resource path="res://sprites/Buttons/import/ExitButton1.tex" type="Texture" index="16"></ext_resource>
+	<ext_resource path="res://sounds/BGM/Soft.ogg" type="AudioStream" index="4"></ext_resource>
+	<ext_resource path="res://sprites/Buttons/import/SingleButton2.tex" type="Texture" index="9"></ext_resource>
+	<ext_resource path="res://sprites/Buttons/import/MultiButton2.tex" type="Texture" index="13"></ext_resource>
+	<ext_resource path="res://sprites/Logo.tex" type="Texture" index="6"></ext_resource>
+	<ext_resource path="res://sprites/Buttons/import/SingleButton3.tex" type="Texture" index="10"></ext_resource>
 	<ext_resource path="res://player.gd" type="Script" index="3"></ext_resource>
+	<ext_resource path="res://sprites/Buttons/import/MultiButton3.tex" type="Texture" index="14"></ext_resource>
+	<ext_resource path="res://sprites/Background.tex" type="Texture" index="5"></ext_resource>
+	<ext_resource path="res://sprites/Buttons/import/MultiButton1.tex" type="Texture" index="12"></ext_resource>
+	<ext_resource path="res://sprites/Buttons/import/SingleButton1.tex" type="Texture" index="8"></ext_resource>
 	<resource type="SampleLibrary" path="local://3">
 		<dictionary name="samples/Active" shared="false">
 			<string> "db" </string>
@@ -45,9 +45,9 @@
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
 			<string> "conn_count" </string>
-			<int> 19 </int>
+			<int> 20 </int>
 			<string> "conns" </string>
-			<int_array  len="114"> 				10, 1, 61, 60, 2, 0, 10, 9, 61, 60, 2, 0, 10, 1, 63, 62, 2, 0, 10, 9, 63, 62, 2, 0, 10, 9, 65, 64, 2, 0, 10, 1, 67, 66, 2, 0, 10, 9, 67, 66, 2, 0, 15, 1, 61, 68, 2, 0, 15, 14, 61, 68, 2, 0, 15, 14, 63, 69, 2, 0, 15, 14, 65, 70, 2, 0, 15, 0, 67, 71, 2, 0, 15, 14, 67, 71, 2, 0, 20, 1, 61, 72, 2, 0, 20, 19, 61, 72, 2, 0, 20, 19, 63, 73, 2, 0, 20, 19, 65, 74, 2, 0, 20, 0, 67, 75, 2, 0, 20, 19, 67, 75, 2, 0 </int_array>
+			<int_array  len="120"> 				10, 1, 61, 60, 2, 0, 10, 9, 61, 60, 2, 0, 10, 1, 63, 62, 2, 0, 10, 9, 63, 62, 2, 0, 10, 9, 65, 64, 2, 0, 10, 1, 67, 66, 2, 0, 10, 9, 67, 66, 2, 0, 15, 14, 61, 68, 2, 0, 15, 1, 61, 68, 2, 0, 15, 14, 63, 69, 2, 0, 15, 14, 65, 70, 2, 0, 15, 14, 67, 71, 2, 0, 15, 0, 67, 71, 2, 0, 20, 19, 61, 72, 2, 0, 20, 1, 61, 72, 2, 0, 20, 19, 63, 73, 2, 0, 20, 1, 63, 73, 2, 0, 20, 19, 65, 74, 2, 0, 20, 0, 67, 75, 2, 0, 20, 19, 67, 75, 2, 0 </int_array>
 			<string> "editable_instances" </string>
 			<array  len="0" shared="false">
 			</array>
@@ -84,8 +84,8 @@
 				<string> "Sprite" </string>
 				<string> "Splash Names" </string>
 				<string> "Game" </string>
-				<string> "editor/display_folded" </string>
 				<string> "Fundo" </string>
+				<string> "editor/display_folded" </string>
 				<string> "transform/pos" </string>
 				<string> "texture" </string>
 				<string> "Title" </string>
@@ -136,7 +136,7 @@
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="370"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 3, 3, -1, 15, 4, 1, 5, 2, 6, 3, 7, 4, 8, 3, 9, 3, 10, 3, 11, 5, 12, 6, 13, 4, 14, 4, 15, 7, 16, 3, 17, 3, 1, 8, 0, 0, 0, 18, 18, -1, 8, 19, 9, 20, 10, 21, 11, 22, 12, 23, 11, 24, 10, 25, 3, 26, 13, 0, 0, 0, 28, 27, -1, 0, 0, 0, 0, 28, 29, -1, 0, 0, 0, 0, 2, 30, -1, 1, 31, 11, 0, 5, 0, 2, 32, -1, 2, 31, 11, 33, 14, 0, 6, 0, 28, 28, -1, 1, 34, 15, 0, 5, 0, 28, 35, -1, 4, 33, 16, 36, 17, 34, 18, 1, 19, 0, 5, 0, 2, 37, -1, 1, 1, 20, 0, 9, 0, 52, 38, -1, 13, 39, 3, 40, 10, 41, 11, 42, 7, 43, 7, 44, 21, 45, 22, 46, 23, 47, 24, 48, 10, 49, 7, 50, 25, 51, 10, 0, 9, 0, 28, 53, -1, 3, 33, 26, 36, 27, 34, 28, 0, 9, 0, 28, 54, -1, 3, 33, 26, 36, 27, 34, 29, 0, 9, 0, 28, 55, -1, 3, 33, 26, 36, 27, 34, 30, 0, 5, 0, 2, 56, -1, 1, 1, 31, 0, 14, 0, 52, 57, -1, 13, 39, 3, 40, 10, 41, 11, 42, 7, 43, 7, 44, 32, 45, 22, 46, 33, 47, 24, 48, 10, 49, 7, 50, 25, 51, 10, 0, 14, 0, 28, 53, -1, 3, 33, 34, 36, 27, 34, 35, 0, 14, 0, 28, 54, -1, 3, 33, 34, 36, 27, 34, 36, 0, 14, 0, 28, 55, -1, 3, 33, 34, 36, 27, 34, 37, 0, 5, 0, 2, 58, -1, 1, 1, 38, 0, 19, 0, 52, 59, -1, 13, 39, 3, 40, 10, 41, 11, 42, 7, 43, 7, 44, 39, 45, 40, 46, 40, 47, 41, 48, 10, 49, 7, 50, 25, 51, 10, 0, 19, 0, 28, 53, -1, 3, 33, 42, 36, 43, 34, 44, 0, 19, 0, 28, 54, -1, 3, 33, 42, 36, 43, 34, 45, 0, 19, 0, 28, 55, -1, 3, 33, 42, 36, 43, 34, 46, 0 </int_array>
+			<int_array  len="370"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 3, 3, -1, 15, 4, 1, 5, 2, 6, 3, 7, 4, 8, 3, 9, 3, 10, 3, 11, 5, 12, 6, 13, 4, 14, 4, 15, 7, 16, 3, 17, 3, 1, 8, 0, 0, 0, 18, 18, -1, 8, 19, 9, 20, 10, 21, 11, 22, 12, 23, 11, 24, 10, 25, 3, 26, 13, 0, 0, 0, 28, 27, -1, 0, 0, 0, 0, 28, 29, -1, 0, 0, 0, 0, 2, 30, -1, 0, 0, 5, 0, 2, 31, -1, 2, 32, 11, 33, 14, 0, 6, 0, 28, 28, -1, 1, 34, 15, 0, 5, 0, 28, 35, -1, 4, 33, 16, 36, 17, 34, 18, 1, 19, 0, 5, 0, 2, 37, -1, 2, 32, 11, 1, 20, 0, 9, 0, 52, 38, -1, 13, 39, 3, 40, 10, 41, 11, 42, 7, 43, 7, 44, 21, 45, 22, 46, 23, 47, 24, 48, 10, 49, 7, 50, 25, 51, 10, 0, 9, 0, 28, 53, -1, 3, 33, 26, 36, 27, 34, 28, 0, 9, 0, 28, 54, -1, 3, 33, 26, 36, 27, 34, 29, 0, 9, 0, 28, 55, -1, 3, 33, 26, 36, 27, 34, 30, 0, 5, 0, 2, 56, -1, 1, 1, 31, 0, 14, 0, 52, 57, -1, 13, 39, 3, 40, 10, 41, 11, 42, 7, 43, 7, 44, 32, 45, 22, 46, 33, 47, 24, 48, 10, 49, 7, 50, 25, 51, 10, 0, 14, 0, 28, 53, -1, 3, 33, 34, 36, 27, 34, 35, 0, 14, 0, 28, 54, -1, 3, 33, 34, 36, 27, 34, 36, 0, 14, 0, 28, 55, -1, 3, 33, 34, 36, 27, 34, 37, 0, 5, 0, 2, 58, -1, 1, 1, 38, 0, 19, 0, 52, 59, -1, 13, 39, 3, 40, 10, 41, 11, 42, 7, 43, 7, 44, 39, 45, 40, 46, 40, 47, 41, 48, 10, 49, 7, 50, 25, 51, 10, 0, 19, 0, 28, 53, -1, 3, 33, 42, 36, 43, 34, 44, 0, 19, 0, 28, 54, -1, 3, 33, 42, 36, 43, 34, 45, 0, 19, 0, 28, 55, -1, 3, 33, 42, 36, 43, 34, 46, 0 </int_array>
 			<string> "variants" </string>
 			<array  len="47" shared="false">
 				<resource  external="0">  </resource>
