@@ -1,17 +1,24 @@
 
 extends Node2D
 var time = 0.0
-var stages = 1
+var splash = true
 
 # member variables here, example:
 # var a=2
 # var b="textvar"
 
 func _process(delta):
+	time += delta
+	if splash:
+		get_node("Splash").set_opacity(cos(2*time))
+		if cos(2*time) < 0:
+			splash = false
+			get_node("Splash").hide()
 	pass
-		
+
 func _ready():
-	set_process(false)
+	get_node("Splash").set_opacity(1)
+	set_process(true)
 
 
 func _on_SinglePlayerButton_pressed():

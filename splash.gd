@@ -15,10 +15,8 @@ func _process(delta):
 			time = 0
 	elif stages == 2:
 		get_node("Splash1").set_opacity(1)
-		print("OI")
-		if time > 0.3:
-			stages += 1
-			time = 0
+		stages += 1
+		time = 0
 	elif stages == 3:
 		get_node("Splash1").set_opacity(cos(time))
 		if cos(time) < 0:
