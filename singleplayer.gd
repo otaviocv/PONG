@@ -110,10 +110,16 @@ func _ready():
 		get_node("Background/Bars1").show()
 		get_node("Background/Space").show()
 		get_node("Background/Bars2").hide()
+		get_node("Background/Bg1").show()
+		get_node("Background/Bg2").hide()
+
 	else:
 		get_node("Background/Bars2").show()
 		get_node("Background/Bars1").hide()
 		get_node("Background/Space").hide()
+		get_node("Background/Bg2").show()
+		get_node("Background/Bg1").hide()
+
 	randomize()
 	var rand = randf()
 	if rand > 0.5:

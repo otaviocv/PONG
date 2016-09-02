@@ -137,7 +137,7 @@
     - [X] Efeito de shake quando a bola bate nas paredes
     - [X] Concertar a fonte
     - [] Concertar tutorial
-    - [] Corrigir a posição das coisas
+    - [+-] Corrigir a posição das coisas
         - [] Placares
         - [] Fundo
         - [] Pause
@@ -148,6 +148,7 @@
     - [] Exportação
     - [] Re-importar sprites
         - [] Fundo 2
+    - [] Corrigir Shake
 
     Sprites novos:
         - Tela do UGD  (Repositório do everknitght)

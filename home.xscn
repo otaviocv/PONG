@@ -4,6 +4,7 @@
 	<ext_resource path="res://mpbutton.gd" type="Script" index="11"></ext_resource>
 	<ext_resource path="res://title.gd" type="Script" index="7"></ext_resource>
 	<ext_resource path="res://exbutton.gd" type="Script" index="15"></ext_resource>
+	<ext_resource path="res://player.gd" type="Script" index="3"></ext_resource>
 	<ext_resource path="res://sounds/Hover.smp" type="Sample" index="2"></ext_resource>
 	<ext_resource path="res://sounds/Active.smp" type="Sample" index="1"></ext_resource>
 	<ext_resource path="res://sprites/Buttons/import/ExitButton2.tex" type="Texture" index="17"></ext_resource>
@@ -14,7 +15,6 @@
 	<ext_resource path="res://sprites/Buttons/import/MultiButton2.tex" type="Texture" index="13"></ext_resource>
 	<ext_resource path="res://sprites/Logo.tex" type="Texture" index="6"></ext_resource>
 	<ext_resource path="res://sprites/Buttons/import/SingleButton3.tex" type="Texture" index="10"></ext_resource>
-	<ext_resource path="res://player.gd" type="Script" index="3"></ext_resource>
 	<ext_resource path="res://sprites/Buttons/import/MultiButton3.tex" type="Texture" index="14"></ext_resource>
 	<ext_resource path="res://sprites/Background.tex" type="Texture" index="5"></ext_resource>
 	<ext_resource path="res://sprites/Buttons/import/MultiButton1.tex" type="Texture" index="12"></ext_resource>
@@ -47,7 +47,7 @@
 			<string> "conn_count" </string>
 			<int> 20 </int>
 			<string> "conns" </string>
-			<int_array  len="120"> 				10, 1, 61, 60, 2, 0, 10, 9, 61, 60, 2, 0, 10, 1, 63, 62, 2, 0, 10, 9, 63, 62, 2, 0, 10, 9, 65, 64, 2, 0, 10, 1, 67, 66, 2, 0, 10, 9, 67, 66, 2, 0, 15, 14, 61, 68, 2, 0, 15, 1, 61, 68, 2, 0, 15, 14, 63, 69, 2, 0, 15, 14, 65, 70, 2, 0, 15, 14, 67, 71, 2, 0, 15, 0, 67, 71, 2, 0, 20, 19, 61, 72, 2, 0, 20, 1, 61, 72, 2, 0, 20, 19, 63, 73, 2, 0, 20, 1, 63, 73, 2, 0, 20, 19, 65, 74, 2, 0, 20, 0, 67, 75, 2, 0, 20, 19, 67, 75, 2, 0 </int_array>
+			<int_array  len="120"> 				10, 1, 61, 60, 2, 0, 10, 9, 61, 60, 2, 0, 10, 1, 63, 62, 2, 0, 10, 9, 63, 62, 2, 0, 10, 9, 65, 64, 2, 0, 10, 1, 67, 66, 2, 0, 10, 9, 67, 66, 2, 0, 15, 1, 61, 68, 2, 0, 15, 14, 61, 68, 2, 0, 15, 14, 63, 69, 2, 0, 15, 14, 65, 70, 2, 0, 15, 0, 67, 71, 2, 0, 15, 14, 67, 71, 2, 0, 20, 1, 61, 72, 2, 0, 20, 19, 61, 72, 2, 0, 20, 1, 63, 73, 2, 0, 20, 19, 63, 73, 2, 0, 20, 19, 65, 74, 2, 0, 20, 0, 67, 75, 2, 0, 20, 19, 67, 75, 2, 0 </int_array>
 			<string> "editable_instances" </string>
 			<array  len="0" shared="false">
 			</array>

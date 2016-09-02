@@ -68,12 +68,10 @@ func _fixed_process(delta):
 func check_end_of_game():
 	if scoreleft == maxpoints:
 		playerwins.set_text("Player 1 Wins")
-		get_node("Square").show()
 		gameend = true
 		reset_time.start()
 	if scoreright == maxpoints:
 		playerwins.set_text("Player 2 Wins")
-		get_node("Square").show()
 		gameend = true
 		reset_time.start()
 
@@ -114,11 +112,15 @@ func _ready():
 	if rand > 0.5:
 		get_node("Background/Bars1").show()
 		get_node("Background/Space").show()
+		get_node("Background/Bg1").show()
 		get_node("Background/Bars2").hide()
+		get_node("Background/Bg2").hide()
 	else:
 		get_node("Background/Bars2").show()
 		get_node("Background/Bars1").hide()
 		get_node("Background/Space").hide()
+		get_node("Background/Bg2").show()
+		get_node("Background/Bg1").hide()
 	randomize()
 	var rand = randf()
 	if rand > 0.5:
@@ -133,6 +135,7 @@ func _ready():
 	else:
 		get_node("ball/BlueBall").hide()
 		get_node("ball/RedBall").show()
+	
 			
 
 
