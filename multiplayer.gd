@@ -66,11 +66,11 @@ func _fixed_process(delta):
 
 func check_end_of_game():
 	if scoreleft == maxpoints:
-		playerwins.set_text("Player 1 Wins")
+		playerwins.set_text("player 1 wins")
 		gameend = true
 		reset_time.start()
 	if scoreright == maxpoints:
-		playerwins.set_text("Player 2 Wins")
+		playerwins.set_text("player 2 wins")
 		gameend = true
 		reset_time.start()
 
