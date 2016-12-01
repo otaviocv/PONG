@@ -18,7 +18,7 @@ var scoreai = 0
 var pause = false
 var scoreplayer = 0
 var dir = 1
-var maxpoints = 1
+var maxpoints = 11
 var gameend = false
 var paused = false
 
@@ -49,7 +49,7 @@ func _fixed_process(delta):
 	
 	shaketime += delta
 	if shake:
-		set_pos(Vector2(2*cos(15*shaketime + PI), 2*sin(-15*shaketime)))
+		set_pos(Vector2(2*cos(15*shaketime + PI/2), 2*sin(20*shaketime)))
 		if 15*shaketime > 2*PI:
 			shake = false
 			set_pos(Vector2(0,0))

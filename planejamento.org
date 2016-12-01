@@ -127,8 +127,8 @@
 
 * Metas definidas em 5 de Agosto de 2016
 
-    - [] Introdução
-        - [] Tela do UGD e dos créditos
+    - [X] Introdução
+        - [X] Tela do UGD e dos créditos
     - [X] Adicionar Glow em tudo
         - [X] Pads
     - [X] Fazer o glow oscilante
