@@ -1,0 +1,161 @@
+                             ************
+                             *   PONG   *
+                             ************
+                   [[http://github.com/otaviocv/pong]]
+         [[https://forum.uspgamedev.org/t/mini-projeto-game-pong/447]]
+                    ______________________________
+                     -          7  |  6
+                     |             |
+                     -             |
+                                   |
+                             o     |
+                                   |
+                                   |             -
+                                   |             |
+                                   |             -
+                                   |
+                    _______________|______________
+
+* Planejamento Incial
+  ** Horários
+    1o Horário: Segunda 16:00 - 18:00
+    2o Horário: Quarta 16:00 - 18:00
+    3o Horário: Quinta 8:00 - 10:00
+
+   |    Horários   | SEG | TER | QUA | QUI | SEX |
+   |---------------|-----|-----|-----|-----|-----|
+   | 8:00 - 10:00  |     |     |     |     |     |
+   | 10:00 - 12:00 |     |     |     |     | 1o  |
+   | 16:00 - 18:00 |     |     |     |     |     |
+
+
+  ** Integrantes
+    - Breno Moura [[mailto:]]
+    - Otávio Vasques [[mailto:]]
+    - Sofia Alonso [[mailto:]]
+    - Gabriel Kazuyuki [[mailto:]]
+
+  ** Mecânica Básica
+
+    - Movimento do pauzinhos
+    - Tamanho dos pauzinhos
+    - Movimento da bolinha
+      - colide com as perede superiores, atravessa as laterais
+        - Quando a bolinha sai pela lateral ela deixa de exisitr. Nova bolinha é criada
+      - Ganho/perda de velocidade baseado na velocidade do pauzinho
+        - Troca de direção
+          - Movimento baseado em colisões elásticas.
+            - Colisão com Pauzinho Vx = x, Vy = y -> Vx = -x, Vy = (a*Vp - b*y)
+            - Colisão com Parede Vx = x, Vy = y -> Vx = x, Vy = -y.
+    - Criação de novos objetos
+      - A bolinha nova surge na metade da tela por onde a última bolinha escapou com velocidade Vi
+      - Nova Bolinha
+        - Sempre pro lado do jogador que perdeu a rodada
+        - Velocidade inical
+          - Vy = k, Vx = abs(k), x = centro,
+        - Posição inicial
+          - y = centro
+          OU
+          - y = yaxis * random()
+
+    - Placar
+      - Registro de quantas bolinhas escaparam pelas laterais.
+    - Início/Fim do jogo
+      - Delimitar o máximo de pontos
+
+  ** Jogabilidade
+    - Single Player
+      - Mouse ou teclado
+    - Vs local
+      -  Só teclado
+    - Vs online
+
+
+    *** PROBLEMAS :importante:
+      - IA balanceada
+        - Numero máximo de rabtidas
+        - Velocidade fixa
+      - Na implementação mobile definir uma velocidade limite
+
+  ** Visual
+    - Proporção da Tela 16:9
+    - DEFAULT
+      - Fontes
+        - TODAS [[http://www.dafont.com/pt/8-bit-party.font?psize=l&text=PONG]]
+      - Pauzinhos
+      - Barra central (dashed)
+      - Barra suprerior e inferior
+  ** Som
+      - Colisão com pauzinho
+        - Ajustável com a intensidade da colisão
+      - Colisão com parede
+      - Música de fundo
+      - inicio/fim do jogo
+      - inicio/fim da rodada + Bola nova
+      *** Músicas
+        - Soft -> menu
+        - Low e Wack com 50% de chance de aparecer tanto no multiplayer quanto
+          no singleplayer
+
+  ** Plataformas
+    - MOBILE **
+    - PC
+
+* Mínimo para o jogo ficar pornto
+  * Global [1/2]
+    - [X] Sprites
+    - [X] Som
+  ** Multiplayer [4/4]
+    - [X] Placares
+    - [X] Mecânica de reposição de bola [2/2]
+      - [X] Delay no reset da bola
+      - [X] Angulo de reposição
+    - [X] Corrigir o lado do lançamento da bolinha
+    - [X] Mecânica de inicio e fim de jogo
+
+  ** Single Player [1/1]
+    - [X] IA
+
+* Features [0/1]
+  - [ ]  Destruir a barra do perdedor
+
+* Issues [2/2]
+  - [X] Velocidade em X da bolinha
+  - [X] Velocidade em Y da bolinha
+      - A bola não consegue somar a velocidade do pad
+  - [] Concertar as posições das coisas
+
+* Metas definidas em 5 de Agosto de 2016
+
+    - [X] Introdução
+        - [X] Tela do UGD e dos créditos
+    - [X] Adicionar Glow em tudo
+        - [X] Pads
+    - [X] Fazer o glow oscilante
+    - [] Criar o rastro em forma de glow do título
+    - [] Criar o rastro em forma de glow das bolas
+    - [X] Efeito de shake quando a bola bate nas paredes
+    - [X] Concertar a fonte
+    - [] Concertar tutorial
+    - [+-] Corrigir a posição das coisas
+        - [] Placares
+        - [] Fundo
+        - [] Pause
+    - [] Opções
+        - [] Controlar Volume
+        - [] Bind de teclas
+        - [] Incluir controle de mouse
+    - [] Exportação
+    - [] Re-importar sprites
+        - [] Fundo 2
+    - [] Corrigir Shake
+
+    Sprites novos:
+        - Tela do UGD  (Repositório do everknitght)
+        - Tela dos créditos
+        - Fonte (??)
+        - Botão de opção
+        - Fundo da tela de opções
+        - Iterruptores on e off da tela de opções
+
+Esses são os requisitos da versão 1.0.0
